@@ -297,5 +297,102 @@
    "Sell unknown: set = ask (no profit assumed)",
    "Aftermarket diamonds"
   ]
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster Diver 300M Co-Axial, blue, 2024",
+  "ref": "210.30.42.20.03.001",
+  "ask": 3300,
+  "buy": 3300,
+  "sell": 4000,
+  "sellRange": "$3,900-4,100 est.",
+  "source": "r/watchexchange",
+  "url": "https://www.reddit.com/r/Watchexchange/comments/1xbsn1u/",
+  "found": "2026-10-21",
+  "kind": "buy",
+  "why": "About $1,000 under WatchCharts ($4,347) and Loupe ($4,320) market values; Grailzee asks $5,250 for a 2026 example. Est. profit $550-750. Buy only after a custom timestamp and video call, via PayPal G&S.",
+  "redFlags": [
+   "Seller account has only 1 transaction",
+   "Generic description",
+   "Price ~$1,000 under market (scam pattern)",
+   "Shipping not stated"
+  ],
+  "image_url": "https://i.redd.it/wkfffrs6puwh1.jpeg"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Prince Oysterdate 34mm, 1985, full kit",
+  "ref": "74000",
+  "ask": 850,
+  "buy": 850,
+  "sell": 1200,
+  "sellRange": "$1,150-1,250 est.",
+  "source": "r/watchexchange",
+  "url": "https://www.reddit.com/r/Watchexchange/comments/1xbo6kp/",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "why": "Borderline. $820 + insured ship. Tempus Europa median €950 (10 sales); 360d.io says prices down 27% in 12 months. Est. profit $300-400.",
+  "redFlags": [
+   "PayPal F&F only, no buyer protection",
+   "34mm is small for FB buyers",
+   "Falling prices",
+   "Several 'PM' comments, may be gone"
+  ],
+  "image_url": "https://i.redd.it/jfrved7ivtwh1.jpeg"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Speedmaster Triple Date MK40 'Cosmos', 1998, watch only",
+  "ref": "3520.53",
+  "ask": 2300,
+  "buy": 2300,
+  "sell": 2600,
+  "source": "r/watchexchange",
+  "url": "https://www.reddit.com/r/Watchexchange/comments/1xbny25/",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "why": "Margin too thin: Reddit asks $2,570-2,690, est. profit $250-350 before any service.",
+  "redFlags": [
+   "No service history",
+   "No box or papers"
+  ],
+  "image_url": "https://i.redd.it/wkkd536yttwh1.jpeg"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay 58, 2025, full set (FB, Nashville)",
+  "ref": "79030N",
+  "ask": 3499,
+  "buy": 3499,
+  "sell": 3800,
+  "source": "Facebook Marketplace",
+  "url": "https://www.facebook.com/marketplace/item/3675739455917638/",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "why": "Dealer-priced. Grailzee asks for 79030N run $3,750-4,100, leaving roughly $300 or less after fees.",
+  "redFlags": [
+   "Seller appears to be a dealer",
+   "Thin margin"
+  ],
+  "image_url": ""
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Constellation, c.1966, gold cap/steel, cal. 561 (FB, Nashville)",
+  "ref": "168.004",
+  "ask": 2995,
+  "buy": 2995,
+  "sell": 2995,
+  "source": "Facebook Marketplace",
+  "url": "https://www.facebook.com/marketplace/item/39389244964024775/",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "why": "No verified comps pulled this run; service history unknown and accuracy untested, so no room at this ask.",
+  "redFlags": [
+   "Unknown service history",
+   "Accuracy untested",
+   "No box or papers"
+  ],
+  "image_url": ""
  }
 ]
