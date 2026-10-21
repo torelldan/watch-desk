@@ -15,4 +15,4 @@
 4. Send Daniel the fresh `watch-desk.html`.
 
 ## GitHub Pages
-The site is published from the `main` branch at the repository root: https://torelldan.github.io/watch-desk/ (open that on a phone). `build.py` writes `watch-desk.html` and `index.html`; Pages serves `index.html`.
+The site is published from the `main` branch at the repository root: https://torelldan.github.io/watch-desk/ (open that on a phone). `build.py` writes `watch-desk.html` and `index.html`; Pages serves `index.html`. `.github/workflows/pages.yml` deploys that root on each push to `main`.
