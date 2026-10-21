@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Desk — Watch deals</title>
+<style>
+  :root {
+    --bg: #121417;
+    --panel: #1a1d21;
+    --card: #22262c;
+    --line: #2c3138;
+    --text: #f2f4f6;
+    --muted: #9aa3ad;
+    --dim: #6d7680;
+    --green: #3dd68c;
+    --red: #ff5d5d;
+    --blue: #7eb6ff;
+    --amber: #e7b549;
+    --chip: #2a3038;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+  button, input, select { font: inherit; color: inherit; }
+  .app { display: grid; grid-template-columns: 232px 1fr; min-height: 100%; }
+  aside {
+    background: #16191d;
+    border-right: 1px solid var(--line);
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .brand { display: flex; align-items: baseline; gap: 8px; padding: 0 8px; }
+  .brand b { letter-spacing: 0.14em; font-size: 13px; }
+  .brand span { color: var(--dim); font-size: 11px; }
+  nav { display: flex; flex-direction: column; gap: 4px; }
+  nav button, .group button {
+    text-align: left;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  nav button.active, nav button:hover, .group button:hover { background: #242930; color: var(--text); }
+  .label { color: var(--dim); font-size: 10px; letter-spacing: 0.16em; padding: 8px 10px 4px; }
+  .group { display: flex; flex-direction: column; gap: 2px; }
+  .rules {
+    margin-top: auto;
+    background: #1c2127;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .rules strong { color: var(--text); font-weight: 600; }
+  main { display: flex; flex-direction: column; min-width: 0; }
+  header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  header input {
+    flex: 1;
+    background: #1c2127;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 10px 16px;
+    outline: none;
+  }
+  .stat { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  .stat b { color: var(--text); }
+  .toolbar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .toolbar select, .seg button {
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 7px 10px;
+  }
+  .seg { margin-left: auto; display: flex; gap: 6px; }
+  .seg button.on { color: var(--text); border-color: #3d4652; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+    padding: 16px 18px 28px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .shot {
+    height: 168px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    background:
+      radial-gradient(circle at 50% 45%, rgba(255,255,255,0.08), transparent 55%),
+      linear-gradient(160deg, #2a3140, #171b21 70%);
+  }
+  .shot .dial {
+    width: 92px; height: 92px; border-radius: 50%;
+    border: 6px solid #c8ccd1;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    position: relative;
+  }
+  .shot .dial::before {
+    content: "";
+    position: absolute; left: 50%; top: 18%;
+    width: 2px; height: 28px; background: #eee; transform: translateX(-50%);
+  }
+  .shot .dial::after {
+    content: "";
+    position: absolute; left: 50%; top: 50%;
+    width: 24px; height: 2px; background: #d7b15a; transform-origin: left center;
+  }
+  .badge {
+    position: absolute; top: 10px; left: 10px;
+    font-size: 10px; letter-spacing: 0.08em;
+    padding: 4px 7px; border-radius: 999px;
+    background: rgba(0,0,0,0.45);
+  }
+  .badge.buy { color: var(--green); }
+  .badge.pass { color: var(--red); }
+  .badge.auction { color: var(--amber); }
+  .body { padding: 12px 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+  .brand-name { color: var(--dim); font-size: 11px; letter-spacing: 0.12em; }
+  .model { font-size: 14px; line-height: 1.3; min-height: 36px; }
+  .ref { color: var(--dim); font-size: 12px; }
+  .prices { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-top: 6px; }
+  .prices div { background: #1a1e24; border-radius: 8px; padding: 6px; }
+  .prices span { display: block; color: var(--dim); font-size: 10px; letter-spacing: 0.06em; }
+  .ask { color: var(--blue); }
+  .buy { color: var(--green); }
+  .sell { color: var(--red); }
+  .meta { display: flex; justify-content: space-between; color: var(--dim); font-size: 11px; margin-top: 4px; }
+  .why { color: var(--muted); font-size: 12px; line-height: 1.4; min-height: 34px; }
+  .empty {
+    grid-column: 1 / -1;
+    padding: 48px 16px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .analyze {
+    margin-top: 8px;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .analyze:hover { color: var(--text); border-color: #3d4652; }
+  .overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.62);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 18px 28px 250px;
+    z-index: 5;
+  }
+  .overlay.open { display: flex; }
+  .panel {
+    width: min(980px, 100%);
+    max-height: calc(100vh - 56px);
+    overflow: auto;
+    background: #1b1f25;
+    border: 1px solid #3a3424;
+    border-radius: 12px;
+    padding: 16px 18px 20px;
+  }
+  .panel-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+  .panel-head h2 { margin: 0; font-size: 18px; }
+  .panel-head p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .x {
+    background: transparent; border: 0; color: var(--muted); cursor: pointer; font-size: 18px;
+  }
+  .listing {
+    display: inline-block; margin-top: 10px;
+    color: var(--amber); font-size: 12px; letter-spacing: 0.08em;
+  }
+  .filters { display: flex; gap: 8px; margin: 14px 0; align-items: center; }
+  .filters input, .filters select {
+    background: #14181d; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px;
+  }
+  .filters input { flex: 1; }
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .statbox {
+    background: #14181d; border: 1px solid var(--line); border-radius: 10px; padding: 10px;
+  }
+  .statbox span { display: block; color: var(--dim); font-size: 10px; letter-spacing: 0.08em; }
+  .statbox b { display: block; margin-top: 6px; font-size: 18px; }
+  .split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 14px; margin-top: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { text-align: left; color: var(--dim); font-weight: 500; padding: 6px 4px; }
+  td { padding: 7px 4px; border-top: 1px solid var(--line); color: var(--muted); }
+  .chart {
+    background: #14181d; border: 1px solid var(--line); border-radius: 10px; padding: 12px;
+    min-height: 280px;
+  }
+  .chart h3 { margin: 0 0 8px; font-size: 12px; letter-spacing: 0.1em; color: var(--dim); }
+  svg { width: 100%; height: 230px; }
+  @media (max-width: 900px) {
+    .overlay { padding: 12px; }
+    .stats, .split { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand"><b>DESK</b><span>v1</span></div>
+    <nav>
+      <button class="active" data-view="deals">Deals</button>
+      <button data-view="buys">Buys only</button>
+      <button data-view="auctions">Auctions</button>
+      <button data-view="passes">Passes</button>
+      <button data-view="book">Book</button>
+    </nav>
+    <div class="label">BUDGET</div>
+    <div class="group">
+      <button data-budget="1000" class="on">Under $1,000</button>
+      <button data-budget="1500">Under $1,500</button>
+      <button data-budget="all">All</button>
+    </div>
+    <div class="rules">
+      Cash <strong>$1,000</strong><br />
+      Buy rule <strong>ask ≤ target cap</strong><br />
+      Exit <strong>r/watchexchange</strong><br />
+      Fees assumed <strong>~3% PayPal G&amp;S</strong><br />
+      Skip <strong>refinished / fakes</strong>
+    </div>
+  </aside>
+  <main>
+    <header>
+      <input id="q" placeholder="Search refs, brands — comma to compare" />
+      <div class="stat"><b id="count">0</b> rows · last 14 days</div>
+      <div class="stat">Data updated <b id="updated"></b></div>
+    </header>
+    <div class="toolbar">
+      <select id="sort">
+        <option value="new">Sort: Newest</option>
+        <option value="spread">Sort: Spread</option>
+        <option value="ask">Sort: Ask</option>
+      </select>
+      <div class="seg">
+        <button class="on" id="mode">Target prices</button>
+      </div>
+    </div>
+    <section class="grid" id="grid"></section>
+  </main>
+</div>
+<div class="overlay" id="overlay">
+  <div class="panel">
+    <div class="panel-head">
+      <div>
+        <h2 id="ah">Watch</h2>
+        <p id="asub">Listed at</p>
+        <a class="listing" id="alink" href="#" target="_blank" rel="noopener">VIEW THIS LISTING</a>
+      </div>
+      <button class="x" id="close">×</button>
+    </div>
+    <div class="filters">
+      <input id="asearch" placeholder="Search dial, reference, keyword" />
+      <select id="adial"><option>All dials</option><option>Black</option><option>Blue</option></select>
+    </div>
+    <div class="stats" id="astats"></div>
+    <div class="split">
+      <div>
+        <table>
+          <thead><tr><th>DATE SOLD</th><th>SOURCE</th><th>WATCH</th></tr></thead>
+          <tbody id="asales"></tbody>
+        </table>
+      </div>
+      <div class="chart">
+        <h3>SOLD PRICE TREND</h3>
+        <svg id="achart" viewBox="0 0 420 230"></svg>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const deals = [{"brand": "TISSOT", "model": "PRX Powermatic 80, blue dial, box & papers", "ref": "T137.407.11.041.00", "ask": 400, "buy": 400, "sell": 472, "source": "r/watchexchange", "url": "https://www.reddit.com/r/Watchexchange/comments/1x8cd0m/", "found": "2026-10-21", "kind": "buy", "why": "At cap. Sell is the WatchSnipe r/watchexchange median sold ($472). Pay via PayPal G&S and ask for a custom-note photo.", "redFlags": ["Seller has 0 trades", "Bracelet visibly scratched", "Thin margin (~$72 before fees/ship)"]}, {"brand": "OMEGA", "model": "Seamaster De Ville, vintage, gold-plated", "ref": "vintage (no ref)", "compRef": "166.020", "ask": 499, "buy": 600, "sell": 750, "source": "r/watchexchange", "url": "https://www.reddit.com/r/Watchexchange/comments/1x322a3/", "found": "2026-10-21", "kind": "pass", "why": "Borderline. Under cap and seller has 76 trades + video call, but no reference to confirm era. Sell based on Second Vintage 166.020 sales ($617-797).", "redFlags": ["No reference number (may be 1970s)", "Gold plating can wear through", "F&F / Venmo only, no buyer protection", "Posted Oct 11"]}, {"brand": "OMEGA", "model": "Seamaster De Ville", "ref": "165.008", "compRef": "166.020", "ask": 499.55, "buy": 600, "sell": 750, "source": "eBay", "url": "https://www.ebay.com/itm/398438457723", "found": "2026-10-21", "kind": "buy", "why": "Under cap, seller 100% feedback, accepts offers. Delivery mid-to-late November.", "redFlags": ["Ships from Albania, import fees extra", "No returns", "Verify dial and movement photos"]}, {"brand": "CITIZEN", "model": "Fugu, auction, free shipping", "ref": "NY0040", "ask": 127.5, "buy": 160, "sell": 250, "sellRange": "$200-300 (guide)", "source": "eBay", "url": "https://www.ebay.com/itm/147639813762", "found": "2026-10-21", "kind": "auction", "why": "Current bid under $160 cap; bid will likely rise. Ends ~Oct 24. Sell is a rough $200-300 guide (midpoint shown).", "redFlags": ["Auction, final price unknown"]}, {"brand": "HAMILTON", "model": "Khaki Field Mechanical 38mm", "ref": "38mm (ref not recorded)", "ask": 450, "buy": 340, "sell": 400, "source": "FB Marketplace (Nashville)", "url": "", "found": "2026-10-21", "kind": "pass", "why": "Ask $450 is over the $340 cap and above the ~$400 WatchSnipe median sold.", "redFlags": ["Over cap", "No link saved"]}];
+const comps = {"166.020": [{"date": "2026-04-30", "price": 617, "source": "Second Vintage (USD figure from earlier research; page lists EUR, mapping unverified)", "title": "Omega Seamaster De Ville 166.020", "url": "https://secondvintage.com/en/auction/OME-OAS-0032"}, {"date": "2026-01-11", "price": 786, "source": "Second Vintage (USD figure from earlier research; page lists EUR, mapping unverified)", "title": "Omega Seamaster De Ville 166.020, 1966", "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"}, {"date": "2026-07-24", "price": 797, "source": "Second Vintage (USD figure from earlier research; page shows a 165.008, mapping unverified)", "title": "Omega Seamaster De Ville (page: 165.008, no reserve)", "url": "https://secondvintage.com/en/auction/OME-OSD-0003"}]};
+const DATA_UPDATED = "Oct 21, 2026 8:50 AM CT";
+
+const money = n => "$" + Number(n).toLocaleString("en-US", {maximumFractionDigits: 2});
+let view = "deals";
+let budget = 1000;
+document.getElementById("updated").textContent = DATA_UPDATED;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function ageOf(iso) {
+  const days = Math.floor((Date.now() - new Date(iso + "T12:00:00")) / 86400000);
+  return days <= 0 ? "today" : days + "d";
+}
+
+function rows() {
+  const q = document.getElementById("q").value.toLowerCase().trim();
+  let list = deals.filter(d => {
+    if (view === "buys" && d.kind !== "buy") return false;
+    if (view === "auctions" && d.kind !== "auction") return false;
+    if (view === "passes" && d.kind !== "pass") return false;
+    if (view === "book") return false;
+    if (budget !== "all" && d.ask > budget && d.kind !== "auction") return false;
+    if (!q) return true;
+    return (d.brand + " " + d.model + " " + d.ref).toLowerCase().includes(q);
+  });
+  const sort = document.getElementById("sort").value;
+  if (sort === "spread") list.sort((a, b) => (b.sell - b.buy) - (a.sell - a.buy));
+  if (sort === "new") list.sort((a, b) => b.found.localeCompare(a.found));
+  if (sort === "ask") list.sort((a, b) => a.ask - b.ask);
+  return list;
+}
+
+function paint() {
+  const grid = document.getElementById("grid");
+  if (view === "book") {
+    grid.innerHTML = '<div class="empty">Book is empty. A bought row lands here with cost, target sell, and the Marketplace draft.</div>';
+    document.getElementById("count").textContent = "0";
+    return;
+  }
+  const list = rows();
+  document.getElementById("count").textContent = String(list.length);
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty">No buy this pass. Nothing cleared cash, profit, and hold together.</div>';
+    return;
+  }
+  grid.innerHTML = list.map(d => `
+    <article class="card">
+      <div class="shot">
+        <span class="badge ${d.kind}">${d.kind.toUpperCase()}</span>
+        <div class="dial" style="background:${d.brand === "TUDOR" ? "#1c2430" : d.brand === "OMEGA" ? "#123" : "#2a241c"}"></div>
+      </div>
+      <div class="body">
+        <div class="brand-name">${d.brand}</div>
+        <div class="model">${d.model}</div>
+        <div class="ref">${d.ref}</div>
+        <div class="prices">
+          <div><span>ASK</span><b class="ask">${money(d.ask)}</b></div>
+          <div><span>BUY</span><b class="buy">${money(d.buy)}</b></div>
+          <div><span>SELL</span><b class="sell">${money(d.sell)}</b></div>
+        </div>
+        <div class="why">${esc(d.why)}</div>
+        ${(d.redFlags||[]).length ? `<div class="why" style="color:var(--amber)">⚑ ${d.redFlags.map(esc).join(" · ")}</div>` : ""}
+        <div class="meta"><span>${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" style="color:var(--blue)">${esc(d.source)} ↗</a>` : esc(d.source)}</span><span>${ageOf(d.found)}</span></div>
+        <button class="analyze" data-i="${deals.indexOf(d)}">ANALYZE WATCH</button>
+      </div>
+    </article>
+  `).join("");
+  document.querySelectorAll(".analyze").forEach(b => b.onclick = () => openAnalysis(Number(b.dataset.i)));
+}
+
+function openAnalysis(i) {
+  const d = deals[i];
+  const key = d.compRef || d.ref;
+  const solds = (comps[key] || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+  document.getElementById("ah").textContent = `${d.brand} ${d.model.split(",")[0]}`;
+  document.getElementById("asub").textContent = `${d.ref} · listed at ${money(d.ask)} · target buy ${money(d.buy)} · target sell ${d.sellRange || money(d.sell)}` + (d.compRef ? ` · comps from ${d.compRef}` : "");
+  const link = document.getElementById("alink");
+  if (d.url) { link.href = d.url; link.style.display = ""; } else { link.removeAttribute("href"); link.style.display = "none"; }
+  if (!solds.length) {
+    document.getElementById("astats").innerHTML = '<div class="statbox"><span>SOLD COMPS</span><b>No sold comps yet</b></div>';
+    document.getElementById("asales").innerHTML = '<tr><td colspan="3">No sold comps yet</td></tr>';
+    document.getElementById("achart").innerHTML = '<text x="24" y="120" fill="#6d7680" font-size="13">No sold comps yet</text>';
+    document.getElementById("overlay").classList.add("open");
+    return;
+  }
+  const prices = solds.map(s => s.price);
+  const sorted = prices.slice().sort((a, b) => a - b);
+  const avg = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length);
+  const lo = sorted[0], hi = sorted[sorted.length - 1];
+  const n = sorted.length;
+  const mid = n % 2 ? sorted[(n - 1) / 2] : Math.round((sorted[n / 2 - 1] + sorted[n / 2]) / 2);
+  document.getElementById("astats").innerHTML = [
+    ["AVERAGE PRICE", money(avg)],
+    ["LOWEST AND HIGHEST", `${money(lo)} to ${money(hi)}`],
+    ["MIDDLE PRICE", money(mid)],
+    ["MOST RECENT SALE", money(prices[0])],
+    ["SALES OVERALL", String(n)]
+  ].map(([k, v]) => `<div class="statbox"><span>${k}</span><b>${v}</b></div>`).join("");
+  document.getElementById("asales").innerHTML = solds.map(s =>
+    `<tr><td>${esc(s.date)}</td><td>${esc(s.source)}</td><td>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--blue)">${esc(s.title)}</a>` : esc(s.title)} ${money(s.price)}</td></tr>`
+  ).join("");
+  const chron = solds.slice().reverse().map(s => s.price);
+  const min = lo * 0.92, max = hi * 1.08;
+  const step = chron.length > 1 ? 376 / (chron.length - 1) : 0;
+  const pts = chron.map((p, idx) => [24 + idx * step, 200 - ((p - min) / (max - min || 1)) * 160]);
+  document.getElementById("achart").innerHTML =
+    `<line x1="24" y1="200" x2="400" y2="200" stroke="#2c3138"/>
+     <polyline fill="none" stroke="#7eb6ff" stroke-width="2" points="${pts.map(p => p.join(",")).join(" ")}"/>
+     ${pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#7eb6ff"/>`).join("")}
+     <text x="300" y="24" fill="#9aa3ad" font-size="11">median ${money(mid)}</text>`;
+  document.getElementById("overlay").classList.add("open");
+}
+
+document.getElementById("close").onclick = () => document.getElementById("overlay").classList.remove("open");
+document.getElementById("overlay").onclick = e => { if (e.target.id === "overlay") e.currentTarget.classList.remove("open"); };
+
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x => x.classList.remove("active"));
+  b.classList.add("active");
+  view = b.dataset.view;
+  paint();
+});
+document.querySelectorAll("[data-budget]").forEach(b => b.onclick = () => {
+  document.querySelectorAll("[data-budget]").forEach(x => x.classList.remove("on"));
+  b.classList.add("on");
+  budget = b.dataset.budget === "all" ? "all" : Number(b.dataset.budget);
+  paint();
+});
+document.getElementById("q").oninput = paint;
+document.getElementById("sort").onchange = paint;
+paint();
+</script>
+</body>
+</html>
