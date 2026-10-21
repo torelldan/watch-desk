@@ -346,7 +346,7 @@ function paint() {
   grid.innerHTML = list.map(d => `
     <article class="card">
       <div class="shot">
-        <span class="badge ${d.kind}" style="z-index:1">${d.kind.toUpperCase()}</span>
+        <span class="badge ${d.kind}" style="z-index:1">${d.kind.toUpperCase()}${d.tier ? " · " + esc(d.tier).toUpperCase() : ""}</span>
         <div class="dial" style="background:${d.brand === "TUDOR" ? "#1c2430" : d.brand === "OMEGA" ? "#123" : "#2a241c"}"></div>
         ${d.image_url ? `<img src="${esc(d.image_url)}" alt="${esc(d.brand + " " + d.model)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '<span class="noimg">No photo saved</span>'}
       </div>

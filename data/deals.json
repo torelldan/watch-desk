@@ -57,7 +57,7 @@
    "No returns",
    "Verify dial and movement photos"
   ],
-  "image_url": ""
+  "image_url": "https://i.ebayimg.com/images/g/Ls0AAeSwi5NqubEj/s-l400.jpg"
  },
  {
   "brand": "CITIZEN",
@@ -75,7 +75,7 @@
   "redFlags": [
    "Auction, final price unknown"
   ],
-  "image_url": ""
+  "image_url": "https://i.ebayimg.com/images/g/Uz8AAeSw1qxq03C2/s-l400.jpg"
  },
  {
   "brand": "HAMILTON",
@@ -94,5 +94,208 @@
    "No link saved"
   ],
   "image_url": ""
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Prospex Sumo 1st gen 'Blumo', blue dial, pre-owned good, BIN",
+  "ref": "ref unconfirmed",
+  "ask": 367.37,
+  "buy": 400,
+  "sell": 565,
+  "sellRange": "$480-650 (Pro Wrist Flipper guide)",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/189028169628",
+  "found": "2026-10-21",
+  "kind": "buy",
+  "image_url": "https://i.ebayimg.com/images/g/oisAAeSwZmdq0Pny/s-l400.jpg",
+  "why": "$359 + $8.37 ship = $367.37, under $400 cap. Seller greztan (1,468 feedback, 100%), Denver CO. Sell is the midpoint of the $480-650 guide; no WatchSnipe Sumo data.",
+  "redFlags": [
+   "Ref not stated",
+   "Originality unchecked",
+   "No returns"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SARB035",
+  "ref": "SARB035",
+  "ask": 625,
+  "buy": 400,
+  "sell": 750,
+  "source": "FB Marketplace (Nashville)",
+  "url": "",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Over the $400 cap (SARB guide buy $280-400). Sell is the WatchSnipe median sold ($750).",
+  "redFlags": [
+   "No link saved",
+   "Over cap"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX009 'Pepsi'",
+  "ref": "SKX009",
+  "ask": 400,
+  "buy": 330,
+  "sell": 255,
+  "source": "FB Marketplace (Nashville)",
+  "url": "",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Over the $330 cap and above the WatchSnipe median sold ($255).",
+  "redFlags": [
+   "No link saved",
+   "Over cap"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX007",
+  "ref": "SKX007",
+  "ask": 260,
+  "buy": 300,
+  "sell": 240,
+  "source": "FB Marketplace (Nashville)",
+  "url": "",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Near miss: under the $300 guide cap but above the WatchSnipe SKX007J median sold ($240), so no margin.",
+  "redFlags": [
+   "No link saved",
+   "No margin vs median sold"
+  ]
+ },
+ {
+  "brand": "HAMILTON",
+  "model": "Khaki Field Mechanical 38mm",
+  "ref": "38mm (ref not recorded)",
+  "ask": 469,
+  "buy": 340,
+  "sell": 400,
+  "source": "FB Marketplace (Nashville)",
+  "url": "",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Over the $340 cap and above the ~$400 WatchSnipe median sold.",
+  "redFlags": [
+   "No link saved",
+   "Over cap"
+  ]
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR03-92 black steel 42mm, box + OEM straps, Good, BIN",
+  "ref": "BR03-92",
+  "ask": 1895,
+  "buy": 2500,
+  "sell": 1895,
+  "sellRange": "unknown, no profit assumed",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/236958724927",
+  "found": "2026-10-21",
+  "kind": "buy",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/gTUAAeSwHg9qYm8y/s-l400.jpg",
+  "why": "$1,895, free shipping. Seller mbk52 (151, 100%).",
+  "redFlags": [
+   "Unverified $2,500 cap",
+   "Clustered asks $1,850-2,000 suggest market price, not a discount",
+   "Originality unchecked",
+   "Sell unknown: set = ask (no profit assumed)"
+  ]
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR03-92, box, rubber strap, Good, BIN",
+  "ref": "BR03-92",
+  "ask": 2006.19,
+  "buy": 2500,
+  "sell": 2006.19,
+  "sellRange": "unknown, no profit assumed",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/267778517668",
+  "found": "2026-10-21",
+  "kind": "buy",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/LzcAAeSwS9dqnqlQ/s-l400.jpg",
+  "why": "$2,000 + $6.19 ship. Seller kfarsaba (135, 100%).",
+  "redFlags": [
+   "Unverified $2,500 cap",
+   "Clustered asks $1,850-2,000 suggest market price, not a discount",
+   "Originality unchecked",
+   "Sell unknown: set = ask (no profit assumed)"
+  ]
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR03-92 Horograph, Excellent, BIN",
+  "ref": "BR0392-HOR-BLC/SRB",
+  "ask": 1920.15,
+  "buy": 2500,
+  "sell": 1920.15,
+  "sellRange": "unknown, no profit assumed",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/168578785276",
+  "found": "2026-10-21",
+  "kind": "buy",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/uPEAAeSwrBNqbOX-/s-l400.jpg",
+  "why": "$1,900 + $20.15 ship. Seller jbjewelers330 (225, 98.9%).",
+  "redFlags": [
+   "Unverified $2,500 cap",
+   "Clustered asks $1,850-2,000 suggest market price, not a discount",
+   "Originality unchecked",
+   "Sell unknown: set = ask (no profit assumed)"
+  ]
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR03-92, Fair condition, BIN",
+  "ref": "BR03-92",
+  "ask": 1850,
+  "buy": 2500,
+  "sell": 1850,
+  "sellRange": "unknown, no profit assumed",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/318479976493",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/sg8AAeSw3ZNqNgXU/s-l400.jpg",
+  "why": "Pass: Fair condition at a market-level ask.",
+  "redFlags": [
+   "Unverified $2,500 cap",
+   "Clustered asks $1,850-2,000 suggest market price, not a discount",
+   "Originality unchecked",
+   "Sell unknown: set = ask (no profit assumed)"
+  ]
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR03-92, custom aftermarket diamonds, BIN",
+  "ref": "BR03-92",
+  "ask": 1930.48,
+  "buy": 2500,
+  "sell": 1930.48,
+  "sellRange": "unknown, no profit assumed",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/176071019995",
+  "found": "2026-10-21",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/eNAAAOSwaddlai1h/s-l400.jpg",
+  "why": "Pass: aftermarket diamonds hurt resale and originality.",
+  "redFlags": [
+   "Unverified $2,500 cap",
+   "Clustered asks $1,850-2,000 suggest market price, not a discount",
+   "Originality unchecked",
+   "Sell unknown: set = ask (no profit assumed)",
+   "Aftermarket diamonds"
+  ]
  }
 ]
