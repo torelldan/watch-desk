@@ -1,7 +1,30 @@
 {
  "166.020": [
-  {"date":"2026-04-30","price":617,"source":"Second Vintage (USD figure from earlier research; page lists EUR, mapping unverified)","title":"Omega Seamaster De Ville 166.020","url":"https://secondvintage.com/en/auction/OME-OAS-0032"},
-  {"date":"2026-01-11","price":786,"source":"Second Vintage (USD figure from earlier research; page lists EUR, mapping unverified)","title":"Omega Seamaster De Ville 166.020, 1966","url":"https://secondvintage.com/en/auction/OME7G9J7C0000"},
-  {"date":"2026-07-24","price":797,"source":"Second Vintage (USD figure from earlier research; page shows a 165.008, mapping unverified)","title":"Omega Seamaster De Ville (page: 165.008, no reserve)","url":"https://secondvintage.com/en/auction/OME-OSD-0003"}
+  {
+   "date": "2026-07-24",
+   "price": 797,
+   "currency_note": "Sold €710; Second Vintage page shows ≈$797",
+   "source": "Second Vintage auction",
+   "title": "Omega Seamaster De Ville 166.020, cal. 562",
+   "url": "https://secondvintage.com/en/auction/OME-OAS-0032"
+  },
+  {
+   "date": "2026-01-11",
+   "price": 786,
+   "currency_note": "Sold €700; Second Vintage page shows ≈$786",
+   "source": "Second Vintage auction",
+   "title": "Omega Seamaster De Ville 166.020, 1966, cal. 552",
+   "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"
+  }
+ ],
+ "165.008": [
+  {
+   "date": "2026-04-30",
+   "price": 617,
+   "currency_note": "Sold €550; Second Vintage page shows ≈$617",
+   "source": "Second Vintage auction",
+   "title": "Omega Seamaster De Ville 165.008, 1966",
+   "url": "https://secondvintage.com/en/auction/OME-OSD-0003"
+  }
  ]
 }

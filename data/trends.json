@@ -1,0 +1,24 @@
+{
+ "166.020": [
+  {
+   "date": "2026-01-11",
+   "price": 786,
+   "source": "Second Vintage auction",
+   "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"
+  },
+  {
+   "date": "2026-07-24",
+   "price": 797,
+   "source": "Second Vintage auction",
+   "url": "https://secondvintage.com/en/auction/OME-OAS-0032"
+  }
+ ],
+ "165.008": [
+  {
+   "date": "2026-04-30",
+   "price": 617,
+   "source": "Second Vintage auction",
+   "url": "https://secondvintage.com/en/auction/OME-OSD-0003"
+  }
+ ]
+}

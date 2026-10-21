@@ -114,6 +114,8 @@
       radial-gradient(circle at 50% 45%, rgba(255,255,255,0.08), transparent 55%),
       linear-gradient(160deg, #2a3140, #171b21 70%);
   }
+  .shot img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .shot .noimg { position:absolute; bottom:8px; right:10px; font-size:10px; color:var(--dim); }
   .shot .dial {
     width: 92px; height: 92px; border-radius: 50%;
     border: 6px solid #c8ccd1;
@@ -238,6 +240,7 @@
     <div class="group">
       <button data-budget="1000" class="on">Under $1,000</button>
       <button data-budget="1500">Under $1,500</button>
+      <button data-budget="5000">Under $5,000</button>
       <button data-budget="all">All</button>
     </div>
     <div class="rules">
@@ -343,8 +346,9 @@ function paint() {
   grid.innerHTML = list.map(d => `
     <article class="card">
       <div class="shot">
-        <span class="badge ${d.kind}">${d.kind.toUpperCase()}</span>
+        <span class="badge ${d.kind}" style="z-index:1">${d.kind.toUpperCase()}</span>
         <div class="dial" style="background:${d.brand === "TUDOR" ? "#1c2430" : d.brand === "OMEGA" ? "#123" : "#2a241c"}"></div>
+        ${d.image_url ? `<img src="${esc(d.image_url)}" alt="${esc(d.brand + " " + d.model)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '<span class="noimg">No photo saved</span>'}
       </div>
       <div class="body">
         <div class="brand-name">${d.brand}</div>
@@ -365,6 +369,28 @@ function paint() {
   document.querySelectorAll(".analyze").forEach(b => b.onclick = () => openAnalysis(Number(b.dataset.i)));
 }
 
+function drawTrend(key) {
+  const svg = document.getElementById("achart");
+  const pts0 = ((typeof trends !== "undefined" && trends[key]) || []).filter(p => p.date && isFinite(p.price)).sort((a, b) => a.date.localeCompare(b.date));
+  if (pts0.length < 2) {
+    svg.innerHTML = `<text x="24" y="110" fill="#9aa3ad" font-size="14">No trend data yet</text>` +
+      (pts0.length ? `<text x="24" y="132" fill="#6d7680" font-size="11">1 dated point (${esc(pts0[0].date)} · ${money(pts0[0].price)}) — need 2+</text>` : "");
+    return;
+  }
+  const t = pts0.map(p => new Date(p.date + "T12:00:00").getTime()), v = pts0.map(p => p.price);
+  const tmin = Math.min(...t), tmax = Math.max(...t), lo = Math.min(...v) * 0.92, hi = Math.max(...v) * 1.08;
+  const X = x => 40 + (x - tmin) / (tmax - tmin || 1) * 360, Y = y => 190 - (y - lo) / (hi - lo || 1) * 160;
+  const xy = pts0.map((p, i) => [X(t[i]), Y(p.price)]);
+  svg.innerHTML = `<line x1="40" y1="190" x2="400" y2="190" stroke="#2c3138"/>
+    <text x="4" y="${Y(Math.max(...v)) + 4}" fill="#6d7680" font-size="10">${money(Math.max(...v))}</text>
+    <text x="4" y="${Y(Math.min(...v)) + 4}" fill="#6d7680" font-size="10">${money(Math.min(...v))}</text>
+    <polyline fill="none" stroke="#7eb6ff" stroke-width="2" points="${xy.map(p => p.join(",")).join(" ")}"/>
+    ${xy.map((p, i) => `<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="#7eb6ff"><title>${esc(pts0[i].date)} ${money(pts0[i].price)} · ${esc(pts0[i].source)}</title></circle>`).join("")}
+    <text x="40" y="214" fill="#6d7680" font-size="10">${esc(pts0[0].date)}</text>
+    <text x="400" y="214" fill="#6d7680" font-size="10" text-anchor="end">${esc(pts0[pts0.length - 1].date)}</text>
+    <text x="400" y="20" fill="#9aa3ad" font-size="11" text-anchor="end">${pts0.length} dated sold points</text>`;
+}
+
 function openAnalysis(i) {
   const d = deals[i];
   const key = d.compRef || d.ref;
@@ -376,7 +402,7 @@ function openAnalysis(i) {
   if (!solds.length) {
     document.getElementById("astats").innerHTML = '<div class="statbox"><span>SOLD COMPS</span><b>No sold comps yet</b></div>';
     document.getElementById("asales").innerHTML = '<tr><td colspan="3">No sold comps yet</td></tr>';
-    document.getElementById("achart").innerHTML = '<text x="24" y="120" fill="#6d7680" font-size="13">No sold comps yet</text>';
+    drawTrend(key);
     document.getElementById("overlay").classList.add("open");
     return;
   }
@@ -396,15 +422,7 @@ function openAnalysis(i) {
   document.getElementById("asales").innerHTML = solds.map(s =>
     `<tr><td>${esc(s.date)}</td><td>${esc(s.source)}</td><td>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--blue)">${esc(s.title)}</a>` : esc(s.title)} ${money(s.price)}</td></tr>`
   ).join("");
-  const chron = solds.slice().reverse().map(s => s.price);
-  const min = lo * 0.92, max = hi * 1.08;
-  const step = chron.length > 1 ? 376 / (chron.length - 1) : 0;
-  const pts = chron.map((p, idx) => [24 + idx * step, 200 - ((p - min) / (max - min || 1)) * 160]);
-  document.getElementById("achart").innerHTML =
-    `<line x1="24" y1="200" x2="400" y2="200" stroke="#2c3138"/>
-     <polyline fill="none" stroke="#7eb6ff" stroke-width="2" points="${pts.map(p => p.join(",")).join(" ")}"/>
-     ${pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#7eb6ff"/>`).join("")}
-     <text x="300" y="24" fill="#9aa3ad" font-size="11">median ${money(mid)}</text>`;
+  drawTrend(key);
   document.getElementById("overlay").classList.add("open");
 }
 
