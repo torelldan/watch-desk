@@ -15,4 +15,6 @@
 4. Send Daniel the fresh `watch-desk.html`.
 
 ## GitHub Pages
-The site is published from the `main` branch at the repository root: https://torelldan.github.io/watch-desk/ (open that on a phone). `build.py` writes `watch-desk.html` and `index.html`; Pages serves `index.html`. `.github/workflows/pages.yml` deploys that root on each push to `main`.
+Phone URL: https://torelldan.github.io/watch-desk/
+
+`build.py` writes `watch-desk.html` and `index.html`. Pages serves `index.html` from the `main` branch root. `.github/workflows/pages.yml` deploys that root on each push to `main`. The site still has to be turned on under Settings → Pages (source: GitHub Actions). On GitHub Free that only works if this repository is public.
