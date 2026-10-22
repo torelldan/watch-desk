@@ -141,6 +141,11 @@
   .badge.buy { color: var(--green); }
   .badge.pass { color: var(--red); }
   .badge.auction { color: var(--amber); }
+  .badge.needsbcv { color: var(--amber); }
+  .chip { display:inline-block; font-size:10px; letter-spacing:.08em; padding:2px 6px; border-radius:6px; background:var(--chip); border:1px solid var(--line); margin-right:4px; }
+  .chip.amber { color: var(--amber); border-color:#5a4a22; }
+  .chip.blue { color: var(--blue); }
+  .lowroi { color: var(--amber) !important; }
   .body { padding: 12px 12px 14px; display: flex; flex-direction: column; gap: 6px; }
   .brand-name { color: var(--dim); font-size: 11px; letter-spacing: 0.12em; }
   .model { font-size: 14px; line-height: 1.3; min-height: 36px; }
@@ -228,12 +233,13 @@
 <body>
 <div class="app">
   <aside>
-    <div class="brand"><b>DESK</b><span>v1.1</span></div>
+    <div class="brand"><b>DESK</b><span>v1.2</span></div>
     <nav>
       <button class="active" data-view="deals">Deals</button>
       <button data-view="buys">Buys only</button>
       <button data-view="auctions">Auctions</button>
       <button data-view="passes">Passes</button>
+      <button data-view="needsbcv">Needs BCV <span id="nbcv"></span></button>
       <button data-view="book">Book</button>
     </nav>
     <div class="label">BUDGET</div>
@@ -258,8 +264,12 @@
       Cash <strong>$1,000</strong><br />
       Buy rule <strong>ask ≤ target cap</strong><br />
       Ceiling <strong>= min(market, Bottom Cash Value)</strong><br />
-      Exit <strong>r/watchexchange</strong><br />
-      Fees assumed <strong>~3% PayPal G&amp;S</strong><br />
+      Exit <strong>Marketplace or Grailzee</strong><br />
+      Target ROI <strong>15–20%, plus $300 min</strong><br />
+      ROI <strong>= (sell − buy − 10% fees) / buy</strong><br />
+      Grailzee sell fee <strong>$49 flat</strong><br />
+      Grailzee buy <strong>all-in = buy + 5% premium ($250 min, $5,000 max)</strong><br />
+      No BCV <strong>= NEEDS BCV, not a buy</strong><br />
       Skip <strong>refinished / fakes</strong>
     </div>
   </aside>
@@ -336,12 +346,21 @@ function ageOf(iso) {
   return days <= 0 ? "today" : days + "d";
 }
 
+const needsBcv = d => d.kind === "buy" && d.bcv == null;
+const costOf = d => Number(d.buyAllIn != null ? d.buyAllIn : d.buy);
+const roiOf = d => {
+  const buy = costOf(d);
+  return (buy > 0 && d.sell != null) ? (d.sell - buy - FEES.sell * d.sell) / buy * 100 : null;
+};
+const roiTxt = r => r == null ? "—" : r.toFixed(1) + "%";
+function median(a) { const s = a.slice().sort((x, y) => x - y), n = s.length; return n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2; }
 function rows() {
   const q = document.getElementById("q").value.toLowerCase().trim();
   let list = deals.filter(d => {
     if (view === "buys" && d.kind !== "buy") return false;
     if (view === "auctions" && d.kind !== "auction") return false;
     if (view === "passes" && d.kind !== "pass") return false;
+    if (view === "needsbcv" && !needsBcv(d)) return false;
     if (view === "book") return false;
     if (sourceFilter !== "all" && sourceKey(d.source) !== sourceFilter) return false;
     if (budget !== "all" && d.ask > budget && d.kind !== "auction") return false;
@@ -355,14 +374,38 @@ function rows() {
   return list;
 }
 
+const START_BANKROLL = 1500;
+function bankrollSvg() {
+  const closed = book.filter(b => b.out != null && b.in != null).sort((a, b) => String(a.soldDate || "").localeCompare(String(b.soldDate || "")));
+  const actual = [START_BANKROLL];
+  closed.forEach(b => actual.push(actual[actual.length - 1] + Number(b.out) - Number(b.in) - Number(b.fees || 0)));
+  const bench = Array.from({length: 13}, (_, k) => START_BANKROLL * Math.pow(1.2, k));
+  const hi = Math.max(...bench, ...actual) * 1.05, lo = Math.min(0, ...actual);
+  const X = k => 50 + k * (620 / 12), Y = v => 170 - (v - lo) / (hi - lo) * 150;
+  const pl = a => a.map((v, k) => `${X(k)},${Y(v)}`).join(" ");
+  return `<div class="card" style="grid-column:1/-1;padding:14px"><div class="title">Bankroll tracker · start ${money(START_BANKROLL)} · now ${money(Math.round(actual[actual.length - 1]))} after ${closed.length} closed flip(s)</div>
+    <svg viewBox="0 0 700 200" style="width:100%;max-height:220px">
+      <line x1="50" y1="170" x2="670" y2="170" stroke="#2c3138"/>
+      <polyline fill="none" stroke="#6d7680" stroke-dasharray="5 4" stroke-width="2" points="${pl(bench)}"/>
+      <polyline fill="none" stroke="#3dd68c" stroke-width="2.5" points="${pl(actual)}"/>
+      ${actual.map((v, k) => `<circle cx="${X(k)}" cy="${Y(v)}" r="3.5" fill="#3dd68c"><title>after flip ${k}: ${money(Math.round(v))}</title></circle>`).join("")}
+      <text x="4" y="${Y(bench[12]) + 4}" fill="#6d7680" font-size="10">${money(Math.round(bench[12]))}</text>
+      <text x="4" y="174" fill="#6d7680" font-size="10">${money(lo)}</text>
+      <text x="670" y="192" fill="#6d7680" font-size="10" text-anchor="end">flip 12</text>
+      <text x="50" y="192" fill="#6d7680" font-size="10">start</text>
+      <text x="60" y="16" fill="#3dd68c" font-size="11">— actual bankroll (book.json)</text>
+      <text x="260" y="16" fill="#9aa3ad" font-size="11">- - 20% per flip reinvested × 12: guide benchmark, not a forecast</text>
+    </svg></div>`;
+}
 function paint() {
   const grid = document.getElementById("grid");
   if (view === "book") {
     const q = document.getElementById("q").value.toLowerCase().trim();
     const bk = book.filter(b => !q || (b.brand + " " + b.model + " " + b.ref).toLowerCase().includes(q));
     document.getElementById("count").textContent = String(bk.length);
-    if (!bk.length) { grid.innerHTML = '<div class="empty">Book is empty. Add a purchase to data/book.json to track In / Out / Days / ROI.</div>'; return; }
-    grid.innerHTML = bk.map(b => {
+    const tracker = bankrollSvg();
+    if (!bk.length) { grid.innerHTML = tracker + '<div class="empty">Book is empty. Add a purchase to data/book.json to track In / Out / Days / ROI.</div>'; return; }
+    grid.innerHTML = tracker + bk.map(b => {
       const inP = Number(b.in), out = b.out != null ? Number(b.out) : null;
       const end = b.soldDate ? new Date(b.soldDate + "T12:00:00") : new Date();
       const days = b.boughtDate ? Math.max(0, Math.floor((end - new Date(b.boughtDate + "T12:00:00")) / 86400000)) : null;
@@ -373,13 +416,14 @@ function paint() {
           <div><span>IN</span><b class="buy">${money(inP)}</b></div>
           <div><span>OUT</span><b class="sell">${out != null ? money(out) : "—"}</b></div>
           <div><span>DAYS</span><b>${days != null ? days : "—"}</b></div>
-          <div><span>ROI</span><b>${roi != null ? roi.toFixed(1) + "%" : "—"}</b></div>
+          <div><span>ROI</span><b class="${roi != null && roi < 15 ? "lowroi" : ""}">${roi != null ? roi.toFixed(1) + "%" : "—"}</b></div>
         </div>
         <div class="why">${esc(b.notes || "")}</div></div></article>`;
     }).join("");
     return;
   }
   const list = rows();
+  document.getElementById("nbcv").textContent = "(" + deals.filter(needsBcv).length + ")";
   document.getElementById("count").textContent = String(list.length);
   if (!list.length) {
     grid.innerHTML = '<div class="empty">No buy this pass. Nothing cleared cash, profit, and hold together.</div>';
@@ -388,7 +432,7 @@ function paint() {
   grid.innerHTML = list.map(d => `
     <article class="card">
       <div class="shot">
-        <span class="badge ${d.kind}" style="z-index:1">${d.kind.toUpperCase()}${d.tier ? " · " + esc(d.tier).toUpperCase() : ""}</span>
+        <span class="badge ${needsBcv(d) ? "needsbcv" : d.kind}" style="z-index:1">${needsBcv(d) ? "NEEDS BCV" : d.kind.toUpperCase()}${d.tier ? " · " + esc(d.tier).toUpperCase() : ""}</span>
         <div class="dial" style="background:${d.brand === "TUDOR" ? "#1c2430" : d.brand === "OMEGA" ? "#123" : "#2a241c"}"></div>
         ${d.image_url ? `<img src="${esc(d.image_url)}" alt="${esc(d.brand + " " + d.model)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '<span class="noimg">No photo saved</span>'}
       </div>
@@ -401,9 +445,12 @@ function paint() {
           <div><span>BUY</span><b class="buy">${money(d.buy)}</b></div>
           <div><span>SELL</span><b class="sell">${money(d.sell)}</b></div>
         </div>
+        <div class="meta"><span class="${roiOf(d) != null && roiOf(d) < 15 ? "lowroi" : ""}" title="${d.buyerPremium ? "(sell − all-in buy − 10% fees on sell) / all-in buy" : "(sell − buy − 10% fees on sell) / buy"}">ROI ${roiTxt(roiOf(d))}${roiOf(d) != null && roiOf(d) < 15 ? " · under 15%" : ""}</span><span>Exit ${esc(d.exit === "grailzee" ? "Grailzee" : "Marketplace")}</span></div>
+        ${d.buyerPremium ? `<div class="meta"><span>All-in buy ${money(d.buyAllIn)} incl. ${money(d.buyerPremium)} Grailzee buyer premium</span></div>` : ""}
+        ${d.weak_listing ? `<div><span class="chip blue" title="${esc(d.weak_listing_reason || "")}">RELIST PLAY</span><span class="why">${esc(d.weak_listing_reason || "")}</span></div>` : ""}
         <div class="why">${esc(d.why)}</div>
         ${(d.redFlags||[]).length ? `<div class="why" style="color:var(--amber)">⚑ ${d.redFlags.map(esc).join(" · ")}</div>` : ""}
-        <div class="meta"><span title="${esc(d.bcvNote || "Bottom Cash Value")}">BCV ${d.bcv != null ? money(d.bcv) : "—"}</span></div>
+        <div class="meta"><span title="${esc(d.bcvNote || "Bottom Cash Value")}">BCV ${d.bcv != null ? money(d.bcv) + (d.bcv_source ? " · " + esc(d.bcv_source) : "") : "—"}</span></div>
         <div class="meta"><span>${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" style="color:var(--blue)">${esc(d.source)} ↗</a>` : esc(d.source)}</span><span>${ageOf(d.found)}</span></div>
         <button class="analyze" data-i="${deals.indexOf(d)}">ANALYZE WATCH</button>
       </div>
@@ -434,16 +481,29 @@ function drawTrend(key) {
     <text x="400" y="20" fill="#9aa3ad" font-size="11" text-anchor="end">${pts0.length} dated sold points</text>`;
 }
 
+function exitRows(d, solds) {
+  const cost = costOf(d);
+  const net = s => s - cost - FEES.sell * s;
+  const out = [["EXPECTED ROI", roiTxt(roiOf(d))], ["EXIT: MARKETPLACE" + (d.exit !== "grailzee" ? " ★" : ""), d.sell != null ? `${money(d.sell)} · net ${money(Math.round(net(d.sell)))}` : "—"]];
+  const gz = solds.filter(s => /grailzee/i.test(s.source || "")).map(s => s.price);
+  if (gz.length) {
+    const m = median(gz), g = m - FEES.grailzeeFlat, p = g - cost;
+    const pct = cost > 0 ? (p / cost * 100).toFixed(1) + "%" : "—";
+    out.push(["EXIT: GRAILZEE" + (d.exit === "grailzee" ? " ★" : ""), `${money(Math.round(g))} · net ${money(Math.round(p))} · ${pct} (median of ${gz.length}, seller fee ${money(FEES.grailzeeFlat)})`]);
+  }
+  return out;
+}
 function openAnalysis(i) {
   const d = deals[i];
   const key = d.compRef || d.ref;
   const solds = (comps[key] || []).slice().sort((a, b) => b.date.localeCompare(a.date));
   document.getElementById("ah").textContent = `${d.brand} ${d.model.split(",")[0]}`;
-  document.getElementById("asub").textContent = `${d.ref} · listed at ${money(d.ask)} · target buy ${money(d.buy)} · BCV ${d.bcv != null ? money(d.bcv) : "—"} · target sell ${d.sellRange || money(d.sell)}` + (d.compRef ? ` · comps from ${d.compRef}` : "");
+  const buyBit = d.buyerPremium ? `${money(d.buy)} (all-in ${money(d.buyAllIn)})` : money(d.buy);
+  document.getElementById("asub").textContent = `${d.ref} · listed at ${money(d.ask)} · target buy ${buyBit} · BCV ${d.bcv != null ? money(d.bcv) + (d.bcv_source ? " (" + d.bcv_source + ")" : "") : "—"} · ROI ${roiTxt(roiOf(d))}${roiOf(d) != null && roiOf(d) < 15 ? " (under 15% target)" : ""} · target sell ${d.sellRange || money(d.sell)}` + (d.compRef ? ` · comps from ${d.compRef}` : "");
   const link = document.getElementById("alink");
   if (d.url) { link.href = d.url; link.style.display = ""; } else { link.removeAttribute("href"); link.style.display = "none"; }
   if (!solds.length) {
-    document.getElementById("astats").innerHTML = '<div class="statbox"><span>SOLD COMPS</span><b>No sold comps yet</b></div>';
+    document.getElementById("astats").innerHTML = [["SOLD COMPS", "No sold comps yet"], ...exitRows(d, [])].map(([k, v]) => `<div class="statbox"><span>${k}</span><b>${v}</b></div>`).join("");
     document.getElementById("asales").innerHTML = '<tr><td colspan="3">No sold comps yet</td></tr>';
     drawTrend(key);
     document.getElementById("overlay").classList.add("open");
@@ -460,7 +520,8 @@ function openAnalysis(i) {
     ["LOWEST AND HIGHEST", `${money(lo)} to ${money(hi)}`],
     ["MIDDLE PRICE", money(mid)],
     ["MOST RECENT SALE", money(prices[0])],
-    ["SALES OVERALL", String(n)]
+    ["SALES OVERALL", String(n)],
+    ...exitRows(d, solds)
   ].map(([k, v]) => `<div class="statbox"><span>${k}</span><b>${v}</b></div>`).join("");
   document.getElementById("asales").innerHTML = solds.map(s =>
     `<tr><td>${esc(s.date)}</td><td>${esc(s.source)}</td><td>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--blue)">${esc(s.title)}</a>` : esc(s.title)} ${money(s.price)}</td></tr>`
