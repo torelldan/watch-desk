@@ -7,7 +7,10 @@
 - `data/deals.json` – array of deals: brand, model, ref, ask (incl. shipping), buy (target cap), sell (expected resale), source, url, found (YYYY-MM-DD), kind (buy/auction/pass), why, redFlags[]. Optional: compRef (ref to use for comps), sellRange (text). `image_url`: a real listing photo URL (reddit `preview`/gallery/i.imgur.com, eBay `og:image` / i.ebayimg.com), or "" if none could be fetched. Never invent one; cards show a placeholder when it's empty.
 - `data/comps.json` – `{ "<ref>": [{date, price, source, title, url}] }`. Real sold rows only, every row has a source.
 - `data/trends.json` – `{ "<ref>": [{date, price, source, url}] }` dated USD price points for the Analyze chart (sold comps or fetched public price history). A chart needs 2+ points, otherwise it shows "No trend data yet". Convert non-USD prices only using a figure the source itself shows, and record the original currency.
-- `build.py` – injects the JSON and writes `watch-desk.html`.
+- Optional `bcv` (Bottom Cash Value, USD) per deal: the price you could dump the watch for fast. Never invent it. If absent, `build.py` derives it as the **lowest real sold comp in `comps.json` (deal's `compRef` or `ref`) dated within the last 6 months**, and sets `bcvNote` describing that. If no such comp exists, cards show `BCV —`. Buy ceiling = min(market-derived cap, BCV).
+- `data/book.json` – array of purchases for the Book view: `{brand, model, ref, in, out (null until sold), fees, boughtDate, soldDate, notes}`. Days = boughtDate→soldDate (or today); ROI% = (out − in − fees) / in. Empty `[]` shows the empty state.
+- Source filter keys (mapped from each deal's `source` text): eBay, Chrono24, Grailzee, Forums (WUS/RolexForums), Facebook/Marketplace, WatchPatrol, Reddit.
+- `build.py` – injects the JSON (deals, comps, trends, book) and stamps "Data updated" in America/Chicago time (zoneinfo), labeled CT. It the JSON and writes `watch-desk.html`.
 5. Budget filters: under $1,000, $1,500, $5,000, or All. The routine covers watches up to $5,000.
 
 ## Daily update (after the ~8 AM CT deal check)

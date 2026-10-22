@@ -44,7 +44,7 @@
     color: var(--muted);
     cursor: pointer;
   }
-  nav button.active, nav button:hover, .group button:hover { background: #242930; color: var(--text); }
+  nav button.active, nav button:hover, .group button:hover, .group button.on { background: #242930; color: var(--text); }
   .label { color: var(--dim); font-size: 10px; letter-spacing: 0.16em; padding: 8px 10px 4px; }
   .group { display: flex; flex-direction: column; gap: 2px; }
   .rules {
@@ -228,7 +228,7 @@
 <body>
 <div class="app">
   <aside>
-    <div class="brand"><b>DESK</b><span>v1</span></div>
+    <div class="brand"><b>DESK</b><span>v1.1</span></div>
     <nav>
       <button class="active" data-view="deals">Deals</button>
       <button data-view="buys">Buys only</button>
@@ -243,9 +243,21 @@
       <button data-budget="5000">Under $5,000</button>
       <button data-budget="all">All</button>
     </div>
+    <div class="label">SOURCE</div>
+    <div class="group">
+      <button data-source="all" class="on">All</button>
+      <button data-source="ebay">eBay</button>
+      <button data-source="chrono24">Chrono24</button>
+      <button data-source="grailzee">Grailzee</button>
+      <button data-source="forums">Forums / WUS / RolexForums</button>
+      <button data-source="facebook">Facebook / Marketplace</button>
+      <button data-source="watchpatrol">WatchPatrol</button>
+      <button data-source="reddit">Reddit</button>
+    </div>
     <div class="rules">
       Cash <strong>$1,000</strong><br />
       Buy rule <strong>ask ≤ target cap</strong><br />
+      Ceiling <strong>= min(market, Bottom Cash Value)</strong><br />
       Exit <strong>r/watchexchange</strong><br />
       Fees assumed <strong>~3% PayPal G&amp;S</strong><br />
       Skip <strong>refinished / fakes</strong>
@@ -305,6 +317,18 @@
 const money = n => "$" + Number(n).toLocaleString("en-US", {maximumFractionDigits: 2});
 let view = "deals";
 let budget = 1000;
+let sourceFilter = "all";
+function sourceKey(s) {
+  s = String(s || "").toLowerCase();
+  if (s.includes("ebay")) return "ebay";
+  if (s.includes("chrono24")) return "chrono24";
+  if (s.includes("grailzee")) return "grailzee";
+  if (s.includes("facebook") || s.includes("marketplace") || /^fb\b/.test(s)) return "facebook";
+  if (s.includes("watchpatrol")) return "watchpatrol";
+  if (s.includes("reddit") || s.startsWith("r/")) return "reddit";
+  if (s.includes("wus") || s.includes("watchuseek") || s.includes("rolexforums") || s.includes("forum")) return "forums";
+  return "other";
+}
 document.getElementById("updated").textContent = DATA_UPDATED;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function ageOf(iso) {
@@ -319,6 +343,7 @@ function rows() {
     if (view === "auctions" && d.kind !== "auction") return false;
     if (view === "passes" && d.kind !== "pass") return false;
     if (view === "book") return false;
+    if (sourceFilter !== "all" && sourceKey(d.source) !== sourceFilter) return false;
     if (budget !== "all" && d.ask > budget && d.kind !== "auction") return false;
     if (!q) return true;
     return (d.brand + " " + d.model + " " + d.ref).toLowerCase().includes(q);
@@ -333,8 +358,25 @@ function rows() {
 function paint() {
   const grid = document.getElementById("grid");
   if (view === "book") {
-    grid.innerHTML = '<div class="empty">Book is empty. A bought row lands here with cost, target sell, and the Marketplace draft.</div>';
-    document.getElementById("count").textContent = "0";
+    const q = document.getElementById("q").value.toLowerCase().trim();
+    const bk = book.filter(b => !q || (b.brand + " " + b.model + " " + b.ref).toLowerCase().includes(q));
+    document.getElementById("count").textContent = String(bk.length);
+    if (!bk.length) { grid.innerHTML = '<div class="empty">Book is empty. Add a purchase to data/book.json to track In / Out / Days / ROI.</div>'; return; }
+    grid.innerHTML = bk.map(b => {
+      const inP = Number(b.in), out = b.out != null ? Number(b.out) : null;
+      const end = b.soldDate ? new Date(b.soldDate + "T12:00:00") : new Date();
+      const days = b.boughtDate ? Math.max(0, Math.floor((end - new Date(b.boughtDate + "T12:00:00")) / 86400000)) : null;
+      const roi = out != null && inP ? ((out - inP - Number(b.fees || 0)) / inP * 100) : null;
+      return `<article class="card"><div class="body">
+        <div class="title">${esc(b.brand)} ${esc(b.model)}</div><div class="ref">${esc(b.ref)}</div>
+        <div class="prices">
+          <div><span>IN</span><b class="buy">${money(inP)}</b></div>
+          <div><span>OUT</span><b class="sell">${out != null ? money(out) : "—"}</b></div>
+          <div><span>DAYS</span><b>${days != null ? days : "—"}</b></div>
+          <div><span>ROI</span><b>${roi != null ? roi.toFixed(1) + "%" : "—"}</b></div>
+        </div>
+        <div class="why">${esc(b.notes || "")}</div></div></article>`;
+    }).join("");
     return;
   }
   const list = rows();
@@ -361,6 +403,7 @@ function paint() {
         </div>
         <div class="why">${esc(d.why)}</div>
         ${(d.redFlags||[]).length ? `<div class="why" style="color:var(--amber)">⚑ ${d.redFlags.map(esc).join(" · ")}</div>` : ""}
+        <div class="meta"><span title="${esc(d.bcvNote || "Bottom Cash Value")}">BCV ${d.bcv != null ? money(d.bcv) : "—"}</span></div>
         <div class="meta"><span>${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener" style="color:var(--blue)">${esc(d.source)} ↗</a>` : esc(d.source)}</span><span>${ageOf(d.found)}</span></div>
         <button class="analyze" data-i="${deals.indexOf(d)}">ANALYZE WATCH</button>
       </div>
@@ -396,7 +439,7 @@ function openAnalysis(i) {
   const key = d.compRef || d.ref;
   const solds = (comps[key] || []).slice().sort((a, b) => b.date.localeCompare(a.date));
   document.getElementById("ah").textContent = `${d.brand} ${d.model.split(",")[0]}`;
-  document.getElementById("asub").textContent = `${d.ref} · listed at ${money(d.ask)} · target buy ${money(d.buy)} · target sell ${d.sellRange || money(d.sell)}` + (d.compRef ? ` · comps from ${d.compRef}` : "");
+  document.getElementById("asub").textContent = `${d.ref} · listed at ${money(d.ask)} · target buy ${money(d.buy)} · BCV ${d.bcv != null ? money(d.bcv) : "—"} · target sell ${d.sellRange || money(d.sell)}` + (d.compRef ? ` · comps from ${d.compRef}` : "");
   const link = document.getElementById("alink");
   if (d.url) { link.href = d.url; link.style.display = ""; } else { link.removeAttribute("href"); link.style.display = "none"; }
   if (!solds.length) {
@@ -439,6 +482,12 @@ document.querySelectorAll("[data-budget]").forEach(b => b.onclick = () => {
   document.querySelectorAll("[data-budget]").forEach(x => x.classList.remove("on"));
   b.classList.add("on");
   budget = b.dataset.budget === "all" ? "all" : Number(b.dataset.budget);
+  paint();
+});
+document.querySelectorAll("[data-source]").forEach(b => b.onclick = () => {
+  document.querySelectorAll("[data-source]").forEach(x => x.classList.remove("on"));
+  b.classList.add("on");
+  sourceFilter = b.dataset.source;
   paint();
 });
 document.getElementById("q").oninput = paint;
