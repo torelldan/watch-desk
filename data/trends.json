@@ -59,6 +59,18 @@
  ],
  "SARB017": [
   {
+   "date": "2026-10-05",
+   "price": 1349,
+   "source": "eBay sold (BIN)",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-13",
+   "price": 1050,
+   "source": "eBay sold (Best Offer)",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
    "date": "2026-10-14",
    "price": 638.85,
    "source": "eBay sold (incl. ship)",
@@ -71,21 +83,9 @@
    "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   },
   {
-   "date": "2026-10-13",
-   "price": 1050,
-   "source": "eBay sold (Best Offer)",
-   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-  },
-  {
    "date": "2026-10-16",
    "price": 1335,
    "source": "eBay sold (Best Offer)",
-   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-  },
-  {
-   "date": "2026-10-05",
-   "price": 1349,
-   "source": "eBay sold (BIN)",
    "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   }
  ],
@@ -105,14 +105,14 @@
  ],
  "SKX009": [
   {
-   "date": "2026-10-21",
-   "price": 340,
+   "date": "2026-10-20",
+   "price": 379.99,
    "source": "eBay sold",
    "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   },
   {
-   "date": "2026-10-20",
-   "price": 379.99,
+   "date": "2026-10-21",
+   "price": 340,
    "source": "eBay sold",
    "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   },
@@ -137,22 +137,28 @@
  ],
  "79030N": [
   {
+   "date": "2026-10-11",
+   "price": 2600,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-94"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 4000,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
    "date": "2026-10-17",
    "price": 3499,
    "source": "eBay sold (Best Offer)",
    "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   },
   {
-   "date": "2026-10-21",
-   "price": 3575,
-   "source": "eBay sold (incl. ship)",
-   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-  },
-  {
-   "date": "2026-10-21",
-   "price": 3595,
-   "source": "eBay sold (incl. ship, 3 bids)",
-   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+   "date": "2026-10-17",
+   "price": 3450,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-96"
   },
   {
    "date": "2026-10-19",
@@ -167,9 +173,21 @@
    "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   },
   {
-   "date": "2026-10-16",
-   "price": 4000,
-   "source": "eBay sold",
+   "date": "2026-10-20",
+   "price": 3350,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-97"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3575,
+   "source": "eBay sold (incl. ship)",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3595,
+   "source": "eBay sold (incl. ship, 3 bids)",
    "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
   }
  ],
@@ -183,6 +201,36 @@
  ],
  "79830RB": [
   {
+   "date": "2026-10-15",
+   "price": 4000,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-42"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 4075,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/2025-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
+  },
+  {
+   "date": "2026-10-18",
+   "price": 3750,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-45"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3149,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-2019-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3050,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-347"
+  },
+  {
    "date": "2026-10-21",
    "price": 3200,
    "source": "Grailzee sold",
@@ -193,6 +241,24 @@
    "price": 3160,
    "source": "Grailzee sold",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3200,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-350"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3160,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-354"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3700,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/tudor-black-bay-m79830rb-92"
   }
  ],
  "25407N": [
@@ -215,6 +281,12 @@
    "price": 3800,
    "source": "Grailzee sold",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3850,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-06-6"
   }
  ],
  "3572.50.00": [
@@ -259,6 +331,66 @@
    "price": 2420,
    "source": "LoupeThis auction via EveryWatch",
    "url": "https://everywatch.com/auction/loupethis--id39771"
+  }
+ ],
+ "79230N": [
+  {
+   "date": "2026-10-11",
+   "price": 3250,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-6"
+  },
+  {
+   "date": "2026-10-19",
+   "price": 2900,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-7"
+  }
+ ],
+ "311.30.42.30.01.005": [
+  {
+   "date": "2026-10-08",
+   "price": 4250,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-97"
+  },
+  {
+   "date": "2026-10-10",
+   "price": 5000,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-98"
+  }
+ ],
+ "210.30.42.20.04.001": [
+  {
+   "date": "2026-10-22",
+   "price": 4000,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-4"
+  }
+ ],
+ "210.30.42.20.03.001": [
+  {
+   "date": "2026-10-22",
+   "price": 4100,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-03-8"
+  }
+ ],
+ "IW327012": [
+  {
+   "date": "2026-10-14",
+   "price": 3200,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/2020-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327012"
+  }
+ ],
+ "IW327015": [
+  {
+   "date": "2026-10-09",
+   "price": 2901,
+   "source": "Grailzee auction",
+   "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-327015"
   }
  ]
 }

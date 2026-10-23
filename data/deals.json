@@ -331,7 +331,7 @@
   "url": "https://www.reddit.com/r/Watchexchange/comments/1xbo6kp/",
   "found": "2026-10-21",
   "kind": "pass",
-  "why": "Borderline. $820 + insured ship. Tempus Europa median €950 (10 sales); 360d.io says prices down 27% in 12 months. Est. profit $300-400.",
+  "why": "Borderline. $820 + insured ship. Tempus Europa median \u20ac950 (10 sales); 360d.io says prices down 27% in 12 months. Est. profit $300-400.",
   "redFlags": [
    "PayPal F&F only, no buyer protection",
    "34mm is small for FB buyers",
@@ -406,8 +406,8 @@
   "url": "https://www.reddit.com/r/Watchexchange/comments/1xbq11p/wts_grand_seiko_sbgw231_full_kit/",
   "found": "2026-10-21",
   "kind": "buy",
-  "sellRange": "$2,800–$3,100 (r/watchexchange sold, last ~2 months)",
-  "why": "Off-list pick, $5,000 tier. Asking $2,350 (CONUS, full kit) vs four r/watchexchange sales at $2,800–$3,100 in the last ~2 months and a WatchCharts market estimate of $2,996. Selling at the low comp ($2,800) leaves about $450 before fees.",
+  "sellRange": "$2,800\u2013$3,100 (r/watchexchange sold, last ~2 months)",
+  "why": "Off-list pick, $5,000 tier. Asking $2,350 (CONUS, full kit) vs four r/watchexchange sales at $2,800\u2013$3,100 in the last ~2 months and a WatchCharts market estimate of $2,996. Selling at the low comp ($2,800) leaves about $450 before fees.",
   "redFlags": [
    "Reddit blocked our reads, so condition, kit details, shipping terms and the seller's trade history are unverified; check the post and ask for a timestamp photo",
    "Dress watch: local FB demand may be slower; one Japanese tracker shows a ~135-day median time to sell, though 360d.io shows 26 days"
@@ -609,6 +609,223 @@
    "Box not mentioned"
   ],
   "found": "2026-10-22",
+  "image_url": ""
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay GMT \"Pepsi\" 79830RB, pre-owned good, BIN",
+  "ref": "79830RB",
+  "ask": 2674.72,
+  "buy": 2700,
+  "sell": 3450,
+  "sellRange": "Grailzee sold Oct 15-22: $3,050-4,075 (8 sales, median ~$3,450); eBay sold (undated) $2,950-3,999",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/257802196116",
+  "kind": "buy",
+  "tier": "stretch",
+  "exit": "grailzee",
+  "image_url": "https://i.ebayimg.com/images/g/ooEAAeSw5YVqzaD~/s-l400.jpg",
+  "why": "$2,739.72 BIN, about $2,639.72 with the listed coupon, + $35 shipping = ~$2,675, under the $2,700 cap and under the lowest recent Grailzee sale ($3,050, Oct 20). Grailzee exit: median ~$3,450 - $49 fee leaves ~$725 profit (~27% ROI); Marketplace at $3,450 less 10% is ~$430 (~16%). Seller 99.4%, 30-day returns with free return shipping.",
+  "redFlags": [
+   "Ships from outside the US; import fees possible and not confirmed",
+   "Price assumes the coupon applies",
+   "Box/papers not confirmed",
+   "Verify dial/bezel photos and authenticity before buying",
+   "Above current cash (stretch)"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay GMT 79830, auction, 0 bids",
+  "ref": "79830RB",
+  "ask": 2807.78,
+  "buy": 2700,
+  "sell": 3450,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/840049773750",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/guEAAeSwt-dquv-c/s-l400.jpg",
+  "why": "$2,800 + $7.78, 0 bids, ends Tue Oct 27 ~8:15 PM CT. 4% over cap; seller 100%, no returns.",
+  "redFlags": [
+   "Over cap",
+   "No returns"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay 41 blue bezel, full set, auction",
+  "ref": "79230B",
+  "ask": 2343.17,
+  "buy": 2250,
+  "sell": 2900,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/860059390552",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/dK4AAeSwyMNq1UtX/s-l400.jpg",
+  "why": "14 bids at $2,335 + $8.17, ends Sun Oct 25 ~6:50 PM CT. Already 4% over cap and still climbing.",
+  "redFlags": [
+   "Over cap",
+   "No returns"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Speedmaster Professional Hesalite, box & cards, BIN",
+  "ref": "311.30.42.30.01.005",
+  "ask": 4550,
+  "buy": 4100,
+  "sell": 5000,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/194266274153",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/qSQAAOSw4pBhBvQy/s-l400.jpg",
+  "why": "$4,500 + $50, 11% over cap. Grailzee sold $4,250 (Oct 8) and $5,000 (Oct 10).",
+  "redFlags": [
+   "Over cap",
+   "No returns"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Prospex Sumo SBDC003 blue, auction, 0 bids",
+  "ref": "SBDC003",
+  "ask": 286.5,
+  "buy": 400,
+  "sell": null,
+  "sellRange": "no sold comps collected; no profit assumed",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/137857129632",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/kIkAAeSwN89qxAiP/s-l400.jpg",
+  "why": "$275 + $11.50 with 0 bids, under the $400 Sumo cap. Ends Nov 1 ~7 PM CT, so price will move. Seller 100%. Needs BCV / sold comps before calling it a buy.",
+  "redFlags": [
+   "Ends in 9 days, will rise",
+   "No returns",
+   "No BCV yet"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX009 \"Pepsi\", seller refurbished, auction",
+  "ref": "SKX009",
+  "ask": 194,
+  "buy": 220,
+  "sell": null,
+  "sellRange": "see SKX009 comps",
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/800817350222",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/HxgAAeSwbEVq129~/s-l400.jpg",
+  "why": "1 bid at $159 + $35 shipping = $194, under the $220 cap. Ends Sun Oct 25 ~1:30 PM CT. Seller 99.3%.",
+  "redFlags": [
+   "\"Seller refurbished\": dial, hands, bezel or lume may be aftermarket",
+   "Ships from outside the US"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX007 black, seller refurbished, auction",
+  "ref": "SKX007",
+  "ask": 160.5,
+  "buy": 220,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/137857691678",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/9hEAAeSwTBRq1l4~/s-l400.jpg",
+  "why": "1 bid at $149 + $11.50, ends Nov 1. Same seller has several SKX007s at $134-174 total with 0 bids.",
+  "redFlags": [
+   "\"Seller refurbished\": parts may be aftermarket",
+   "Ships from outside the US",
+   "No BCV yet"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "HAMILTON",
+  "model": "Khaki Field Mechanical 38mm green H69439363, BIN",
+  "ref": "H69439363",
+  "ask": 355.86,
+  "buy": 340,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/407311258902",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/AYEAAeSwuW1q2qL3/s-l500.webp",
+  "why": "$349 + $6.86, 5% over cap.",
+  "redFlags": [
+   "Over cap"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Sumo SBDC113 limited edition, BIN",
+  "ref": "SBDC113",
+  "ask": 410,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/840036139216",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/eVAAAeSwTg5qSz~Z/s-l400.jpg",
+  "why": "$340 + $70 shipping, 2.5% over cap. 60-day returns.",
+  "redFlags": [
+   "Over cap with shipping"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "TISSOT",
+  "model": "PRX Powermatic 80 35mm white, auction",
+  "ref": "T137.207",
+  "ask": 409.41,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/206644905751",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/BnMAAeSwwNlq2WiX/s-l400.jpg",
+  "why": "1 bid $399.99 + $9.42, over cap; 35mm, not the 40mm.",
+  "redFlags": [
+   "Over cap",
+   "35mm size"
+  ],
+  "found": "2026-10-23"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Speedmaster Professional \"w box and papers\" (FB, Hendersonville)",
+  "ref": "311.30.42.30.01.005",
+  "ask": 1000,
+  "buy": 4100,
+  "sell": null,
+  "source": "Facebook Marketplace",
+  "url": "https://www.facebook.com/marketplace/item/1796720434936084/",
+  "kind": "pass",
+  "tier": "stretch",
+  "why": "$1,000 is a fraction of any real Moonwatch price. Skip.",
+  "redFlags": [
+   "Almost certainly fake or scam",
+   "Generic AI-style description",
+   "No ref given"
+  ],
+  "found": "2026-10-23",
   "image_url": ""
  }
 ]

@@ -3,7 +3,7 @@
   {
    "date": "2026-07-24",
    "price": 797,
-   "currency_note": "Sold €710; Second Vintage page shows ≈$797",
+   "currency_note": "Sold \u20ac710; Second Vintage page shows \u2248$797",
    "source": "Second Vintage auction",
    "title": "Omega Seamaster De Ville 166.020, cal. 562",
    "url": "https://secondvintage.com/en/auction/OME-OAS-0032"
@@ -11,7 +11,7 @@
   {
    "date": "2026-01-11",
    "price": 786,
-   "currency_note": "Sold €700; Second Vintage page shows ≈$786",
+   "currency_note": "Sold \u20ac700; Second Vintage page shows \u2248$786",
    "source": "Second Vintage auction",
    "title": "Omega Seamaster De Ville 166.020, 1966, cal. 552",
    "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"
@@ -21,7 +21,7 @@
   {
    "date": "2026-04-30",
    "price": 617,
-   "currency_note": "Sold €550; Second Vintage page shows ≈$617",
+   "currency_note": "Sold \u20ac550; Second Vintage page shows \u2248$617",
    "source": "Second Vintage auction",
    "title": "Omega Seamaster De Ville 165.008, 1966",
    "url": "https://secondvintage.com/en/auction/OME-OSD-0003"
@@ -200,6 +200,27 @@
    "source": "eBay sold",
    "title": "BB58 box + manuals + warranty card",
    "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3350,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 58 79030N, 2020",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-97"
+  },
+  {
+   "date": "2026-10-17",
+   "price": 3450,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 58 79030N, 2024",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-96"
+  },
+  {
+   "date": "2026-10-11",
+   "price": 2600,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 58 79030N, 2019",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-94"
   }
  ],
  "79030B": [
@@ -225,6 +246,62 @@
    "source": "Grailzee sold",
    "title": "79830RB 2023",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3700,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2023 white dial",
+   "url": "https://grailzee.com/products/tudor-black-bay-m79830rb-92"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3200,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, black dial, aftermarket bracelet",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-350"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3160,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2023",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-354"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3149,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2019, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-2019-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3050,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2018 on leather",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-347"
+  },
+  {
+   "date": "2026-10-18",
+   "price": 3750,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2023, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-45"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 4075,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2025",
+   "url": "https://grailzee.com/products/2025-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
+  },
+  {
+   "date": "2026-10-15",
+   "price": 4000,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2026, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-42"
   }
  ],
  "25407N": [
@@ -250,6 +327,13 @@
    "source": "Grailzee sold",
    "title": "SMP 2020",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3850,
+   "source": "Grailzee auction",
+   "title": "Omega Seamaster 300M grey dial, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-06-6"
   }
  ],
  "3572.50.00": [
@@ -300,6 +384,74 @@
    "source": "LoupeThis auction via EveryWatch",
    "title": "PAM00220",
    "url": "https://everywatch.com/auction/loupethis--id39771"
+  }
+ ],
+ "79230N": [
+  {
+   "date": "2026-10-19",
+   "price": 2900,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 79230N, 2018, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-7"
+  },
+  {
+   "date": "2026-10-11",
+   "price": 3250,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 79230N, 2020, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-6"
+  }
+ ],
+ "311.30.42.30.01.005": [
+  {
+   "date": "2026-10-10",
+   "price": 5000,
+   "source": "Grailzee auction",
+   "title": "Omega Speedmaster Professional 311.30.42.30.01.005, 2019",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-98"
+  },
+  {
+   "date": "2026-10-08",
+   "price": 4250,
+   "source": "Grailzee auction",
+   "title": "Omega Speedmaster Professional 311.30.42.30.01.005, 2018",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-97"
+  }
+ ],
+ "210.30.42.20.04.001": [
+  {
+   "date": "2026-10-22",
+   "price": 4000,
+   "source": "Grailzee auction",
+   "title": "Omega Seamaster 300M white dial, 2024, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-4"
+  }
+ ],
+ "210.30.42.20.03.001": [
+  {
+   "date": "2026-10-22",
+   "price": 4100,
+   "source": "Grailzee auction",
+   "title": "Omega Seamaster 300M blue dial, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-03-8"
+  }
+ ],
+ "IW327012": [
+  {
+   "date": "2026-10-14",
+   "price": 3200,
+   "source": "Grailzee auction",
+   "title": "IWC Pilot Mark XVIII IW327012, 2020, white dial",
+   "url": "https://grailzee.com/products/2020-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327012"
+  }
+ ],
+ "IW327015": [
+  {
+   "date": "2026-10-09",
+   "price": 2901,
+   "source": "Grailzee auction",
+   "title": "IWC Pilot Mark XVIII IW327015, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-327015"
   }
  ]
 }
