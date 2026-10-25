@@ -1,837 +1,1105 @@
 {
-  "166.020": [
-    {
-      "date": "2026-07-24",
-      "price": 797,
-      "currency_note": "Sold \u20ac710; Second Vintage page shows \u2248$797",
-      "source": "Second Vintage auction",
-      "title": "Omega Seamaster De Ville 166.020, cal. 562",
-      "url": "https://secondvintage.com/en/auction/OME-OAS-0032"
-    },
-    {
-      "date": "2026-01-11",
-      "price": 786,
-      "currency_note": "Sold \u20ac700; Second Vintage page shows \u2248$786",
-      "source": "Second Vintage auction",
-      "title": "Omega Seamaster De Ville 166.020, 1966, cal. 552",
-      "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"
-    }
-  ],
-  "165.008": [
-    {
-      "date": "2026-04-30",
-      "price": 617,
-      "currency_note": "Sold \u20ac550; Second Vintage page shows \u2248$617",
-      "source": "Second Vintage auction",
-      "title": "Omega Seamaster De Ville 165.008, 1966",
-      "url": "https://secondvintage.com/en/auction/OME-OSD-0003"
-    }
-  ],
-  "SBGW231": [
-    {
-      "date": "2026-08-27",
-      "price": 3199,
-      "source": "WatchSpies (last recorded sale)",
-      "title": "Grand Seiko SBGW231 last sale",
-      "url": "https://watchspies.com/watch/grand-seiko-heritage-manual-37-3mm-ivory-sbgw231"
-    },
-    {
-      "date": "2026-08-21",
-      "price": 3100,
-      "source": "r/watchexchange SOLD via WatchCharts",
-      "title": "SBGW231 Boxes n Papers 2023 (GloryTimepiece)",
-      "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
-      "date_note": "date approximate: WatchCharts shows '2 months ago'"
-    },
-    {
-      "date": "2026-09-21",
-      "price": 3100,
-      "source": "r/watchexchange SOLD via WatchCharts",
-      "title": "SBGW231 Manual Wind Full Set (dsurico1)",
-      "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
-      "date_note": "date approximate: WatchCharts shows '1 month ago'"
-    },
-    {
-      "date": "2026-09-21",
-      "price": 2800,
-      "source": "r/watchexchange SOLD via WatchCharts",
-      "title": "SBGW231 Excellent Condition (aledanniel)",
-      "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
-      "date_note": "date approximate: WatchCharts shows '1 month ago'"
-    },
-    {
-      "date": "2026-09-23",
-      "price": 2800,
-      "source": "r/watchexchange SOLD via WatchCharts",
-      "title": "SBGW231 Manual 37mm Full Set (nicoNeri53)",
-      "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
-      "date_note": "date approximate: WatchCharts shows '4 weeks ago'"
-    }
-  ],
-  "SARB017": [
-    {
-      "date": "2026-10-14",
-      "price": 638.85,
-      "source": "eBay sold (incl. ship)",
-      "title": "SARB017 Green Dial 6R15 + extra strap, 20 bids",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-15",
-      "price": 791.72,
-      "source": "eBay sold (incl. ship)",
-      "title": "N. MINT SARB017 6R15-00E0, 9 bids",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-13",
-      "price": 1050,
-      "source": "eBay sold (Best Offer)",
-      "title": "SARB017 Mint",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-16",
-      "price": 1335,
-      "source": "eBay sold (Best Offer)",
-      "title": "SARB017 Full Set",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-05",
-      "price": 1349,
-      "source": "eBay sold (BIN)",
-      "title": "SARB017 Box & Papers - Mint",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 802.44,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SARB017",
-      "url": "https://www.ebay.com/itm/137843653497"
-    },
-    {
-      "date": "2026-10-16",
-      "price": 1346.1,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SARB017 full set",
-      "url": "https://www.ebay.com/itm/147594357183"
-    },
-    {
-      "date": "2026-10-15",
-      "price": 1435.0,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SARB017",
-      "url": "https://www.ebay.com/itm/287644418839"
-    },
-    {
-      "date": "2026-10-13",
-      "price": 1050,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SARB017",
-      "url": "https://www.ebay.com/itm/287646570563"
-    },
-    {
-      "date": "2026-03-25",
-      "price": 964,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SARB017",
-      "url": "https://www.ebay.com/itm/376683314725"
-    }
-  ],
-  "T137.407.11.041.00": [
-    {
-      "date": "2026-10-21",
-      "price": 446.49,
-      "source": "eBay sold (incl. ship)",
-      "title": "PRX 40mm Blue Early Production Full Set",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tissot+prx+powermatic+80&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 457.78,
-      "source": "eBay sold (incl. ship, Best Offer)",
-      "title": "PRX Blue Dial watch only",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tissot+prx+powermatic+80&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    }
-  ],
-  "SKX009": [
-    {
-      "date": "2026-10-21",
-      "price": 340,
-      "source": "eBay sold",
-      "title": "SKX009 Serviced",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 379.99,
-      "source": "eBay sold",
-      "title": "SKX009 faded bezel",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 396.08,
-      "source": "eBay sold (incl. ship)",
-      "title": "SKX009 7S26-0020 Pepsi",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 450,
-      "source": "eBay sold (Best Offer)",
-      "title": "SKX009 Great Condition",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 457.88,
-      "source": "eBay sold (incl. ship)",
-      "title": "SKX009J Jubilee",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 450,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SKX009",
-      "url": "https://www.ebay.com/itm/189020740982"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 396.08,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SKX009",
-      "url": "https://www.ebay.com/itm/880033336313"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 340,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SKX009 serviced",
-      "url": "https://www.ebay.com/itm/407295390706"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 379.99,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SKX009",
-      "url": "https://www.ebay.com/itm/358739097439"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 499,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Seiko SKX009 new",
-      "url": "https://www.ebay.com/itm/860027922843"
-    }
-  ],
-  "79030N": [
-    {
-      "date": "2026-10-17",
-      "price": 3499,
-      "source": "eBay sold (Best Offer)",
-      "title": "BB58 Full Set, Never Worn",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3575,
-      "source": "eBay sold (incl. ship)",
-      "title": "BB58 Complete Set",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3595,
-      "source": "eBay sold (incl. ship, 3 bids)",
-      "title": "BB58 w/ Box & Papers",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-19",
-      "price": 3590,
-      "source": "eBay sold (incl. ship)",
-      "title": "BB58 Gilt, Box & Papers",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-19",
-      "price": 3795,
-      "source": "eBay sold (Best Offer)",
-      "title": "BB58 Box & Papers",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-16",
-      "price": 4000,
-      "source": "eBay sold",
-      "title": "BB58 box + manuals + warranty card",
-      "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 3350,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay 58 79030N, 2020",
-      "url": "https://grailzee.com/products/tudor-black-bay-79030n-97"
-    },
-    {
-      "date": "2026-10-17",
-      "price": 3450,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay 58 79030N, 2024",
-      "url": "https://grailzee.com/products/tudor-black-bay-79030n-96"
-    },
-    {
-      "date": "2026-10-11",
-      "price": 2600,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay 58 79030N, 2019",
-      "url": "https://grailzee.com/products/tudor-black-bay-79030n-94"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3180.25,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor BB58 79030N",
-      "url": "https://www.ebay.com/itm/366755836545"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3595,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor BB58 79030N",
-      "url": "https://www.ebay.com/itm/206627685918"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3575,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor BB58 79030N",
-      "url": "https://www.ebay.com/itm/960071343522"
-    },
-    {
-      "date": "2026-10-19",
-      "price": 3795,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor BB58 79030N",
-      "url": "https://www.ebay.com/itm/366706890149"
-    },
-    {
-      "date": "2026-10-19",
-      "price": 3590,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor BB58 79030N",
-      "url": "https://www.ebay.com/itm/206632247094"
-    }
-  ],
-  "79030B": [
-    {
-      "date": "2026-10-21",
-      "price": 3000,
-      "source": "Grailzee sold",
-      "title": "79030B, no reserve",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3150,
-      "source": "Grailzee auction",
-      "title": "Tudor 79030B",
-      "url": "https://grailzee.com/products/tudor-black-bay-79030b-176"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3000,
-      "source": "Grailzee auction",
-      "title": "NR 2020 Tudor 79030B",
-      "url": "https://grailzee.com/products/no-reserve-2020-tudor-black-bay-58-39mm-blue-dial-steel-bracelet-79030b-1"
-    },
-    {
-      "date": "2026-10-14",
-      "price": 3220,
-      "source": "Grailzee auction",
-      "title": "NR Tudor 79030B",
-      "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79030b-16"
-    }
-  ],
-  "79830RB": [
-    {
-      "date": "2026-10-21",
-      "price": 3200,
-      "source": "Grailzee sold",
-      "title": "79830RB, aftermarket bracelet",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3160,
-      "source": "Grailzee sold",
-      "title": "79830RB 2023",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 3700,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2023 white dial",
-      "url": "https://grailzee.com/products/tudor-black-bay-m79830rb-92"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3200,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, black dial, aftermarket bracelet",
-      "url": "https://grailzee.com/products/tudor-black-bay-79830rb-350"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 3160,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2023",
-      "url": "https://grailzee.com/products/tudor-black-bay-79830rb-354"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 3149,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2019, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-2019-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 3050,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2018 on leather",
-      "url": "https://grailzee.com/products/tudor-black-bay-79830rb-347"
-    },
-    {
-      "date": "2026-10-18",
-      "price": 3750,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2023, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-45"
-    },
-    {
-      "date": "2026-10-16",
-      "price": 4075,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2025",
-      "url": "https://grailzee.com/products/2025-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
-    },
-    {
-      "date": "2026-10-15",
-      "price": 4000,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay GMT 79830RB, 2026, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-42"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3150,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor 79830RB B&P",
-      "url": "https://www.ebay.com/itm/137865988397"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3730,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor 79830RB",
-      "url": "https://www.ebay.com/itm/318779369582"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3034,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor 79830RB",
-      "url": "https://www.ebay.com/itm/366745418403"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 3999,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor 79830RB",
-      "url": "https://www.ebay.com/itm/147642360475"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 2957.58,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor 79830RB",
-      "url": "https://www.ebay.com/itm/860073451160"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 3350,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor 79830RB",
-      "url": "https://www.ebay.com/itm/147646355479"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3550,
-      "source": "Grailzee auction",
-      "title": "NR 2021 Tudor 79830RB",
-      "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-47"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3000,
-      "source": "Grailzee auction",
-      "title": "Tudor 79830RB",
-      "url": "https://grailzee.com/products/tudor-black-bay-79830rb-351"
-    }
-  ],
-  "25407N": [
-    {
-      "date": "2026-10-13",
-      "price": 4250,
-      "source": "Grailzee sold",
-      "title": "Pelagos 39 25407N 2026, no reserve",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 4495,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor Pelagos 39 25407N",
-      "url": "https://www.ebay.com/itm/257808533597"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 4390,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor Pelagos 39 25407N",
-      "url": "https://www.ebay.com/itm/226479221848"
-    },
-    {
-      "date": "2026-10-21",
-      "price": 4272.99,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor Pelagos 39 25407N",
-      "url": "https://www.ebay.com/itm/860066057310"
-    },
-    {
-      "date": "2026-10-19",
-      "price": 4207.58,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor Pelagos 39 25407N",
-      "url": "https://www.ebay.com/itm/206638622226"
-    },
-    {
-      "date": "2026-10-15",
-      "price": 3757.58,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Tudor Pelagos 39 25407N",
-      "url": "https://www.ebay.com/itm/960070965641"
-    },
-    {
-      "date": "2026-10-13",
-      "price": 4250,
-      "source": "Grailzee auction",
-      "title": "NR Tudor 25407N",
-      "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-6"
-    },
-    {
-      "date": "2026-10-07",
-      "price": 4100,
-      "source": "Grailzee auction",
-      "title": "NR Tudor 25407N",
-      "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-5"
-    },
-    {
-      "date": "2026-09-27",
-      "price": 3350,
-      "source": "Grailzee auction",
-      "title": "NR Tudor 25407N",
-      "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-4"
-    },
-    {
-      "date": "2026-09-26",
-      "price": 4100,
-      "source": "Grailzee auction",
-      "title": "Tudor 25407N",
-      "url": "https://grailzee.com/products/tudor-pelagos-25407n-74"
-    },
-    {
-      "date": "2026-09-26",
-      "price": 4241,
-      "source": "Grailzee auction",
-      "title": "NR Tudor M25407N",
-      "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-m25407n-0001"
-    },
-    {
-      "date": "2026-09-20",
-      "price": 3800,
-      "source": "Grailzee auction",
-      "title": "2025 Tudor 25407N",
-      "url": "https://grailzee.com/products/2025-tudor-pelagos-39mm-black-dial-titanium-bracelet-25407n"
-    },
-    {
-      "date": "2026-09-20",
-      "price": 4100,
-      "source": "Grailzee auction",
-      "title": "NR 2026 Tudor 25407N",
-      "url": "https://grailzee.com/products/no-reserve-2026-tudor-pelagos-39mm-black-dial-titanium-bracelet-25407n"
-    },
-    {
-      "date": "2026-09-16",
-      "price": 4600,
-      "source": "Grailzee auction",
-      "title": "Tudor M25407N",
-      "url": "https://grailzee.com/products/tudor-pelagos-m25407n-22"
-    }
-  ],
-  "210.30.42.20.06.001": [
-    {
-      "date": "2026-10-20",
-      "price": 3550,
-      "source": "Grailzee sold",
-      "title": "SMP 2024, no reserve",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 3800,
-      "source": "Grailzee sold",
-      "title": "SMP 2020",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 3850,
-      "source": "Grailzee auction",
-      "title": "Omega Seamaster 300M grey dial, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-06-6"
-    }
-  ],
-  "3572.50.00": [
-    {
-      "date": "2026-10-20",
-      "price": 4750,
-      "source": "Grailzee sold",
-      "title": "Speedmaster Professional 2001",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    }
-  ],
-  "PAM00312": [
-    {
-      "date": "2026-10-19",
-      "price": 3600,
-      "source": "Grailzee sold",
-      "title": "PAM00312 2018",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-20",
-      "price": 3800,
-      "source": "Grailzee sold",
-      "title": "PAM00312 2017",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    },
-    {
-      "date": "2026-10-22",
-      "price": 4100,
-      "source": "Grailzee sold",
-      "title": "PAM00312 (date approx. within Oct 19-22)",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    }
-  ],
-  "PAM00005": [
-    {
-      "date": "2026-10-19",
-      "price": 3150,
-      "source": "Grailzee sold",
-      "title": "PAM00005, no reserve",
-      "url": "https://grailzee.com/pages/completed-auctions"
-    }
-  ],
-  "PAM00220": [
-    {
-      "date": "2026-03-30",
-      "price": 2420,
-      "source": "LoupeThis auction via EveryWatch",
-      "title": "PAM00220",
-      "url": "https://everywatch.com/auction/loupethis--id39771"
-    }
-  ],
-  "79230N": [
-    {
-      "date": "2026-10-19",
-      "price": 2900,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay 79230N, 2018, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-7"
-    },
-    {
-      "date": "2026-10-11",
-      "price": 3250,
-      "source": "Grailzee auction",
-      "title": "Tudor Black Bay 79230N, 2020, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-6"
-    }
-  ],
-  "311.30.42.30.01.005": [
-    {
-      "date": "2026-10-10",
-      "price": 5000,
-      "source": "Grailzee auction",
-      "title": "Omega Speedmaster Professional 311.30.42.30.01.005, 2019",
-      "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-98"
-    },
-    {
-      "date": "2026-10-08",
-      "price": 4250,
-      "source": "Grailzee auction",
-      "title": "Omega Speedmaster Professional 311.30.42.30.01.005, 2018",
-      "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-97"
-    }
-  ],
-  "210.30.42.20.04.001": [
-    {
-      "date": "2026-10-22",
-      "price": 4000,
-      "source": "Grailzee auction",
-      "title": "Omega Seamaster 300M white dial, 2024, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-4"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 4400,
-      "source": "Grailzee auction",
-      "title": "NR Omega SMP 300 white",
-      "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-5"
-    }
-  ],
-  "210.30.42.20.03.001": [
-    {
-      "date": "2026-10-22",
-      "price": 4100,
-      "source": "Grailzee auction",
-      "title": "Omega Seamaster 300M blue dial, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-03-8"
-    }
-  ],
-  "IW327012": [
-    {
-      "date": "2026-10-14",
-      "price": 3200,
-      "source": "Grailzee auction",
-      "title": "IWC Pilot Mark XVIII IW327012, 2020, white dial",
-      "url": "https://grailzee.com/products/2020-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327012"
-    },
-    {
-      "date": "2026-10-23",
-      "price": 3850,
-      "source": "eBay sold (incl. shipping)",
-      "title": "IWC Mark XVIII IW327012 B&P",
-      "url": "https://www.ebay.com/itm/287600075130"
-    }
-  ],
-  "IW327015": [
-    {
-      "date": "2026-10-09",
-      "price": 2901,
-      "source": "Grailzee auction",
-      "title": "IWC Pilot Mark XVIII IW327015, no reserve",
-      "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-327015"
-    }
-  ],
-  "H69439931": [
-    {
-      "date": "2026-10-23",
-      "price": 406.18,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Hamilton Khaki Field Mechanical 38 H69439931",
-      "url": "https://www.ebay.com/itm/198715601849"
-    }
-  ],
-  "H69439363": [
-    {
-      "date": "2026-10-23",
-      "price": 355.86,
-      "source": "eBay sold (incl. shipping)",
-      "title": "Hamilton Khaki Field Mechanical 38 H69439363",
-      "url": "https://www.ebay.com/itm/407311258902"
-    }
-  ],
-  "IW327006": [
-    {
-      "date": "2026-10-22",
-      "price": 3344.07,
-      "source": "eBay sold (incl. shipping)",
-      "title": "IWC Mark XVIII IW327006",
-      "url": "https://www.ebay.com/itm/267784586399"
-    }
-  ],
-  "IW327010": [
-    {
-      "date": "2026-10-16",
-      "price": 3177.62,
-      "source": "eBay sold (incl. shipping)",
-      "title": "IWC Mark XVIII IW327010",
-      "url": "https://www.ebay.com/itm/267750867239"
-    },
-    {
-      "date": "2026-09-27",
-      "price": 3100,
-      "source": "Grailzee auction",
-      "title": "NR IWC IW327010",
-      "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-iw327010-1"
-    }
-  ],
-  "IW327003": [
-    {
-      "date": "2026-10-13",
-      "price": 3755,
-      "source": "eBay sold (incl. shipping)",
-      "title": "IWC Mark XVIII IW327003",
-      "url": "https://www.ebay.com/itm/820193808821"
-    }
-  ],
-  "IW324703": [
-    {
-      "date": "2026-10-13",
-      "price": 2847,
-      "source": "eBay sold (incl. shipping)",
-      "title": "IWC Mark XVIII IW324703",
-      "url": "https://www.ebay.com/itm/327404438514"
-    },
-    {
-      "date": "2026-10-04",
-      "price": 2900,
-      "source": "Grailzee auction",
-      "title": "IWC IW324703",
-      "url": "https://grailzee.com/products/iwc-schaffhausen-pilot-iw324703-9"
-    },
-    {
-      "date": "2026-09-25",
-      "price": 4200,
-      "source": "Grailzee auction",
-      "title": "IWC IW324703",
-      "url": "https://grailzee.com/products/iwc-schaffhausen-pilot-iw324703-7"
-    }
-  ],
-  "IW327002": [
-    {
-      "date": "2026-09-27",
-      "price": 3126,
-      "source": "Grailzee auction",
-      "title": "2019 IWC Mark XVIII IW327002",
-      "url": "https://grailzee.com/products/2019-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327002-3"
-    }
-  ],
-  "SBGH315": [
-    {
-      "date": "2026-10-23",
-      "price": 4550,
-      "source": "Grailzee auction",
-      "title": "Grand Seiko SBGH315",
-      "url": "https://grailzee.com/products/grand-seiko-heritage-sbgh315"
-    }
-  ]
+ "166.020": [
+  {
+   "date": "2026-07-24",
+   "price": 797,
+   "currency_note": "Sold \u20ac710; Second Vintage page shows \u2248$797",
+   "source": "Second Vintage auction",
+   "title": "Omega Seamaster De Ville 166.020, cal. 562",
+   "url": "https://secondvintage.com/en/auction/OME-OAS-0032"
+  },
+  {
+   "date": "2026-01-11",
+   "price": 786,
+   "currency_note": "Sold \u20ac700; Second Vintage page shows \u2248$786",
+   "source": "Second Vintage auction",
+   "title": "Omega Seamaster De Ville 166.020, 1966, cal. 552",
+   "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"
+  }
+ ],
+ "165.008": [
+  {
+   "date": "2026-04-30",
+   "price": 617,
+   "currency_note": "Sold \u20ac550; Second Vintage page shows \u2248$617",
+   "source": "Second Vintage auction",
+   "title": "Omega Seamaster De Ville 165.008, 1966",
+   "url": "https://secondvintage.com/en/auction/OME-OSD-0003"
+  }
+ ],
+ "SBGW231": [
+  {
+   "date": "2026-08-27",
+   "price": 3199,
+   "source": "WatchSpies (last recorded sale)",
+   "title": "Grand Seiko SBGW231 last sale",
+   "url": "https://watchspies.com/watch/grand-seiko-heritage-manual-37-3mm-ivory-sbgw231"
+  },
+  {
+   "date": "2026-08-21",
+   "price": 3100,
+   "source": "r/watchexchange SOLD via WatchCharts",
+   "title": "SBGW231 Boxes n Papers 2023 (GloryTimepiece)",
+   "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
+   "date_note": "date approximate: WatchCharts shows '2 months ago'"
+  },
+  {
+   "date": "2026-09-21",
+   "price": 3100,
+   "source": "r/watchexchange SOLD via WatchCharts",
+   "title": "SBGW231 Manual Wind Full Set (dsurico1)",
+   "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
+   "date_note": "date approximate: WatchCharts shows '1 month ago'"
+  },
+  {
+   "date": "2026-09-21",
+   "price": 2800,
+   "source": "r/watchexchange SOLD via WatchCharts",
+   "title": "SBGW231 Excellent Condition (aledanniel)",
+   "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
+   "date_note": "date approximate: WatchCharts shows '1 month ago'"
+  },
+  {
+   "date": "2026-09-23",
+   "price": 2800,
+   "source": "r/watchexchange SOLD via WatchCharts",
+   "title": "SBGW231 Manual 37mm Full Set (nicoNeri53)",
+   "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview",
+   "date_note": "date approximate: WatchCharts shows '4 weeks ago'"
+  }
+ ],
+ "SARB017": [
+  {
+   "date": "2026-10-14",
+   "price": 638.85,
+   "source": "eBay sold (incl. ship)",
+   "title": "SARB017 Green Dial 6R15 + extra strap, 20 bids",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-15",
+   "price": 791.72,
+   "source": "eBay sold (incl. ship)",
+   "title": "N. MINT SARB017 6R15-00E0, 9 bids",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-13",
+   "price": 1050,
+   "source": "eBay sold (Best Offer)",
+   "title": "SARB017 Mint",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 1335,
+   "source": "eBay sold (Best Offer)",
+   "title": "SARB017 Full Set",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-05",
+   "price": 1349,
+   "source": "eBay sold (BIN)",
+   "title": "SARB017 Box & Papers - Mint",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 802.44,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SARB017",
+   "url": "https://www.ebay.com/itm/137843653497"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 1346.1,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SARB017 full set",
+   "url": "https://www.ebay.com/itm/147594357183"
+  },
+  {
+   "date": "2026-10-15",
+   "price": 1435.0,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SARB017",
+   "url": "https://www.ebay.com/itm/287644418839"
+  },
+  {
+   "date": "2026-10-13",
+   "price": 1050,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SARB017",
+   "url": "https://www.ebay.com/itm/287646570563"
+  },
+  {
+   "date": "2026-03-25",
+   "price": 964,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SARB017",
+   "url": "https://www.ebay.com/itm/376683314725"
+  },
+  {
+   "date": "2026-10-15",
+   "price": 785,
+   "source": "eBay sold",
+   "title": "Seiko SARB017",
+   "url": "https://www.ebay.com/itm/377560817320"
+  }
+ ],
+ "T137.407.11.041.00": [
+  {
+   "date": "2026-10-21",
+   "price": 446.49,
+   "source": "eBay sold (incl. ship)",
+   "title": "PRX 40mm Blue Early Production Full Set",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tissot+prx+powermatic+80&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 457.78,
+   "source": "eBay sold (incl. ship, Best Offer)",
+   "title": "PRX Blue Dial watch only",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tissot+prx+powermatic+80&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  }
+ ],
+ "SKX009": [
+  {
+   "date": "2026-10-21",
+   "price": 340,
+   "source": "eBay sold",
+   "title": "SKX009 Serviced",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 379.99,
+   "source": "eBay sold",
+   "title": "SKX009 faded bezel",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 396.08,
+   "source": "eBay sold (incl. ship)",
+   "title": "SKX009 7S26-0020 Pepsi",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 450,
+   "source": "eBay sold (Best Offer)",
+   "title": "SKX009 Great Condition",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 457.88,
+   "source": "eBay sold (incl. ship)",
+   "title": "SKX009J Jubilee",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 450,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SKX009",
+   "url": "https://www.ebay.com/itm/189020740982"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 396.08,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SKX009",
+   "url": "https://www.ebay.com/itm/880033336313"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 340,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SKX009 serviced",
+   "url": "https://www.ebay.com/itm/407295390706"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 379.99,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SKX009",
+   "url": "https://www.ebay.com/itm/358739097439"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 499,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Seiko SKX009 new",
+   "url": "https://www.ebay.com/itm/860027922843"
+  },
+  {
+   "date": "2026-10-24",
+   "price": 246.38,
+   "source": "eBay sold",
+   "title": "Seiko SKX009",
+   "url": "https://www.ebay.com/itm/960081479096"
+  }
+ ],
+ "79030N": [
+  {
+   "date": "2026-10-17",
+   "price": 3499,
+   "source": "eBay sold (Best Offer)",
+   "title": "BB58 Full Set, Never Worn",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3575,
+   "source": "eBay sold (incl. ship)",
+   "title": "BB58 Complete Set",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3595,
+   "source": "eBay sold (incl. ship, 3 bids)",
+   "title": "BB58 w/ Box & Papers",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-19",
+   "price": 3590,
+   "source": "eBay sold (incl. ship)",
+   "title": "BB58 Gilt, Box & Papers",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-19",
+   "price": 3795,
+   "source": "eBay sold (Best Offer)",
+   "title": "BB58 Box & Papers",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 4000,
+   "source": "eBay sold",
+   "title": "BB58 box + manuals + warranty card",
+   "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3350,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 58 79030N, 2020",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-97"
+  },
+  {
+   "date": "2026-10-17",
+   "price": 3450,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 58 79030N, 2024",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-96"
+  },
+  {
+   "date": "2026-10-11",
+   "price": 2600,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 58 79030N, 2019",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030n-94"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3180.25,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor BB58 79030N",
+   "url": "https://www.ebay.com/itm/366755836545"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3595,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor BB58 79030N",
+   "url": "https://www.ebay.com/itm/206627685918"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3575,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor BB58 79030N",
+   "url": "https://www.ebay.com/itm/960071343522"
+  },
+  {
+   "date": "2026-10-19",
+   "price": 3795,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor BB58 79030N",
+   "url": "https://www.ebay.com/itm/366706890149"
+  },
+  {
+   "date": "2026-10-19",
+   "price": 3590,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor BB58 79030N",
+   "url": "https://www.ebay.com/itm/206632247094"
+  }
+ ],
+ "79030B": [
+  {
+   "date": "2026-10-21",
+   "price": 3000,
+   "source": "Grailzee sold",
+   "title": "79030B, no reserve",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3150,
+   "source": "Grailzee auction",
+   "title": "Tudor 79030B",
+   "url": "https://grailzee.com/products/tudor-black-bay-79030b-176"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3000,
+   "source": "Grailzee auction",
+   "title": "NR 2020 Tudor 79030B",
+   "url": "https://grailzee.com/products/no-reserve-2020-tudor-black-bay-58-39mm-blue-dial-steel-bracelet-79030b-1"
+  },
+  {
+   "date": "2026-10-14",
+   "price": 3220,
+   "source": "Grailzee auction",
+   "title": "NR Tudor 79030B",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79030b-16"
+  }
+ ],
+ "79830RB": [
+  {
+   "date": "2026-10-21",
+   "price": 3200,
+   "source": "Grailzee sold",
+   "title": "79830RB, aftermarket bracelet",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3160,
+   "source": "Grailzee sold",
+   "title": "79830RB 2023",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3700,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2023 white dial",
+   "url": "https://grailzee.com/products/tudor-black-bay-m79830rb-92"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3200,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, black dial, aftermarket bracelet",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-350"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 3160,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2023",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-354"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3149,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2019, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-2019-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3050,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2018 on leather",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-347"
+  },
+  {
+   "date": "2026-10-18",
+   "price": 3750,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2023, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-45"
+  },
+  {
+   "date": "2026-10-16",
+   "price": 4075,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2025",
+   "url": "https://grailzee.com/products/2025-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"
+  },
+  {
+   "date": "2026-10-15",
+   "price": 4000,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay GMT 79830RB, 2026, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-42"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3150,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor 79830RB B&P",
+   "url": "https://www.ebay.com/itm/137865988397"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3730,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor 79830RB",
+   "url": "https://www.ebay.com/itm/318779369582"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3034,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor 79830RB",
+   "url": "https://www.ebay.com/itm/366745418403"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3999,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor 79830RB",
+   "url": "https://www.ebay.com/itm/147642360475"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 2957.58,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor 79830RB",
+   "url": "https://www.ebay.com/itm/860073451160"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3350,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor 79830RB",
+   "url": "https://www.ebay.com/itm/147646355479"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3550,
+   "source": "Grailzee auction",
+   "title": "NR 2021 Tudor 79830RB",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-47"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3000,
+   "source": "Grailzee auction",
+   "title": "Tudor 79830RB",
+   "url": "https://grailzee.com/products/tudor-black-bay-79830rb-351"
+  },
+  {
+   "date": "2026-06-16",
+   "price": 3100,
+   "source": "Grailzee auction",
+   "title": "Tudor 79830RB 2021 black",
+   "url": "https://grailzee.com/search?q=79830RB"
+  }
+ ],
+ "25407N": [
+  {
+   "date": "2026-10-13",
+   "price": 4250,
+   "source": "Grailzee sold",
+   "title": "Pelagos 39 25407N 2026, no reserve",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 4495,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor Pelagos 39 25407N",
+   "url": "https://www.ebay.com/itm/257808533597"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 4390,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor Pelagos 39 25407N",
+   "url": "https://www.ebay.com/itm/226479221848"
+  },
+  {
+   "date": "2026-10-21",
+   "price": 4272.99,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor Pelagos 39 25407N",
+   "url": "https://www.ebay.com/itm/860066057310"
+  },
+  {
+   "date": "2026-10-19",
+   "price": 4207.58,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor Pelagos 39 25407N",
+   "url": "https://www.ebay.com/itm/206638622226"
+  },
+  {
+   "date": "2026-10-15",
+   "price": 3757.58,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Tudor Pelagos 39 25407N",
+   "url": "https://www.ebay.com/itm/960070965641"
+  },
+  {
+   "date": "2026-10-13",
+   "price": 4250,
+   "source": "Grailzee auction",
+   "title": "NR Tudor 25407N",
+   "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-6"
+  },
+  {
+   "date": "2026-10-07",
+   "price": 4100,
+   "source": "Grailzee auction",
+   "title": "NR Tudor 25407N",
+   "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-5"
+  },
+  {
+   "date": "2026-09-27",
+   "price": 3350,
+   "source": "Grailzee auction",
+   "title": "NR Tudor 25407N",
+   "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-4"
+  },
+  {
+   "date": "2026-09-26",
+   "price": 4100,
+   "source": "Grailzee auction",
+   "title": "Tudor 25407N",
+   "url": "https://grailzee.com/products/tudor-pelagos-25407n-74"
+  },
+  {
+   "date": "2026-09-26",
+   "price": 4241,
+   "source": "Grailzee auction",
+   "title": "NR Tudor M25407N",
+   "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-m25407n-0001"
+  },
+  {
+   "date": "2026-09-20",
+   "price": 3800,
+   "source": "Grailzee auction",
+   "title": "2025 Tudor 25407N",
+   "url": "https://grailzee.com/products/2025-tudor-pelagos-39mm-black-dial-titanium-bracelet-25407n"
+  },
+  {
+   "date": "2026-09-20",
+   "price": 4100,
+   "source": "Grailzee auction",
+   "title": "NR 2026 Tudor 25407N",
+   "url": "https://grailzee.com/products/no-reserve-2026-tudor-pelagos-39mm-black-dial-titanium-bracelet-25407n"
+  },
+  {
+   "date": "2026-09-16",
+   "price": 4600,
+   "source": "Grailzee auction",
+   "title": "Tudor M25407N",
+   "url": "https://grailzee.com/products/tudor-pelagos-m25407n-22"
+  },
+  {
+   "date": "2026-08-10",
+   "price": 4750,
+   "source": "Grailzee auction",
+   "title": "Tudor Pelagos 39 25407N",
+   "url": "https://grailzee.com/search?q=25407N"
+  }
+ ],
+ "210.30.42.20.06.001": [
+  {
+   "date": "2026-10-20",
+   "price": 3550,
+   "source": "Grailzee sold",
+   "title": "SMP 2024, no reserve",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3800,
+   "source": "Grailzee sold",
+   "title": "SMP 2020",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 3850,
+   "source": "Grailzee auction",
+   "title": "Omega Seamaster 300M grey dial, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-06-6"
+  }
+ ],
+ "3572.50.00": [
+  {
+   "date": "2026-10-20",
+   "price": 4750,
+   "source": "Grailzee sold",
+   "title": "Speedmaster Professional 2001",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  }
+ ],
+ "PAM00312": [
+  {
+   "date": "2026-10-19",
+   "price": 3600,
+   "source": "Grailzee sold",
+   "title": "PAM00312 2018",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-20",
+   "price": 3800,
+   "source": "Grailzee sold",
+   "title": "PAM00312 2017",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 4100,
+   "source": "Grailzee sold",
+   "title": "PAM00312 (date approx. within Oct 19-22)",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  }
+ ],
+ "PAM00005": [
+  {
+   "date": "2026-10-19",
+   "price": 3150,
+   "source": "Grailzee sold",
+   "title": "PAM00005, no reserve",
+   "url": "https://grailzee.com/pages/completed-auctions"
+  }
+ ],
+ "PAM00220": [
+  {
+   "date": "2026-03-30",
+   "price": 2420,
+   "source": "LoupeThis auction via EveryWatch",
+   "title": "PAM00220",
+   "url": "https://everywatch.com/auction/loupethis--id39771"
+  }
+ ],
+ "79230N": [
+  {
+   "date": "2026-10-19",
+   "price": 2900,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 79230N, 2018, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-7"
+  },
+  {
+   "date": "2026-10-11",
+   "price": 3250,
+   "source": "Grailzee auction",
+   "title": "Tudor Black Bay 79230N, 2020, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-6"
+  },
+  {
+   "date": "2026-10-17",
+   "price": 3622.14,
+   "source": "eBay sold",
+   "title": "Tudor 79230N",
+   "url": "https://www.ebay.com/itm/168777664529"
+  },
+  {
+   "date": "2026-10-14",
+   "price": 2700,
+   "source": "eBay sold",
+   "title": "Tudor 79230N",
+   "url": "https://www.ebay.com/itm/820222233594"
+  },
+  {
+   "date": "2026-10-14",
+   "price": 3132.84,
+   "source": "eBay sold",
+   "title": "Tudor 79230N",
+   "url": "https://www.ebay.com/itm/407179223635"
+  },
+  {
+   "date": "2026-10-13",
+   "price": 2370,
+   "source": "eBay sold",
+   "title": "Tudor 79230N",
+   "url": "https://www.ebay.com/itm/237122246164"
+  }
+ ],
+ "311.30.42.30.01.005": [
+  {
+   "date": "2026-10-10",
+   "price": 5000,
+   "source": "Grailzee auction",
+   "title": "Omega Speedmaster Professional 311.30.42.30.01.005, 2019",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-98"
+  },
+  {
+   "date": "2026-10-08",
+   "price": 4250,
+   "source": "Grailzee auction",
+   "title": "Omega Speedmaster Professional 311.30.42.30.01.005, 2018",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-97"
+  }
+ ],
+ "210.30.42.20.04.001": [
+  {
+   "date": "2026-10-22",
+   "price": 4000,
+   "source": "Grailzee auction",
+   "title": "Omega Seamaster 300M white dial, 2024, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-4"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 4400,
+   "source": "Grailzee auction",
+   "title": "NR Omega SMP 300 white",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-5"
+  }
+ ],
+ "210.30.42.20.03.001": [
+  {
+   "date": "2026-10-22",
+   "price": 4100,
+   "source": "Grailzee auction",
+   "title": "Omega Seamaster 300M blue dial, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-03-8"
+  }
+ ],
+ "IW327012": [
+  {
+   "date": "2026-10-14",
+   "price": 3200,
+   "source": "Grailzee auction",
+   "title": "IWC Pilot Mark XVIII IW327012, 2020, white dial",
+   "url": "https://grailzee.com/products/2020-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327012"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 3850,
+   "source": "eBay sold (incl. shipping)",
+   "title": "IWC Mark XVIII IW327012 B&P",
+   "url": "https://www.ebay.com/itm/287600075130"
+  },
+  {
+   "date": "2026-08-21",
+   "price": 3700,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XVIII IW327012",
+   "url": "https://grailzee.com/search?q=IW327012"
+  }
+ ],
+ "IW327015": [
+  {
+   "date": "2026-10-09",
+   "price": 2901,
+   "source": "Grailzee auction",
+   "title": "IWC Pilot Mark XVIII IW327015, no reserve",
+   "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-327015"
+  }
+ ],
+ "H69439931": [
+  {
+   "date": "2026-10-23",
+   "price": 406.18,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Hamilton Khaki Field Mechanical 38 H69439931",
+   "url": "https://www.ebay.com/itm/198715601849"
+  }
+ ],
+ "H69439363": [
+  {
+   "date": "2026-10-23",
+   "price": 355.86,
+   "source": "eBay sold (incl. shipping)",
+   "title": "Hamilton Khaki Field Mechanical 38 H69439363",
+   "url": "https://www.ebay.com/itm/407311258902"
+  }
+ ],
+ "IW327006": [
+  {
+   "date": "2026-10-22",
+   "price": 3344.07,
+   "source": "eBay sold (incl. shipping)",
+   "title": "IWC Mark XVIII IW327006",
+   "url": "https://www.ebay.com/itm/267784586399"
+  }
+ ],
+ "IW327010": [
+  {
+   "date": "2026-10-16",
+   "price": 3177.62,
+   "source": "eBay sold (incl. shipping)",
+   "title": "IWC Mark XVIII IW327010",
+   "url": "https://www.ebay.com/itm/267750867239"
+  },
+  {
+   "date": "2026-09-27",
+   "price": 3100,
+   "source": "Grailzee auction",
+   "title": "NR IWC IW327010",
+   "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-iw327010-1"
+  },
+  {
+   "date": "2026-06-04",
+   "price": 3100,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XVIII IW327010",
+   "url": "https://grailzee.com/search?q=IW327010"
+  },
+  {
+   "date": "2026-06-18",
+   "price": 3300,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XVIII IW327010",
+   "url": "https://grailzee.com/search?q=IW327010"
+  },
+  {
+   "date": "2026-09-01",
+   "price": 2800,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XVIII IW327010",
+   "url": "https://grailzee.com/search?q=IW327010"
+  }
+ ],
+ "IW327003": [
+  {
+   "date": "2026-10-13",
+   "price": 3755,
+   "source": "eBay sold (incl. shipping)",
+   "title": "IWC Mark XVIII IW327003",
+   "url": "https://www.ebay.com/itm/820193808821"
+  }
+ ],
+ "IW324703": [
+  {
+   "date": "2026-10-13",
+   "price": 2847,
+   "source": "eBay sold (incl. shipping)",
+   "title": "IWC Mark XVIII IW324703",
+   "url": "https://www.ebay.com/itm/327404438514"
+  },
+  {
+   "date": "2026-10-04",
+   "price": 2900,
+   "source": "Grailzee auction",
+   "title": "IWC IW324703",
+   "url": "https://grailzee.com/products/iwc-schaffhausen-pilot-iw324703-9"
+  },
+  {
+   "date": "2026-09-25",
+   "price": 4200,
+   "source": "Grailzee auction",
+   "title": "IWC IW324703",
+   "url": "https://grailzee.com/products/iwc-schaffhausen-pilot-iw324703-7"
+  }
+ ],
+ "IW327002": [
+  {
+   "date": "2026-09-27",
+   "price": 3126,
+   "source": "Grailzee auction",
+   "title": "2019 IWC Mark XVIII IW327002",
+   "url": "https://grailzee.com/products/2019-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327002-3"
+  }
+ ],
+ "SBGH315": [
+  {
+   "date": "2026-10-23",
+   "price": 4550,
+   "source": "Grailzee auction",
+   "title": "Grand Seiko SBGH315",
+   "url": "https://grailzee.com/products/grand-seiko-heritage-sbgh315"
+  }
+ ],
+ "SKX007": [
+  {
+   "date": "2026-10-25",
+   "price": 260.79,
+   "source": "eBay sold",
+   "title": "Seiko SKX007",
+   "url": "https://www.ebay.com/itm/278196652060"
+  },
+  {
+   "date": "2026-10-24",
+   "price": 250,
+   "source": "eBay sold",
+   "title": "Seiko SKX007",
+   "url": "https://www.ebay.com/itm/336861405552"
+  },
+  {
+   "date": "2026-10-24",
+   "price": 379.99,
+   "source": "eBay sold",
+   "title": "Seiko SKX007",
+   "url": "https://www.ebay.com/itm/366726094508"
+  }
+ ],
+ "SRPE93": [
+  {
+   "date": "2026-10-24",
+   "price": 410,
+   "source": "eBay sold",
+   "title": "Seiko SRPE93",
+   "url": "https://www.ebay.com/itm/168719632262"
+  },
+  {
+   "date": "2026-10-24",
+   "price": 410,
+   "source": "eBay sold",
+   "title": "Seiko SRPE93",
+   "url": "https://www.ebay.com/itm/407239746010"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 375,
+   "source": "eBay sold",
+   "title": "Seiko SRPE93",
+   "url": "https://www.ebay.com/itm/840029079629"
+  },
+  {
+   "date": "2026-10-23",
+   "price": 380,
+   "source": "eBay sold",
+   "title": "Seiko SRPE93",
+   "url": "https://www.ebay.com/itm/920055446726"
+  },
+  {
+   "date": "2026-10-22",
+   "price": 420,
+   "source": "eBay sold",
+   "title": "Seiko SRPE93 new",
+   "url": "https://www.ebay.com/itm/147635655369"
+  }
+ ],
+ "210.30.42.20.01.001": [
+  {
+   "date": "2026-10-17",
+   "price": 4100,
+   "source": "eBay sold",
+   "title": "Omega SMP 210.30.42.20.01.001",
+   "url": "https://www.ebay.com/itm/128137845763"
+  },
+  {
+   "date": "2026-10-11",
+   "price": 3850,
+   "source": "eBay sold",
+   "title": "Omega SMP 210.30.42.20.01.001",
+   "url": "https://www.ebay.com/itm/227563167165"
+  },
+  {
+   "date": "2026-10-10",
+   "price": 4250,
+   "source": "eBay sold",
+   "title": "Omega SMP 210.30.42.20.01.001",
+   "url": "https://www.ebay.com/itm/257792126836"
+  },
+  {
+   "date": "2026-10-08",
+   "price": 4500,
+   "source": "eBay sold",
+   "title": "Omega SMP 210.30.42.20.01.001",
+   "url": "https://www.ebay.com/itm/178527880853"
+  }
+ ],
+ "IW327016": [
+  {
+   "date": "2026-09-21",
+   "price": 4400,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XVIII Petit Prince steel",
+   "url": "https://grailzee.com/search?q=IW327016"
+  }
+ ],
+ "IW328210": [
+  {
+   "date": "2026-08-15",
+   "price": 4450,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XX IW328210",
+   "url": "https://grailzee.com/search?q=IW328210"
+  },
+  {
+   "date": "2026-04-30",
+   "price": 4400,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XX IW328210",
+   "url": "https://grailzee.com/search?q=IW328210"
+  }
+ ],
+ "IW328203": [
+  {
+   "date": "2026-07-10",
+   "price": 3800,
+   "source": "Grailzee auction",
+   "title": "IWC Mark XX IW328203",
+   "url": "https://grailzee.com/search?q=IW328203"
+  }
+ ],
+ "PAM00104": [
+  {
+   "date": "2026-10-18",
+   "price": 3750,
+   "source": "eBay sold (auction)",
+   "title": "Panerai PAM104",
+   "url": "https://www.ebay.com/itm/147637586845"
+  },
+  {
+   "date": "2026-08-23",
+   "price": 3289,
+   "source": "eBay sold",
+   "title": "Panerai PAM104 box+service papers",
+   "url": "https://www.ebay.com/itm/128014932775"
+  },
+  {
+   "date": "2026-08-21",
+   "price": 3300,
+   "source": "eBay sold",
+   "title": "Panerai PAM104 box+papers",
+   "url": "https://www.ebay.com/itm/336742822040"
+  },
+  {
+   "date": "2026-08-05",
+   "price": 3400,
+   "source": "eBay sold",
+   "title": "Panerai PAM104",
+   "url": "https://www.ebay.com/itm/188702891918"
+  }
+ ],
+ "CAW211P": [
+  {
+   "date": "2026-10-13",
+   "price": 4750,
+   "source": "eBay sold (auction)",
+   "title": "TAG Heuer Monaco CAW211P",
+   "url": "https://www.ebay.com/itm/128133822284"
+  },
+  {
+   "date": "2026-10-02",
+   "price": 5800,
+   "source": "eBay sold",
+   "title": "TAG Heuer Monaco CAW211P complete set",
+   "url": "https://www.ebay.com/itm/407261563093"
+  },
+  {
+   "date": "2026-09-30",
+   "price": 5450,
+   "source": "eBay sold (best offer)",
+   "title": "TAG Heuer Monaco CAW211P",
+   "url": "https://www.ebay.com/itm/237097647016"
+  },
+  {
+   "date": "2026-09-24",
+   "price": 5950,
+   "source": "eBay sold",
+   "title": "TAG Heuer Monaco CAW211P",
+   "url": "https://www.ebay.com/itm/298704565772"
+  }
+ ]
 }
