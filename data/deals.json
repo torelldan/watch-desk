@@ -1051,5 +1051,138 @@
    "Listing link not captured"
   ],
   "found": "2026-10-25"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Sumo 'Blumo' 1st gen, Pre-owned Good, BIN",
+  "ref": "SBDC033",
+  "ask": 367.75,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/189028169628",
+  "kind": "buy",
+  "image_url": "https://i.ebayimg.com/images/g/oisAAeSwZmdq0Pny/s-l500.webp",
+  "why": "$359 + $8.75 ship, under $400 cap. Seller 100% positive, ships from Denver, CO.",
+  "redFlags": [
+   "Exact ref not stated (Blumo is usually SBDC033)",
+   "Needs BCV: no sold comps collected today",
+   "Photos/description not reviewed in detail"
+  ],
+  "found": "2026-10-26"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster De Ville 1960s cal. 610, 36mm, Excellent, BIN/Best Offer",
+  "ref": "165.008",
+  "ask": 499.55,
+  "buy": 600,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/398438457723",
+  "kind": "buy",
+  "image_url": "https://i.ebayimg.com/images/g/Ls0AAeSwi5NqubEj/s-l500.webp",
+  "why": "$494 + $5.55 ship, under $600 cap. Seller 99.8% positive.",
+  "redFlags": [
+   "Ships from Albania, import fees due",
+   "Dial originality and authenticity unchecked",
+   "Needs BCV"
+  ],
+  "found": "2026-10-26"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Vintage Seamaster De Ville automatic, 'Runs As-Is', BIN",
+  "ref": "De Ville vintage",
+  "ask": 397.94,
+  "buy": 600,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/168809621537",
+  "kind": "buy",
+  "image_url": "https://i.ebayimg.com/images/g/sAMAAeSwPahq3Vot/s-l500.webp",
+  "why": "$392.99 + $4.95 ship. Seller 99.8%, Cass City, MI.",
+  "redFlags": [
+   "Sold as-is, untested",
+   "Ref and era unknown",
+   "Needs BCV"
+  ],
+  "weak_listing": true,
+  "weak_listing_reason": "As-is listing with no ref; a tested, well-photographed relist could sell higher",
+  "found": "2026-10-26"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Vtg 1960s Seamaster De Ville automatic, 33.5mm, running/tested",
+  "ref": "De Ville vintage",
+  "ask": 290.99,
+  "buy": 600,
+  "sell": null,
+  "source": "ShopGoodwill",
+  "url": "https://shopgoodwill.com/item/281609891",
+  "kind": "auction",
+  "image_url": "",
+  "why": "Current bid $286 (9 bids) + $4.99 ship; ends 10/28 5:54 PM PT, so price will rise.",
+  "redFlags": [
+   "No case-back/movement markings shown",
+   "Goodwill gives no authenticity guarantee",
+   "Auction not ending within 24h"
+  ],
+  "found": "2026-10-26"
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR03-92 black steel, box + OEM straps, Best Offer",
+  "ref": "BR03-92",
+  "ask": 1795,
+  "buy": 1700,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/236958724927",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://i.ebayimg.com/images/g/gTUAAeSwHg9qYm8y/s-l500.webp",
+  "why": "Dropped from $1,895 (Oct 21) to $1,795 shipped; still at market (sold $1,890 Oct 15, $1,999 Apr 16).",
+  "redFlags": [
+   "No margin vs sold comps",
+   "Authenticate (B&R often faked)"
+  ],
+  "found": "2026-10-26"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay Heritage M79230N-0008, leather, Chrono24 lowest US ask",
+  "ref": "79230N",
+  "ask": 3090,
+  "buy": 2250,
+  "sell": null,
+  "source": "Chrono24",
+  "url": "https://www.chrono24.com/tudor/black-bay-heritage-black-dial-on-leather-strap-bracelet-m79230n-0008--id49292785.htm",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "Lowest US ask $3,090 vs eBay sold $2,563-3,133 in Oct.",
+  "redFlags": [
+   "Above cap"
+  ],
+  "found": "2026-10-26"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX007 refurbished auction (Philippines)",
+  "ref": "SKX007",
+  "ask": 134,
+  "buy": 220,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/820264567154",
+  "kind": "pass",
+  "image_url": "",
+  "why": "$99 bid + $35 ship, ends ~13h after 8 AM CT 10/26; likely to rise.",
+  "redFlags": [
+   "Refurbished, likely non-original parts",
+   "Import fees"
+  ],
+  "found": "2026-10-26"
  }
 ]

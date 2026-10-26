@@ -240,6 +240,27 @@
    "source": "eBay sold",
    "title": "Seiko SKX009",
    "url": "https://www.ebay.com/itm/960081479096"
+  },
+  {
+   "date": "2026-10-25",
+   "price": 199.5,
+   "source": "eBay sold",
+   "title": "refurb auction (incl. shipping)",
+   "url": "https://www.ebay.com/itm/800817350222"
+  },
+  {
+   "date": "2026-10-25",
+   "price": 331.87,
+   "source": "eBay sold",
+   "title": "BO accepted, box/papers (incl. shipping)",
+   "url": "https://www.ebay.com/itm/227567775165"
+  },
+  {
+   "date": "2026-10-24",
+   "price": 256.79,
+   "source": "eBay sold",
+   "title": "BO accepted (incl. shipping)",
+   "url": "https://www.ebay.com/itm/336861416888"
   }
  ],
  "79030N": [
@@ -676,6 +697,13 @@
    "source": "Grailzee sold",
    "title": "PAM00005, no reserve",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-18",
+   "price": 3167.99,
+   "source": "eBay sold",
+   "title": "eBay sold (incl. shipping)",
+   "url": "https://www.ebay.com/itm/336835615078"
   }
  ],
  "PAM00220": [
@@ -729,6 +757,34 @@
    "source": "eBay sold",
    "title": "Tudor 79230N",
    "url": "https://www.ebay.com/itm/237122246164"
+  },
+  {
+   "date": "2026-10-09",
+   "price": 3140,
+   "source": "eBay sold",
+   "title": "auction 47 bids, B&P (incl. shipping)",
+   "url": "https://www.ebay.com/itm/206592659188"
+  },
+  {
+   "date": "2026-10-07",
+   "price": 2631.92,
+   "source": "eBay sold",
+   "title": "BO accepted, full set (incl. shipping)",
+   "url": "https://www.ebay.com/itm/188799683639"
+  },
+  {
+   "date": "2026-10-04",
+   "price": 2713.94,
+   "source": "eBay sold",
+   "title": "BO, B&P (incl. shipping)",
+   "url": "https://www.ebay.com/itm/307207046983"
+  },
+  {
+   "date": "2026-09-30",
+   "price": 2875.41,
+   "source": "eBay sold",
+   "title": "auction (incl. shipping)",
+   "url": "https://www.ebay.com/itm/206590677611"
   }
  ],
  "311.30.42.30.01.005": [
@@ -1100,6 +1156,22 @@
    "source": "eBay sold",
    "title": "TAG Heuer Monaco CAW211P",
    "url": "https://www.ebay.com/itm/298704565772"
+  }
+ ],
+ "BR03-92": [
+  {
+   "date": "2026-10-15",
+   "price": 1890,
+   "source": "eBay sold",
+   "title": "black diver, B&P (incl. shipping)",
+   "url": "https://www.ebay.com/itm/206612790459"
+  },
+  {
+   "date": "2026-04-16",
+   "price": 1999,
+   "source": "eBay sold",
+   "title": "Heritage steel, B&P (incl. shipping)",
+   "url": "https://www.ebay.com/itm/178046611473"
   }
  ]
 }

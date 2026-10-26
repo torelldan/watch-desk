@@ -205,6 +205,24 @@
    "price": 246.38,
    "source": "eBay sold",
    "url": "https://www.ebay.com/itm/960081479096"
+  },
+  {
+   "date": "2026-10-25",
+   "price": 199.5,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/800817350222"
+  },
+  {
+   "date": "2026-10-25",
+   "price": 331.87,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/227567775165"
+  },
+  {
+   "date": "2026-10-24",
+   "price": 256.79,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/336861416888"
   }
  ],
  "79030N": [
@@ -581,6 +599,12 @@
    "price": 3150,
    "source": "Grailzee sold",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-18",
+   "price": 3167.99,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/336835615078"
   }
  ],
  "PAM00220": [
@@ -627,6 +651,30 @@
    "price": 2900,
    "source": "Grailzee auction",
    "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-7"
+  },
+  {
+   "date": "2026-10-09",
+   "price": 3140,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/206592659188"
+  },
+  {
+   "date": "2026-10-07",
+   "price": 2631.92,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/188799683639"
+  },
+  {
+   "date": "2026-10-04",
+   "price": 2713.94,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/307207046983"
+  },
+  {
+   "date": "2026-09-30",
+   "price": 2875.41,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/206590677611"
   }
  ],
  "311.30.42.30.01.005": [
@@ -951,6 +999,20 @@
    "price": 4750,
    "source": "eBay sold (auction)",
    "url": "https://www.ebay.com/itm/128133822284"
+  }
+ ],
+ "BR03-92": [
+  {
+   "date": "2026-10-15",
+   "price": 1890,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/206612790459"
+  },
+  {
+   "date": "2026-04-16",
+   "price": 1999,
+   "source": "eBay sold",
+   "url": "https://www.ebay.com/itm/178046611473"
   }
  ]
 }
