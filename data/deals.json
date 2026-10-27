@@ -883,7 +883,7 @@
   "kind": "buy",
   "tier": "stretch",
   "image_url": "https://i.ebayimg.com/images/g/SN8AAeSwBWJphr53/s-l1600.webp",
-  "why": "$1,545 + $19, about $300 under the $1,850-2,000 cluster of eBay BR03-92 asks seen Oct 21. No real sold comps on file, so NEEDS BCV before buying.",
+  "why": "$1,545 + $19, about $300 under the $1,850-2,000 cluster of eBay BR03-92 asks seen Oct 21. No real sold comps on file, so NEEDS BCV before buying. Update 2026-10-27: now $1545.",
   "redFlags": [
    "Needs BCV (no sold comps)",
    "Ships from Bandung, Indonesia: import fees/returns unknown",
@@ -967,7 +967,7 @@
   "kind": "pass",
   "tier": "stretch",
   "image_url": "",
-  "why": "$1,699 + $45, just over the $1,700 cap and within the normal ask cluster.",
+  "why": "$1,699 + $45, just over the $1,700 cap and within the normal ask cluster. Update 2026-10-27: now $1699.",
   "redFlags": [
    "Over cap",
    "Authenticate"
@@ -1026,7 +1026,7 @@
   "kind": "pass",
   "tier": "stretch",
   "image_url": "https://i.ebayimg.com/images/g/YosAAeSwLHlq3AF1/s-l500.webp",
-  "why": "premium: $3,399 + $50 vs eBay sold $3,289-3,750 (median ~$3,350, cap ~$2,850). No margin.",
+  "why": "premium: $3,399 + $50 vs eBay sold $3,289-3,750 (median ~$3,350, cap ~$2,850). No margin. Update 2026-10-27: now $3399.",
   "redFlags": [
    "Above 15%-under-median cap",
    "Panerai is often faked: authenticate"
@@ -1063,7 +1063,7 @@
   "url": "https://www.ebay.com/itm/189028169628",
   "kind": "buy",
   "image_url": "https://i.ebayimg.com/images/g/oisAAeSwZmdq0Pny/s-l500.webp",
-  "why": "$359 + $8.75 ship, under $400 cap. Seller 100% positive, ships from Denver, CO.",
+  "why": "$359 + $8.75 ship, under $400 cap. Seller 100% positive, ships from Denver, CO. Update 2026-10-27: now $359.",
   "redFlags": [
    "Exact ref not stated (Blumo is usually SBDC033)",
    "Needs BCV: no sold comps collected today",
@@ -1082,7 +1082,7 @@
   "url": "https://www.ebay.com/itm/398438457723",
   "kind": "buy",
   "image_url": "https://i.ebayimg.com/images/g/Ls0AAeSwi5NqubEj/s-l500.webp",
-  "why": "$494 + $5.55 ship, under $600 cap. Seller 99.8% positive.",
+  "why": "$494 + $5.55 ship, under $600 cap. Seller 99.8% positive. Update 2026-10-27: now $494.",
   "redFlags": [
    "Ships from Albania, import fees due",
    "Dial originality and authenticity unchecked",
@@ -1101,7 +1101,7 @@
   "url": "https://www.ebay.com/itm/168809621537",
   "kind": "buy",
   "image_url": "https://i.ebayimg.com/images/g/sAMAAeSwPahq3Vot/s-l500.webp",
-  "why": "$392.99 + $4.95 ship. Seller 99.8%, Cass City, MI.",
+  "why": "$392.99 + $4.95 ship. Seller 99.8%, Cass City, MI. Update 2026-10-27: now $380.99.",
   "redFlags": [
    "Sold as-is, untested",
    "Ref and era unknown",
@@ -1122,7 +1122,7 @@
   "url": "https://shopgoodwill.com/item/281609891",
   "kind": "auction",
   "image_url": "",
-  "why": "Current bid $286 (9 bids) + $4.99 ship; ends 10/28 5:54 PM PT, so price will rise.",
+  "why": "Current bid $286 (9 bids) + $4.99 ship; ends 10/28 5:54 PM PT, so price will rise. Update 2026-10-27: now $305.99.",
   "redFlags": [
    "No case-back/movement markings shown",
    "Goodwill gives no authenticity guarantee",
@@ -1184,5 +1184,140 @@
    "Import fees"
   ],
   "found": "2026-10-26"
+ },
+ {
+  "brand": "TISSOT",
+  "model": "PRX Powermatic 80 blue, new with box & papers",
+  "ref": "T137.407.11.041.00",
+  "ask": 331.87,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/800841443619",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/Kp8AAeSwwvJq349Q/s-l500.webp",
+  "why": "$325 opening + $6.87 ship, 0 bids, ~6 days left; seller 100%, Kansas City KS.",
+  "redFlags": [
+   "Auction not ending within 24h, price will rise",
+   "Thin margin vs ~$450 comps",
+   "Needs BCV"
+  ],
+  "found": "2026-10-27"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX007",
+  "ref": "SKX007",
+  "ask": 206.43,
+  "buy": 220,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/227582987679",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/560AAeSw9WZq3iGB/s-l400.jpg",
+  "why": "$200 + $6.43 ship, 0 bids (BIN $375), ~5 days left; good condition, seller 100%, Stuart FL. Recent SKX007 sold $186\u2013334.",
+  "redFlags": [
+   "Auction not ending within 24h",
+   "Needs BCV"
+  ],
+  "found": "2026-10-27"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Sumo SBDC081 green",
+  "ref": "SBDC081",
+  "ask": 320.5,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/168814494279",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/1yAAAeSwaQxq2hh6/s-l500.webp",
+  "why": "$205.50 + $115 ship, 20 bids, ~4 days left; seller 99.8%, Bayside NY.",
+  "redFlags": [
+   "Will likely climb past cap",
+   "High shipping",
+   "Needs BCV"
+  ],
+  "found": "2026-10-27"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster De Ville (vague title), running",
+  "ref": "De Ville vintage",
+  "ask": 288,
+  "buy": 600,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/920060910763",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/emsAAeSwzTtq2MJe/s-l500.webp",
+  "why": "$288, 20 bids, ~2.5 days left; seller 100%, RI.",
+  "redFlags": [
+   "Title names no ref or era",
+   "Shipping not shown",
+   "Needs photo check and BCV"
+  ],
+  "found": "2026-10-27"
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR 03-92 Heritage",
+  "ref": "BR03-92",
+  "ask": 1800,
+  "buy": 2500,
+  "sell": null,
+  "source": "Chrono24",
+  "url": "https://www.chrono24.com/bellross/br-03-92-heritage--id47997052.htm",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "Private seller at $1,800, right at the ~$1,850\u20132,000 market cluster, not well under it.",
+  "redFlags": [
+   "Not well under market",
+   "Authentication needed (often faked)"
+  ],
+  "found": "2026-10-27"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay GMT",
+  "ref": "79830RB",
+  "ask": 3150,
+  "buy": 2700,
+  "sell": null,
+  "source": "Chrono24",
+  "url": "https://www.chrono24.com/tudor/black-bay--id49400615.htm",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "Cheapest US Chrono24 79830RB at $3,150, over the $2,700 cap.",
+  "redFlags": [
+   "Over cap"
+  ],
+  "found": "2026-10-27"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay 41 (ref not stated)",
+  "ref": "79230N",
+  "ask": 2600,
+  "buy": 2250,
+  "sell": null,
+  "source": "Facebook Marketplace",
+  "url": "https://www.facebook.com/marketplace/item/4086073051524680",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "Murfreesboro, $2,600; ref not stated and over the 79230N cap.",
+  "redFlags": [
+   "Ref unconfirmed",
+   "Over cap"
+  ],
+  "found": "2026-10-27"
  }
 ]
