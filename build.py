@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build watch-desk.html from template.html + data/*.json (data is embedded; no fetch needed)."""
+"""Build watch-desk.html and index.html from template.html + data/*.json (data is embedded; no fetch needed)."""
 import json, datetime, pathlib
 from zoneinfo import ZoneInfo
 CT = ZoneInfo("America/Chicago")
@@ -10,6 +10,10 @@ tp = D / "data/trends.json"
 trends = json.loads(tp.read_text()) if tp.exists() else {}
 bp = D / "data/book.json"
 book = json.loads(bp.read_text()) if bp.exists() else []
+mp = D / "data/mined_listings.json"
+mined = json.loads(mp.read_text()) if mp.exists() else []
+metap = D / "data/mined_meta.json"
+mined_meta = json.loads(metap.read_text()) if metap.exists() else {}
 now = datetime.datetime.now(CT)
 qp = D / "data/bcv_quotes.json"
 quotes = json.loads(qp.read_text()) if qp.exists() else []
@@ -58,8 +62,11 @@ fees = {
     "grailzeeBuyerPremiumMin": GRAILZEE_BUYER_PREMIUM_MIN,
     "grailzeeBuyerPremiumMax": GRAILZEE_BUYER_PREMIUM_MAX,
 }
-blob = f"const deals = {js(deals)};\nconst comps = {js(comps)};\nconst trends = {js(trends)};\nconst book = {js(book)};\nconst FEES = {js(fees)};\nconst DATA_UPDATED = {js(updated)};"
+blob = f"const deals = {js(deals)};\nconst comps = {js(comps)};\nconst trends = {js(trends)};\nconst book = {js(book)};\nconst FEES = {js(fees)};\nconst DATA_UPDATED = {js(updated)};\nconst MINED_LISTINGS = {js(mined)};\nconst MINED_META = {js(mined_meta)};"
 tpl = (D / "template.html").read_text()
 assert "/*__DATA__*/" in tpl, "template placeholder missing"
-(D / "watch-desk.html").write_text(tpl.replace("/*__DATA__*/", blob))
-print(f"wrote watch-desk.html: {len(deals)} deals, {sum(map(len, comps.values()))} comps, {sum(len(v)>=2 for v in trends.values())} trend series, {sum(1 for d in deals if d.get('image_url'))} images, {len(book)} book rows, {sum(1 for d in deals if d.get('bcv') is not None)} with BCV ({len(quotes)} manual quotes), updated {updated}")
+html = tpl.replace("/*__DATA__*/", blob)
+(D / "watch-desk.html").write_text(html)
+(D / "index.html").write_text(html)
+n_mined = len(mined) if isinstance(mined, list) else 0
+print(f"wrote watch-desk.html and index.html: {len(deals)} deals, {sum(map(len, comps.values()))} comps, {sum(len(v)>=2 for v in trends.values())} trend series, {sum(1 for d in deals if d.get('image_url'))} images, {len(book)} book rows, {sum(1 for d in deals if d.get('bcv') is not None)} with BCV ({len(quotes)} manual quotes), {n_mined} mined listings, updated {updated}")

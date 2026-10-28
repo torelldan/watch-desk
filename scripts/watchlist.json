@@ -1,0 +1,339 @@
+{
+  "note": "Mining config derived from data/deals.json buy caps (and the refs those deals share with data/comps.json). buy_cap is a number that appears on a deals.json row for that ref. The script searches eBay for active BIN and auction listings at or under buy_cap. It does not bid, buy, or message. Edit buy_cap here when a cap changes; the daily job reads this file, not deals.json directly.",
+  "models": [
+    {
+      "id": "skx007",
+      "brand": "SEIKO",
+      "model": "SKX007",
+      "ref": "SKX007",
+      "query": "Seiko SKX007",
+      "buy_cap": 220,
+      "cap_as_of": "2026-10-28",
+      "cap_note": "Newest deals.json buy is 220 (2026-10-23 through 2026-10-28). The 2026-10-21 row used 300.",
+      "title_any": [["SKX007"]]
+    },
+    {
+      "id": "skx009",
+      "brand": "SEIKO",
+      "model": "SKX009",
+      "ref": "SKX009",
+      "query": "Seiko SKX009",
+      "buy_cap": 220,
+      "cap_as_of": "2026-10-28",
+      "cap_note": "Newest deals.json buy is 220 (2026-10-22 through 2026-10-28). The 2026-10-21 row used 330.",
+      "title_any": [["SKX009"]]
+    },
+    {
+      "id": "sarb017",
+      "brand": "SEIKO",
+      "model": "Alpinist SARB017",
+      "ref": "SARB017",
+      "query": "Seiko SARB017",
+      "buy_cap": 680,
+      "cap_as_of": "2026-10-22",
+      "title_any": [["SARB017"]]
+    },
+    {
+      "id": "sarb035",
+      "brand": "SEIKO",
+      "model": "SARB035",
+      "ref": "SARB035",
+      "query": "Seiko SARB035",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["SARB035"]]
+    },
+    {
+      "id": "sbdc003",
+      "brand": "SEIKO",
+      "model": "Prospex Sumo SBDC003",
+      "ref": "SBDC003",
+      "query": "Seiko SBDC003",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-23",
+      "title_any": [["SBDC003"]]
+    },
+    {
+      "id": "sbdc033",
+      "brand": "SEIKO",
+      "model": "Prospex Sumo SBDC033",
+      "ref": "SBDC033",
+      "query": "Seiko SBDC033",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-26",
+      "title_any": [["SBDC033"]]
+    },
+    {
+      "id": "sbdc081",
+      "brand": "SEIKO",
+      "model": "Prospex Sumo SBDC081",
+      "ref": "SBDC081",
+      "query": "Seiko SBDC081",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-27",
+      "title_any": [["SBDC081"]]
+    },
+    {
+      "id": "sbdc113",
+      "brand": "SEIKO",
+      "model": "Prospex Sumo SBDC113",
+      "ref": "SBDC113",
+      "query": "Seiko SBDC113",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-23",
+      "title_any": [["SBDC113"]]
+    },
+    {
+      "id": "sbdc031",
+      "brand": "SEIKO",
+      "model": "Prospex Sumo SBDC031",
+      "ref": "SBDC031",
+      "query": "Seiko SBDC031",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-28",
+      "title_any": [["SBDC031"]]
+    },
+    {
+      "id": "spb101",
+      "brand": "SEIKO",
+      "model": "Prospex SPB101",
+      "ref": "SPB101",
+      "query": "Seiko SPB101",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-28",
+      "title_any": [["SPB101"]]
+    },
+    {
+      "id": "prx-40",
+      "brand": "TISSOT",
+      "model": "PRX Powermatic 80",
+      "ref": "T137.407.11.041.00",
+      "query": "Tissot T137.407.11.041.00",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-27",
+      "title_any": [["T137.407.11.041.00"], ["T1374071104100"]]
+    },
+    {
+      "id": "prx-35",
+      "brand": "TISSOT",
+      "model": "PRX Powermatic 80 35mm",
+      "ref": "T137.207",
+      "query": "Tissot T137.207",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-23",
+      "title_any": [["T137.207"]]
+    },
+    {
+      "id": "prx-green",
+      "brand": "TISSOT",
+      "model": "PRX Powermatic 80 green",
+      "ref": "PRX Powermatic 80 green",
+      "query": "Tissot PRX Powermatic 80 green",
+      "buy_cap": 400,
+      "cap_as_of": "2026-10-24",
+      "title_any": [["PRX", "green"]]
+    },
+    {
+      "id": "khaki-h69439363",
+      "brand": "HAMILTON",
+      "model": "Khaki Field Mechanical H69439363",
+      "ref": "H69439363",
+      "query": "Hamilton H69439363",
+      "buy_cap": 340,
+      "cap_as_of": "2026-10-23",
+      "title_any": [["H69439363"]]
+    },
+    {
+      "id": "khaki-38",
+      "brand": "HAMILTON",
+      "model": "Khaki Field Mechanical 38mm",
+      "ref": "38mm (ref not recorded)",
+      "query": "Hamilton Khaki Field Mechanical 38",
+      "buy_cap": 340,
+      "cap_as_of": "2026-10-22",
+      "cap_note": "Same $340 buy as the deals.json rows whose ref is \"38mm (ref not recorded)\". H69439363 is mined on its own row.",
+      "title_any": [["Khaki", "38"]]
+    },
+    {
+      "id": "fugu",
+      "brand": "CITIZEN",
+      "model": "Fugu NY0040",
+      "ref": "NY0040",
+      "query": "Citizen NY0040",
+      "buy_cap": 160,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["NY0040"]]
+    },
+    {
+      "id": "omega-165008",
+      "brand": "OMEGA",
+      "model": "Seamaster De Ville",
+      "ref": "165.008",
+      "query": "Omega 165.008",
+      "buy_cap": 600,
+      "cap_as_of": "2026-10-26",
+      "title_any": [["165.008"], ["165008"]]
+    },
+    {
+      "id": "omega-168004",
+      "brand": "OMEGA",
+      "model": "Constellation",
+      "ref": "168.004",
+      "query": "Omega 168.004",
+      "buy_cap": 2995,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["168.004"], ["168004"]]
+    },
+    {
+      "id": "omega-smp-blue",
+      "brand": "OMEGA",
+      "model": "Seamaster Diver 300M",
+      "ref": "210.30.42.20.03.001",
+      "query": "Omega 210.30.42.20.03.001",
+      "buy_cap": 3300,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["210.30.42.20.03.001"], ["21030422003001"]]
+    },
+    {
+      "id": "omega-225450",
+      "brand": "OMEGA",
+      "model": "Seamaster 300M",
+      "ref": "2254.50",
+      "query": "Omega 2254.50",
+      "buy_cap": 2700,
+      "cap_as_of": "2026-10-22",
+      "title_any": [["2254.50"], ["2254.50.00"]]
+    },
+    {
+      "id": "omega-moon",
+      "brand": "OMEGA",
+      "model": "Speedmaster Professional",
+      "ref": "311.30.42.30.01.005",
+      "query": "Omega 311.30.42.30.01.005",
+      "buy_cap": 4100,
+      "cap_as_of": "2026-10-23",
+      "title_any": [["311.30.42.30.01.005"], ["31130423001005"]]
+    },
+    {
+      "id": "omega-mk40",
+      "brand": "OMEGA",
+      "model": "Speedmaster Triple Date MK40",
+      "ref": "3520.53",
+      "query": "Omega 3520.53",
+      "buy_cap": 2300,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["3520.53"]]
+    },
+    {
+      "id": "deville",
+      "brand": "OMEGA",
+      "model": "Seamaster De Ville vintage",
+      "ref": "De Ville vintage",
+      "query": "Omega Seamaster De Ville",
+      "buy_cap": 600,
+      "cap_as_of": "2026-10-27",
+      "cap_note": "Cap from the deals.json rows ref \"De Ville vintage\" and \"De Ville\". 165.008 is mined on its own row.",
+      "title_any": [["De Ville"]]
+    },
+    {
+      "id": "tudor-74000",
+      "brand": "TUDOR",
+      "model": "Prince Oysterdate",
+      "ref": "74000",
+      "query": "Tudor 74000",
+      "buy_cap": 850,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["74000"]]
+    },
+    {
+      "id": "bb58",
+      "brand": "TUDOR",
+      "model": "Black Bay 58",
+      "ref": "79030N",
+      "query": "Tudor 79030N",
+      "buy_cap": 2650,
+      "cap_as_of": "2026-10-28",
+      "cap_note": "Newest deals.json buy is 2650 (2026-10-28). The 2026-10-21 row used 3499.",
+      "title_any": [["79030N"], ["M79030N"]]
+    },
+    {
+      "id": "bb-79230b",
+      "brand": "TUDOR",
+      "model": "Black Bay",
+      "ref": "79230B",
+      "query": "Tudor 79230B",
+      "buy_cap": 2250,
+      "cap_as_of": "2026-10-23",
+      "title_any": [["79230B"], ["M79230B"]]
+    },
+    {
+      "id": "bb-79230n",
+      "brand": "TUDOR",
+      "model": "Black Bay",
+      "ref": "79230N",
+      "query": "Tudor 79230N",
+      "buy_cap": 2250,
+      "cap_as_of": "2026-10-27",
+      "title_any": [["79230N"], ["M79230N"]]
+    },
+    {
+      "id": "bb-79540",
+      "brand": "TUDOR",
+      "model": "Black Bay 41",
+      "ref": "79540",
+      "query": "Tudor 79540",
+      "buy_cap": 2250,
+      "cap_as_of": "2026-10-22",
+      "title_any": [["79540"]]
+    },
+    {
+      "id": "bb-gmt",
+      "brand": "TUDOR",
+      "model": "Black Bay GMT",
+      "ref": "79830RB",
+      "query": "Tudor 79830RB",
+      "buy_cap": 2700,
+      "cap_as_of": "2026-10-27",
+      "title_any": [["79830RB"], ["M79830RB"]]
+    },
+    {
+      "id": "sbgw231",
+      "brand": "GRAND SEIKO",
+      "model": "Elegance SBGW231",
+      "ref": "SBGW231",
+      "query": "Grand Seiko SBGW231",
+      "buy_cap": 2350,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["SBGW231"]]
+    },
+    {
+      "id": "br03-92",
+      "brand": "BELL & ROSS",
+      "model": "BR03-92",
+      "ref": "BR03-92",
+      "query": "Bell & Ross BR03-92",
+      "buy_cap": 1750,
+      "cap_as_of": "2026-10-28",
+      "cap_note": "deals.json buys for BR03-92 include 2500 (2026-10-21, 2026-10-22, and the 2026-10-27 Chrono24 row), 1600 (2026-10-24 Heritage), 1700 (2026-10-25 and 2026-10-26), and 1750 (2026-10-28). buy_cap is 1750, the newest row.",
+      "title_any": [["BR03-92"], ["BR 03-92"], ["BR0392"]]
+    },
+    {
+      "id": "br-horograph",
+      "brand": "BELL & ROSS",
+      "model": "BR03-92 Horograph",
+      "ref": "BR0392-HOR-BLC/SRB",
+      "query": "Bell & Ross BR0392 Horograph",
+      "buy_cap": 2500,
+      "cap_as_of": "2026-10-21",
+      "title_any": [["BR0392-HOR-BLC/SRB"], ["Horograph"], ["HOR-BLC"]]
+    }
+  ],
+  "skipped": [
+    {"ref": "PAM00104", "reason": "No numeric buy cap in deals.json."},
+    {"ref": "CAW211P", "reason": "No numeric buy cap in deals.json."},
+    {"ref": "Mark XVIII", "reason": "No numeric buy cap in deals.json."},
+    {"ref": "ref unconfirmed", "reason": "Not a searchable reference. Sumo refs SBDC003, SBDC033, SBDC081, and SBDC113 are listed."},
+    {"ref": "SKX007 (unconfirmed)", "reason": "Unconfirmed. SKX007 is listed."},
+    {"ref": "vintage (no ref)", "reason": "No reference. 165.008 and De Ville vintage are listed."}
+  ]
+}

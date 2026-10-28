@@ -61,6 +61,7 @@
   main { display: flex; flex-direction: column; min-width: 0; }
   header {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     align-items: center;
     padding: 14px 18px;
@@ -78,10 +79,28 @@
   .stat b { color: var(--text); }
   .toolbar {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     align-items: center;
     padding: 12px 18px;
     border-bottom: 1px solid var(--line);
+  }
+  a.refresh {
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 7px 10px;
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  a.refresh:hover { border-color: #3d4652; }
+  .fresh-head {
+    grid-column: 1 / -1;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    padding: 8px 2px 0;
   }
   .toolbar select, .seg button {
     background: var(--chip);
@@ -240,6 +259,7 @@
       <button data-view="auctions">Auctions</button>
       <button data-view="passes">Passes</button>
       <button data-view="needsbcv">Needs BCV <span id="nbcv"></span></button>
+      <button data-view="fresh">Fresh listings <span id="nfresh"></span></button>
       <button data-view="book">Book</button>
     </nav>
     <div class="label">BUDGET</div>
@@ -276,7 +296,8 @@
   <main>
     <header>
       <input id="q" placeholder="Search refs, brands — comma to compare" />
-      <div class="stat"><b id="count">0</b> rows · last 14 days</div>
+      <div class="stat"><b id="count">0</b> <span id="countNote">rows · last 14 days</span></div>
+      <div class="stat">Last mined <b id="mined">—</b></div>
       <div class="stat">Data updated <b id="updated"></b></div>
     </header>
     <div class="toolbar">
@@ -285,6 +306,7 @@
         <option value="spread">Sort: Spread</option>
         <option value="ask">Sort: Ask</option>
       </select>
+      <a class="refresh" href="https://github.com/torelldan/watch-desk/actions/workflows/mine.yml" target="_blank" rel="noopener noreferrer">Refresh data</a>
       <div class="seg">
         <button class="on" id="mode">Target prices</button>
       </div>
@@ -340,6 +362,9 @@ function sourceKey(s) {
   return "other";
 }
 document.getElementById("updated").textContent = DATA_UPDATED;
+const minedListings = (typeof MINED_LISTINGS !== "undefined" && Array.isArray(MINED_LISTINGS)) ? MINED_LISTINGS : [];
+const minedMeta = (typeof MINED_META !== "undefined" && MINED_META) ? MINED_META : {};
+document.getElementById("mined").textContent = minedMeta.last_mined || "—";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function ageOf(iso) {
   const days = Math.floor((Date.now() - new Date(iso + "T12:00:00")) / 86400000);
@@ -361,7 +386,7 @@ function rows() {
     if (view === "auctions" && d.kind !== "auction") return false;
     if (view === "passes" && d.kind !== "pass") return false;
     if (view === "needsbcv" && !needsBcv(d)) return false;
-    if (view === "book") return false;
+    if (view === "book" || view === "fresh") return false;
     if (sourceFilter !== "all" && sourceKey(d.source) !== sourceFilter) return false;
     if (budget !== "all" && d.ask > budget && d.kind !== "auction") return false;
     if (!q) return true;
@@ -397,12 +422,94 @@ function bankrollSvg() {
       <text x="260" y="16" fill="#9aa3ad" font-size="11">- - 20% per flip reinvested × 12: guide benchmark, not a forecast</text>
     </svg></div>`;
 }
+function listingLive(l) {
+  if (!l.end_time) return true;
+  const t = Date.parse(l.end_time);
+  return !isFinite(t) || t > Date.now();
+}
+function endLabel(iso) {
+  if (!iso) return "BIN";
+  const t = Date.parse(iso);
+  if (!isFinite(t)) return "";
+  return new Date(t).toLocaleString("en-US", {timeZone: "America/Chicago", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short"});
+}
+function dialColor(brand) {
+  if (brand === "TUDOR") return "#1c2430";
+  if (brand === "OMEGA") return "#123";
+  return "#2a241c";
+}
+function freshRows(live) {
+  const q = document.getElementById("q").value.toLowerCase().trim();
+  return live.filter(l => {
+    const total = Number(l.total != null ? l.total : l.price);
+    if (sourceFilter !== "all" && sourceKey(l.source) !== sourceFilter) return false;
+    if (budget !== "all" && total > budget) return false;
+    if (!q) return true;
+    return (l.brand + " " + l.model + " " + l.ref + " " + (l.title || "")).toLowerCase().includes(q);
+  }).sort((a, b) => Number(a.total) - Number(b.total) || String(a.ref).localeCompare(String(b.ref)));
+}
+function paintFresh(grid, live) {
+  const list = freshRows(live);
+  document.getElementById("count").textContent = String(list.length);
+  document.getElementById("countNote").textContent = "live listings";
+  if (!list.length) {
+    let msg = "No fresh listings under cap.";
+    if (live.length) msg += " " + live.length + " live listing(s) are outside this budget, source, or search.";
+    else if (minedListings.length) msg += " Ended listings are hidden.";
+    else msg += " Run Refresh data, then Run workflow on GitHub.";
+    grid.innerHTML = '<div class="empty">' + esc(msg) + "</div>";
+    return;
+  }
+  const groups = [];
+  list.forEach(l => {
+    const key = l.model_id || l.ref;
+    let g = groups.find(x => x.key === key);
+    if (!g) {
+      g = {key, label: (l.brand || "") + " " + (l.model || ""), ref: l.ref, cap: l.buy_cap, rows: []};
+      groups.push(g);
+    }
+    g.rows.push(l);
+  });
+  grid.innerHTML = groups.map(g =>
+    '<div class="fresh-head">' + esc(g.label) + " · " + esc(g.ref) + " · cap " + (g.cap != null ? money(g.cap) : "—") + " · " + g.rows.length + "</div>" +
+    g.rows.map(l => `
+    <article class="card">
+      <div class="shot">
+        <span class="badge ${l.format === "auction" ? "auction" : "buy"}" style="z-index:1">${l.format === "auction" ? "AUCTION" : "BIN"}</span>
+        <div class="dial" style="background:${dialColor(l.brand)}"></div>
+        ${l.image_url ? `<img src="${esc(l.image_url)}" alt="${esc(l.title || "")}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '<span class="noimg">No photo saved</span>'}
+      </div>
+      <div class="body">
+        <div class="brand-name">${esc(l.brand)} · ${esc(l.source)}</div>
+        <div class="model">${esc(l.title || "")}</div>
+        <div class="ref">${esc(l.ref)}</div>
+        <div class="prices">
+          <div><span>PRICE</span><b class="ask">${money(l.price)}</b></div>
+          <div><span>SHIP</span><b>${l.shipping_known && l.shipping != null ? money(l.shipping) : "—"}</b></div>
+          <div><span>TOTAL</span><b class="buy">${money(l.total != null ? l.total : l.price)}</b></div>
+        </div>
+        <div class="meta"><span>${esc(l.seller_feedback || "—")}</span><span>${esc(l.location || "—")}</span></div>
+        <div class="meta"><span>${l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">View listing ↗</a>` : ""}</span><span>${esc(endLabel(l.end_time))}</span></div>
+        ${l.shipping_known ? "" : '<div class="why">Shipping was not in the response. Total is the item price only.</div>'}
+      </div>
+    </article>`).join("")
+  ).join("");
+}
 function paint() {
   const grid = document.getElementById("grid");
+  document.getElementById("nbcv").textContent = "(" + deals.filter(needsBcv).length + ")";
+  const live = minedListings.filter(listingLive);
+  const nfresh = document.getElementById("nfresh");
+  if (nfresh) nfresh.textContent = "(" + live.length + ")";
+  if (view === "fresh") {
+    paintFresh(grid, live);
+    return;
+  }
   if (view === "book") {
     const q = document.getElementById("q").value.toLowerCase().trim();
     const bk = book.filter(b => !q || (b.brand + " " + b.model + " " + b.ref).toLowerCase().includes(q));
     document.getElementById("count").textContent = String(bk.length);
+    document.getElementById("countNote").textContent = "book rows";
     const tracker = bankrollSvg();
     if (!bk.length) { grid.innerHTML = tracker + '<div class="empty">Book is empty. Add a purchase to data/book.json to track In / Out / Days / ROI.</div>'; return; }
     grid.innerHTML = tracker + bk.map(b => {
@@ -423,8 +530,8 @@ function paint() {
     return;
   }
   const list = rows();
-  document.getElementById("nbcv").textContent = "(" + deals.filter(needsBcv).length + ")";
   document.getElementById("count").textContent = String(list.length);
+  document.getElementById("countNote").textContent = "rows · last 14 days";
   if (!list.length) {
     grid.innerHTML = '<div class="empty">No buy this pass. Nothing cleared cash, profit, and hold together.</div>';
     return;

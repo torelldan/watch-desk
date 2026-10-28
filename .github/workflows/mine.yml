@@ -1,0 +1,74 @@
+name: Mine listings
+
+on:
+  workflow_dispatch:
+    inputs:
+      models:
+        description: "Optional comma-separated refs, ids, or brands (blank = full watch list)"
+        required: false
+        type: string
+      max_price:
+        description: "Optional extra USD ceiling applied on top of each buy cap"
+        required: false
+        type: string
+  schedule:
+    # 12:30 UTC = 7:30 AM CT while daylight time is in effect (CDT, UTC-5),
+    # before the 8 AM review. After the fall time change this is 6:30 AM CT.
+    - cron: "30 12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mine
+  cancel-in-progress: false
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Chrono24 client
+        run: python -m pip install --disable-pip-version-check requests
+
+      - name: Mine listings
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          MINE_MODELS: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.models || '' }}
+          MINE_MAX_PRICE: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.max_price || '' }}
+        run: python3 scripts/mine.py
+
+      - name: Commit results when they change
+        run: |
+          set -euo pipefail
+          files=()
+          for f in data/mined_listings.json data/mined_meta.json data/price_history.json; do
+            if [ -f "$f" ]; then
+              files+=("$f")
+            fi
+          done
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No mined data files. Not committing."
+            exit 0
+          fi
+          git add -- "${files[@]}"
+          if git diff --cached --quiet; then
+            echo "Mined data unchanged. Not committing."
+            exit 0
+          fi
+          python3 build.py
+          git add -- index.html watch-desk.html
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Mine listings $(TZ=America/Chicago date +%Y-%m-%d)"
+          branch=$(git rev-parse --abbrev-ref HEAD)
+          git push origin "HEAD:${branch}"

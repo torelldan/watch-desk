@@ -61,6 +61,7 @@
   main { display: flex; flex-direction: column; min-width: 0; }
   header {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     align-items: center;
     padding: 14px 18px;
@@ -78,10 +79,28 @@
   .stat b { color: var(--text); }
   .toolbar {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     align-items: center;
     padding: 12px 18px;
     border-bottom: 1px solid var(--line);
+  }
+  a.refresh {
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 7px 10px;
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  a.refresh:hover { border-color: #3d4652; }
+  .fresh-head {
+    grid-column: 1 / -1;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    padding: 8px 2px 0;
   }
   .toolbar select, .seg button {
     background: var(--chip);
@@ -240,6 +259,7 @@
       <button data-view="auctions">Auctions</button>
       <button data-view="passes">Passes</button>
       <button data-view="needsbcv">Needs BCV <span id="nbcv"></span></button>
+      <button data-view="fresh">Fresh listings <span id="nfresh"></span></button>
       <button data-view="book">Book</button>
     </nav>
     <div class="label">BUDGET</div>
@@ -276,7 +296,8 @@
   <main>
     <header>
       <input id="q" placeholder="Search refs, brands — comma to compare" />
-      <div class="stat"><b id="count">0</b> rows · last 14 days</div>
+      <div class="stat"><b id="count">0</b> <span id="countNote">rows · last 14 days</span></div>
+      <div class="stat">Last mined <b id="mined">—</b></div>
       <div class="stat">Data updated <b id="updated"></b></div>
     </header>
     <div class="toolbar">
@@ -285,6 +306,7 @@
         <option value="spread">Sort: Spread</option>
         <option value="ask">Sort: Ask</option>
       </select>
+      <a class="refresh" href="https://github.com/torelldan/watch-desk/actions/workflows/mine.yml" target="_blank" rel="noopener noreferrer">Refresh data</a>
       <div class="seg">
         <button class="on" id="mode">Target prices</button>
       </div>
@@ -327,7 +349,9 @@ const comps = {"166.020": [{"date": "2026-07-24", "price": 797, "currency_note":
 const trends = {"166.020": [{"date": "2026-01-11", "price": 786, "source": "Second Vintage auction", "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"}, {"date": "2026-07-24", "price": 797, "source": "Second Vintage auction", "url": "https://secondvintage.com/en/auction/OME-OAS-0032"}, {"date": "2026-07-31", "price": 699.99, "source": "eBay sold", "url": "https://www.ebay.com/itm/257652819519"}], "165.008": [{"date": "2026-04-30", "price": 617, "source": "Second Vintage auction", "url": "https://secondvintage.com/en/auction/OME-OSD-0003"}], "SBGW231": [{"date": "2026-08-21", "price": 3100, "source": "r/watchexchange SOLD via WatchCharts", "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview", "date_note": "date approximate: WatchCharts shows '2 months ago'"}, {"date": "2026-08-27", "price": 3199, "source": "WatchSpies (last recorded sale)", "url": "https://watchspies.com/watch/grand-seiko-heritage-manual-37-3mm-ivory-sbgw231"}, {"date": "2026-09-21", "price": 3100, "source": "r/watchexchange SOLD via WatchCharts", "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview", "date_note": "date approximate: WatchCharts shows '1 month ago'"}, {"date": "2026-09-21", "price": 2800, "source": "r/watchexchange SOLD via WatchCharts", "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview", "date_note": "date approximate: WatchCharts shows '1 month ago'"}, {"date": "2026-09-23", "price": 2800, "source": "r/watchexchange SOLD via WatchCharts", "url": "https://watchcharts.com/watch_model/1739-grand-seiko-sbgw231/overview", "date_note": "date approximate: WatchCharts shows '4 weeks ago'"}], "SARB017": [{"date": "2026-03-25", "price": 964, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/376683314725"}, {"date": "2026-10-05", "price": 1349, "source": "eBay sold (BIN)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-13", "price": 1050, "source": "eBay sold (Best Offer)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-13", "price": 1050, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/287646570563"}, {"date": "2026-10-14", "price": 638.85, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-15", "price": 791.72, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-15", "price": 1435.0, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/287644418839"}, {"date": "2026-10-15", "price": 785, "source": "eBay sold", "url": "https://www.ebay.com/itm/377560817320"}, {"date": "2026-10-16", "price": 1335, "source": "eBay sold (Best Offer)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+sarb017&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-16", "price": 1346.1, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/147594357183"}, {"date": "2026-10-23", "price": 802.44, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/137843653497"}, {"date": "2026-10-27", "price": 950, "source": "eBay sold", "url": "https://www.ebay.com/itm/327415347838"}, {"date": "2026-10-26", "price": 699.9, "source": "eBay sold", "url": "https://www.ebay.com/itm/237146133006"}, {"date": "2026-10-26", "price": 960, "source": "eBay sold", "url": "https://www.ebay.com/itm/327407893135"}, {"date": "2026-10-27", "price": 835, "source": "eBay sold", "url": "https://www.ebay.com/itm/257820980458"}, {"date": "2026-10-25", "price": 1599.95, "source": "eBay sold", "url": "https://www.ebay.com/itm/860075709632"}], "T137.407.11.041.00": [{"date": "2026-10-21", "price": 446.49, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=tissot+prx+powermatic+80&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-21", "price": 457.78, "source": "eBay sold (incl. ship, Best Offer)", "url": "https://www.ebay.com/sch/i.html?_nkw=tissot+prx+powermatic+80&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}], "SKX009": [{"date": "2026-10-20", "price": 379.99, "source": "eBay sold", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-20", "price": 379.99, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/358739097439"}, {"date": "2026-10-20", "price": 499, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/860027922843"}, {"date": "2026-10-21", "price": 340, "source": "eBay sold", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-21", "price": 396.08, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-21", "price": 450, "source": "eBay sold (Best Offer)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-21", "price": 457.88, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=seiko+skx009&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-21", "price": 450, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/189020740982"}, {"date": "2026-10-21", "price": 396.08, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/880033336313"}, {"date": "2026-10-21", "price": 340, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/407295390706"}, {"date": "2026-10-24", "price": 246.38, "source": "eBay sold", "url": "https://www.ebay.com/itm/960081479096"}, {"date": "2026-10-25", "price": 199.5, "source": "eBay sold", "url": "https://www.ebay.com/itm/800817350222"}, {"date": "2026-10-25", "price": 331.87, "source": "eBay sold", "url": "https://www.ebay.com/itm/227567775165"}, {"date": "2026-10-24", "price": 256.79, "source": "eBay sold", "url": "https://www.ebay.com/itm/336861416888"}, {"date": "2026-10-26", "price": 390.29, "source": "eBay sold", "url": "https://www.ebay.com/itm/278403455290"}, {"date": "2026-10-27", "price": 349.99, "source": "eBay sold", "url": "https://www.ebay.com/itm/357934029094"}, {"date": "2026-10-27", "price": 367.65, "source": "eBay sold", "url": "https://www.ebay.com/itm/377590528062"}, {"date": "2026-10-27", "price": 260.05, "source": "eBay sold", "url": "https://www.ebay.com/itm/336866308693"}, {"date": "2026-10-27", "price": 207.7, "source": "eBay sold", "url": "https://www.ebay.com/itm/227584461681"}], "79030N": [{"date": "2026-10-11", "price": 2600, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79030n-94"}, {"date": "2026-10-16", "price": 4000, "source": "eBay sold", "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-17", "price": 3499, "source": "eBay sold (Best Offer)", "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-17", "price": 3450, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79030n-96"}, {"date": "2026-10-19", "price": 3590, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-19", "price": 3795, "source": "eBay sold (Best Offer)", "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-20", "price": 3350, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79030n-97"}, {"date": "2026-10-21", "price": 3575, "source": "eBay sold (incl. ship)", "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-21", "price": 3595, "source": "eBay sold (incl. ship, 3 bids)", "url": "https://www.ebay.com/sch/i.html?_nkw=tudor+black+bay+58+79030n&LH_Sold=1&LH_Complete=1&LH_PrefLoc=1"}, {"date": "2026-10-23", "price": 3180.25, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/366755836545"}, {"date": "2026-10-21", "price": 3595, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/206627685918"}, {"date": "2026-10-21", "price": 3575, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/960071343522"}, {"date": "2026-10-19", "price": 3795, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/366706890149"}, {"date": "2026-10-19", "price": 3590, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/206632247094"}, {"date": "2026-10-26", "price": 2668.4, "source": "eBay sold", "url": "https://www.ebay.com/itm/137876988063"}, {"date": "2026-10-26", "price": 3800, "source": "eBay sold", "url": "https://www.ebay.com/itm/206616835211"}, {"date": "2026-10-25", "price": 3550, "source": "eBay sold", "url": "https://www.ebay.com/itm/960101480497"}], "79030B": [{"date": "2026-10-21", "price": 3000, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-23", "price": 3150, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79030b-176"}, {"date": "2026-10-21", "price": 3000, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-2020-tudor-black-bay-58-39mm-blue-dial-steel-bracelet-79030b-1"}, {"date": "2026-10-14", "price": 3220, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79030b-16"}], "79830RB": [{"date": "2026-06-16", "price": 3100, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=79830RB"}, {"date": "2026-10-15", "price": 4000, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-42"}, {"date": "2026-10-16", "price": 4075, "source": "Grailzee auction", "url": "https://grailzee.com/products/2025-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"}, {"date": "2026-10-18", "price": 3750, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-45"}, {"date": "2026-10-20", "price": 3149, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-2019-tudor-black-bay-gmt-pepsi-41mm-black-dial-steel-bracelet-79830rb-3"}, {"date": "2026-10-20", "price": 3050, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79830rb-347"}, {"date": "2026-10-21", "price": 3200, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-21", "price": 3160, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-21", "price": 3200, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79830rb-350"}, {"date": "2026-10-21", "price": 3160, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79830rb-354"}, {"date": "2026-10-22", "price": 3700, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-m79830rb-92"}, {"date": "2026-10-22", "price": 3999, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/147642360475"}, {"date": "2026-10-22", "price": 2957.58, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/860073451160"}, {"date": "2026-10-22", "price": 3350, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/147646355479"}, {"date": "2026-10-23", "price": 3150, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/137865988397"}, {"date": "2026-10-23", "price": 3730, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/318779369582"}, {"date": "2026-10-23", "price": 3034, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/366745418403"}, {"date": "2026-10-23", "price": 3550, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-47"}, {"date": "2026-10-23", "price": 3000, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-black-bay-79830rb-351"}, {"date": "2026-10-25", "price": 3995, "source": "eBay sold", "url": "https://www.ebay.com/itm/287647491781"}, {"date": "2026-10-25", "price": 3295, "source": "eBay sold", "url": "https://www.ebay.com/itm/840021784346"}, {"date": "2026-10-24", "price": 3199, "source": "eBay sold", "url": "https://www.ebay.com/itm/880037921165"}], "25407N": [{"date": "2026-08-10", "price": 4750, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=25407N"}, {"date": "2026-09-16", "price": 4600, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-pelagos-m25407n-22"}, {"date": "2026-09-20", "price": 3800, "source": "Grailzee auction", "url": "https://grailzee.com/products/2025-tudor-pelagos-39mm-black-dial-titanium-bracelet-25407n"}, {"date": "2026-09-20", "price": 4100, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-2026-tudor-pelagos-39mm-black-dial-titanium-bracelet-25407n"}, {"date": "2026-09-26", "price": 4100, "source": "Grailzee auction", "url": "https://grailzee.com/products/tudor-pelagos-25407n-74"}, {"date": "2026-09-26", "price": 4241, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-m25407n-0001"}, {"date": "2026-09-27", "price": 3350, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-4"}, {"date": "2026-10-07", "price": 4100, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-5"}, {"date": "2026-10-13", "price": 4250, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-13", "price": 4250, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-pelagos-25407n-6"}, {"date": "2026-10-15", "price": 3757.58, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/960070965641"}, {"date": "2026-10-19", "price": 4207.58, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/206638622226"}, {"date": "2026-10-21", "price": 4272.99, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/860066057310"}, {"date": "2026-10-22", "price": 4390, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/226479221848"}, {"date": "2026-10-23", "price": 4495, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/257808533597"}, {"date": "2026-10-26", "price": 4925, "source": "eBay sold", "url": "https://www.ebay.com/itm/168029564568"}, {"date": "2026-10-24", "price": 4129.35, "source": "eBay sold", "url": "https://www.ebay.com/itm/820158114517"}], "210.30.42.20.06.001": [{"date": "2026-10-20", "price": 3550, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-20", "price": 3800, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-22", "price": 3850, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-06-6"}], "3572.50.00": [{"date": "2026-10-20", "price": 4750, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}], "PAM00312": [{"date": "2026-10-19", "price": 3600, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-20", "price": 3800, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-22", "price": 4100, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}], "PAM00005": [{"date": "2026-10-19", "price": 3150, "source": "Grailzee sold", "url": "https://grailzee.com/pages/completed-auctions"}, {"date": "2026-10-18", "price": 3167.99, "source": "eBay sold", "url": "https://www.ebay.com/itm/336835615078"}], "PAM00220": [{"date": "2026-03-30", "price": 2420, "source": "LoupeThis auction via EveryWatch", "url": "https://everywatch.com/auction/loupethis--id39771"}], "79230N": [{"date": "2026-10-11", "price": 3250, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-6"}, {"date": "2026-10-13", "price": 2370, "source": "eBay sold", "url": "https://www.ebay.com/itm/237122246164"}, {"date": "2026-10-14", "price": 2700, "source": "eBay sold", "url": "https://www.ebay.com/itm/820222233594"}, {"date": "2026-10-14", "price": 3132.84, "source": "eBay sold", "url": "https://www.ebay.com/itm/407179223635"}, {"date": "2026-10-17", "price": 3622.14, "source": "eBay sold", "url": "https://www.ebay.com/itm/168777664529"}, {"date": "2026-10-19", "price": 2900, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79230n-7"}, {"date": "2026-10-09", "price": 3140, "source": "eBay sold", "url": "https://www.ebay.com/itm/206592659188"}, {"date": "2026-10-07", "price": 2631.92, "source": "eBay sold", "url": "https://www.ebay.com/itm/188799683639"}, {"date": "2026-10-04", "price": 2713.94, "source": "eBay sold", "url": "https://www.ebay.com/itm/307207046983"}, {"date": "2026-09-30", "price": 2875.41, "source": "eBay sold", "url": "https://www.ebay.com/itm/206590677611"}, {"date": "2026-10-26", "price": 3000, "source": "eBay sold", "url": "https://www.ebay.com/itm/147653189315"}, {"date": "2026-10-27", "price": 2959.61, "source": "eBay sold", "url": "https://www.ebay.com/itm/840066990801"}], "311.30.42.30.01.005": [{"date": "2026-10-08", "price": 4250, "source": "Grailzee auction", "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-97"}, {"date": "2026-10-10", "price": 5000, "source": "Grailzee auction", "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-311-30-42-30-01-98"}, {"date": "2026-10-19", "price": 5500, "source": "eBay sold", "url": "https://www.ebay.com/itm/278375081287"}, {"date": "2026-10-19", "price": 5250, "source": "eBay sold", "url": "https://www.ebay.com/itm/287656984059"}, {"date": "2026-10-17", "price": 5330.13, "source": "eBay sold", "url": "https://www.ebay.com/itm/960071502868"}], "210.30.42.20.04.001": [{"date": "2026-10-22", "price": 4000, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-4"}, {"date": "2026-10-23", "price": 4400, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-04-5"}], "210.30.42.20.03.001": [{"date": "2026-10-22", "price": 4100, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-omega-seamaster-300-210-30-42-20-03-8"}], "IW327012": [{"date": "2026-08-21", "price": 3700, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW327012"}, {"date": "2026-10-14", "price": 3200, "source": "Grailzee auction", "url": "https://grailzee.com/products/2020-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327012"}, {"date": "2026-10-23", "price": 3850, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/287600075130"}], "IW327015": [{"date": "2026-10-09", "price": 2901, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-327015"}], "H69439931": [{"date": "2026-10-23", "price": 406.18, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/198715601849"}], "H69439363": [{"date": "2026-10-23", "price": 355.86, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/407311258902"}], "IW327006": [{"date": "2026-10-22", "price": 3344.07, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/267784586399"}], "IW327010": [{"date": "2026-06-04", "price": 3100, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW327010"}, {"date": "2026-06-18", "price": 3300, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW327010"}, {"date": "2026-09-01", "price": 2800, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW327010"}, {"date": "2026-09-27", "price": 3100, "source": "Grailzee auction", "url": "https://grailzee.com/products/no-reserve-iwc-schaffhausen-pilot-iw327010-1"}, {"date": "2026-10-16", "price": 3177.62, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/267750867239"}], "IW327003": [{"date": "2026-10-13", "price": 3755, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/820193808821"}], "IW324703": [{"date": "2026-10-13", "price": 2847, "source": "eBay sold (incl. shipping)", "url": "https://www.ebay.com/itm/327404438514"}, {"date": "2026-10-04", "price": 2900, "source": "Grailzee auction", "url": "https://grailzee.com/products/iwc-schaffhausen-pilot-iw324703-9"}, {"date": "2026-09-25", "price": 4200, "source": "Grailzee auction", "url": "https://grailzee.com/products/iwc-schaffhausen-pilot-iw324703-7"}], "IW327002": [{"date": "2026-09-27", "price": 3126, "source": "Grailzee auction", "url": "https://grailzee.com/products/2019-iwc-schaffhausen-pilot-mark-xviii-40mm-white-dial-leather-strap-iw327002-3"}], "SBGH315": [{"date": "2026-10-23", "price": 4550, "source": "Grailzee auction", "url": "https://grailzee.com/products/grand-seiko-heritage-sbgh315"}], "SKX007": [{"date": "2026-10-24", "price": 250, "source": "eBay sold", "url": "https://www.ebay.com/itm/336861405552"}, {"date": "2026-10-24", "price": 379.99, "source": "eBay sold", "url": "https://www.ebay.com/itm/366726094508"}, {"date": "2026-10-25", "price": 260.79, "source": "eBay sold", "url": "https://www.ebay.com/itm/278196652060"}, {"date": "2026-10-27", "price": 333.55, "source": "eBay sold", "url": "https://www.ebay.com/itm/307239708077"}, {"date": "2026-10-27", "price": 213.15, "source": "eBay sold", "url": "https://www.ebay.com/itm/960100404987"}, {"date": "2026-10-27", "price": 186.49, "source": "eBay sold", "url": "https://www.ebay.com/itm/206640449526"}], "SRPE93": [{"date": "2026-10-22", "price": 420, "source": "eBay sold", "url": "https://www.ebay.com/itm/147635655369"}, {"date": "2026-10-23", "price": 375, "source": "eBay sold", "url": "https://www.ebay.com/itm/840029079629"}, {"date": "2026-10-23", "price": 380, "source": "eBay sold", "url": "https://www.ebay.com/itm/920055446726"}, {"date": "2026-10-24", "price": 410, "source": "eBay sold", "url": "https://www.ebay.com/itm/168719632262"}, {"date": "2026-10-24", "price": 410, "source": "eBay sold", "url": "https://www.ebay.com/itm/407239746010"}, {"date": "2026-10-26", "price": 469, "source": "eBay sold", "url": "https://www.ebay.com/itm/146795372758"}, {"date": "2026-10-14", "price": 305, "source": "eBay sold", "url": "https://www.ebay.com/itm/227573171770"}], "210.30.42.20.01.001": [{"date": "2026-10-08", "price": 4500, "source": "eBay sold", "url": "https://www.ebay.com/itm/178527880853"}, {"date": "2026-10-10", "price": 4250, "source": "eBay sold", "url": "https://www.ebay.com/itm/257792126836"}, {"date": "2026-10-11", "price": 3850, "source": "eBay sold", "url": "https://www.ebay.com/itm/227563167165"}, {"date": "2026-10-17", "price": 4100, "source": "eBay sold", "url": "https://www.ebay.com/itm/128137845763"}, {"date": "2026-10-25", "price": 4911.2, "source": "eBay sold", "url": "https://www.ebay.com/itm/287613647310"}], "IW327016": [{"date": "2026-09-21", "price": 4400, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW327016"}], "IW328210": [{"date": "2026-04-30", "price": 4400, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW328210"}, {"date": "2026-08-15", "price": 4450, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW328210"}], "IW328203": [{"date": "2026-07-10", "price": 3800, "source": "Grailzee auction", "url": "https://grailzee.com/search?q=IW328203"}], "PAM00104": [{"date": "2026-08-05", "price": 3400, "source": "eBay sold", "url": "https://www.ebay.com/itm/188702891918"}, {"date": "2026-08-21", "price": 3300, "source": "eBay sold", "url": "https://www.ebay.com/itm/336742822040"}, {"date": "2026-08-23", "price": 3289, "source": "eBay sold", "url": "https://www.ebay.com/itm/128014932775"}, {"date": "2026-10-18", "price": 3750, "source": "eBay sold (auction)", "url": "https://www.ebay.com/itm/147637586845"}], "CAW211P": [{"date": "2026-09-24", "price": 5950, "source": "eBay sold", "url": "https://www.ebay.com/itm/298704565772"}, {"date": "2026-09-30", "price": 5450, "source": "eBay sold (best offer)", "url": "https://www.ebay.com/itm/237097647016"}, {"date": "2026-10-02", "price": 5800, "source": "eBay sold", "url": "https://www.ebay.com/itm/407261563093"}, {"date": "2026-10-13", "price": 4750, "source": "eBay sold (auction)", "url": "https://www.ebay.com/itm/128133822284"}, {"date": "2026-10-22", "price": 6000, "source": "eBay sold", "url": "https://www.ebay.com/itm/128132973009"}, {"date": "2026-10-21", "price": 5897, "source": "eBay sold", "url": "https://www.ebay.com/itm/117469930668"}], "BR03-92": [{"date": "2026-10-15", "price": 1890, "source": "eBay sold", "url": "https://www.ebay.com/itm/206612790459"}, {"date": "2026-04-16", "price": 1999, "source": "eBay sold", "url": "https://www.ebay.com/itm/178046611473"}], "H64455523": [{"date": "2026-10-26", "price": 447, "source": "eBay sold", "url": "https://www.ebay.com/itm/336853368798"}], "H70455553": [{"date": "2026-10-26", "price": 431.87, "source": "eBay sold", "url": "https://www.ebay.com/itm/286095259915"}], "SNK809": [{"date": "2026-10-26", "price": 205, "source": "eBay sold", "url": "https://www.ebay.com/itm/920000400019"}, {"date": "2026-10-25", "price": 172.5, "source": "eBay sold", "url": "https://www.ebay.com/itm/137828607182"}, {"date": "2026-10-25", "price": 140.5, "source": "eBay sold", "url": "https://www.ebay.com/itm/137828668182"}], "De Ville vintage": [{"date": "2026-10-23", "price": 499, "source": "eBay sold", "url": "https://www.ebay.com/itm/940035933826"}], "25600TN": [{"date": "2026-10-25", "price": 4200, "source": "eBay sold", "url": "https://www.ebay.com/itm/800816760266"}, {"date": "2026-10-24", "price": 3900, "source": "eBay sold", "url": "https://www.ebay.com/itm/407313775826"}, {"date": "2026-10-22", "price": 4250, "source": "eBay sold", "url": "https://www.ebay.com/itm/287663246614"}], "2254.50": [{"date": "2026-10-26", "price": 3600, "source": "eBay sold", "url": "https://www.ebay.com/itm/206636888373"}, {"date": "2026-10-19", "price": 4099.99, "source": "eBay sold", "url": "https://www.ebay.com/itm/920030774174"}, {"date": "2026-10-12", "price": 4145, "source": "eBay sold", "url": "https://www.ebay.com/itm/206622692936"}], "PAM00111": [{"date": "2026-10-21", "price": 3595, "source": "eBay sold", "url": "https://www.ebay.com/itm/178549415736"}, {"date": "2026-10-17", "price": 4699.06, "source": "eBay sold", "url": "https://www.ebay.com/itm/267801235202"}, {"date": "2026-10-05", "price": 5295, "source": "eBay sold", "url": "https://www.ebay.com/itm/227549743590"}], "515.NX.0170.LR": [{"date": "2026-10-25", "price": 5100, "source": "Grailzee sold", "url": "https://grailzee.com/products/no-reserve-hublot-classic-fusion-515-nx-0170-lr"}]};
 const book = [];
 const FEES = {"sell": 0.1, "grailzeeFlat": 49, "grailzeeBuyerPremium": 0.05, "grailzeeBuyerPremiumMin": 250, "grailzeeBuyerPremiumMax": 5000};
-const DATA_UPDATED = "Oct 28, 2026 8:23 AM CT";
+const DATA_UPDATED = "Oct 28, 2026 8:49 AM CT";
+const MINED_LISTINGS = [];
+const MINED_META = {};
 
 const money = n => "$" + Number(n).toLocaleString("en-US", {maximumFractionDigits: 2});
 let view = "deals";
@@ -345,6 +369,9 @@ function sourceKey(s) {
   return "other";
 }
 document.getElementById("updated").textContent = DATA_UPDATED;
+const minedListings = (typeof MINED_LISTINGS !== "undefined" && Array.isArray(MINED_LISTINGS)) ? MINED_LISTINGS : [];
+const minedMeta = (typeof MINED_META !== "undefined" && MINED_META) ? MINED_META : {};
+document.getElementById("mined").textContent = minedMeta.last_mined || "—";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function ageOf(iso) {
   const days = Math.floor((Date.now() - new Date(iso + "T12:00:00")) / 86400000);
@@ -366,7 +393,7 @@ function rows() {
     if (view === "auctions" && d.kind !== "auction") return false;
     if (view === "passes" && d.kind !== "pass") return false;
     if (view === "needsbcv" && !needsBcv(d)) return false;
-    if (view === "book") return false;
+    if (view === "book" || view === "fresh") return false;
     if (sourceFilter !== "all" && sourceKey(d.source) !== sourceFilter) return false;
     if (budget !== "all" && d.ask > budget && d.kind !== "auction") return false;
     if (!q) return true;
@@ -402,12 +429,94 @@ function bankrollSvg() {
       <text x="260" y="16" fill="#9aa3ad" font-size="11">- - 20% per flip reinvested × 12: guide benchmark, not a forecast</text>
     </svg></div>`;
 }
+function listingLive(l) {
+  if (!l.end_time) return true;
+  const t = Date.parse(l.end_time);
+  return !isFinite(t) || t > Date.now();
+}
+function endLabel(iso) {
+  if (!iso) return "BIN";
+  const t = Date.parse(iso);
+  if (!isFinite(t)) return "";
+  return new Date(t).toLocaleString("en-US", {timeZone: "America/Chicago", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short"});
+}
+function dialColor(brand) {
+  if (brand === "TUDOR") return "#1c2430";
+  if (brand === "OMEGA") return "#123";
+  return "#2a241c";
+}
+function freshRows(live) {
+  const q = document.getElementById("q").value.toLowerCase().trim();
+  return live.filter(l => {
+    const total = Number(l.total != null ? l.total : l.price);
+    if (sourceFilter !== "all" && sourceKey(l.source) !== sourceFilter) return false;
+    if (budget !== "all" && total > budget) return false;
+    if (!q) return true;
+    return (l.brand + " " + l.model + " " + l.ref + " " + (l.title || "")).toLowerCase().includes(q);
+  }).sort((a, b) => Number(a.total) - Number(b.total) || String(a.ref).localeCompare(String(b.ref)));
+}
+function paintFresh(grid, live) {
+  const list = freshRows(live);
+  document.getElementById("count").textContent = String(list.length);
+  document.getElementById("countNote").textContent = "live listings";
+  if (!list.length) {
+    let msg = "No fresh listings under cap.";
+    if (live.length) msg += " " + live.length + " live listing(s) are outside this budget, source, or search.";
+    else if (minedListings.length) msg += " Ended listings are hidden.";
+    else msg += " Run Refresh data, then Run workflow on GitHub.";
+    grid.innerHTML = '<div class="empty">' + esc(msg) + "</div>";
+    return;
+  }
+  const groups = [];
+  list.forEach(l => {
+    const key = l.model_id || l.ref;
+    let g = groups.find(x => x.key === key);
+    if (!g) {
+      g = {key, label: (l.brand || "") + " " + (l.model || ""), ref: l.ref, cap: l.buy_cap, rows: []};
+      groups.push(g);
+    }
+    g.rows.push(l);
+  });
+  grid.innerHTML = groups.map(g =>
+    '<div class="fresh-head">' + esc(g.label) + " · " + esc(g.ref) + " · cap " + (g.cap != null ? money(g.cap) : "—") + " · " + g.rows.length + "</div>" +
+    g.rows.map(l => `
+    <article class="card">
+      <div class="shot">
+        <span class="badge ${l.format === "auction" ? "auction" : "buy"}" style="z-index:1">${l.format === "auction" ? "AUCTION" : "BIN"}</span>
+        <div class="dial" style="background:${dialColor(l.brand)}"></div>
+        ${l.image_url ? `<img src="${esc(l.image_url)}" alt="${esc(l.title || "")}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '<span class="noimg">No photo saved</span>'}
+      </div>
+      <div class="body">
+        <div class="brand-name">${esc(l.brand)} · ${esc(l.source)}</div>
+        <div class="model">${esc(l.title || "")}</div>
+        <div class="ref">${esc(l.ref)}</div>
+        <div class="prices">
+          <div><span>PRICE</span><b class="ask">${money(l.price)}</b></div>
+          <div><span>SHIP</span><b>${l.shipping_known && l.shipping != null ? money(l.shipping) : "—"}</b></div>
+          <div><span>TOTAL</span><b class="buy">${money(l.total != null ? l.total : l.price)}</b></div>
+        </div>
+        <div class="meta"><span>${esc(l.seller_feedback || "—")}</span><span>${esc(l.location || "—")}</span></div>
+        <div class="meta"><span>${l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">View listing ↗</a>` : ""}</span><span>${esc(endLabel(l.end_time))}</span></div>
+        ${l.shipping_known ? "" : '<div class="why">Shipping was not in the response. Total is the item price only.</div>'}
+      </div>
+    </article>`).join("")
+  ).join("");
+}
 function paint() {
   const grid = document.getElementById("grid");
+  document.getElementById("nbcv").textContent = "(" + deals.filter(needsBcv).length + ")";
+  const live = minedListings.filter(listingLive);
+  const nfresh = document.getElementById("nfresh");
+  if (nfresh) nfresh.textContent = "(" + live.length + ")";
+  if (view === "fresh") {
+    paintFresh(grid, live);
+    return;
+  }
   if (view === "book") {
     const q = document.getElementById("q").value.toLowerCase().trim();
     const bk = book.filter(b => !q || (b.brand + " " + b.model + " " + b.ref).toLowerCase().includes(q));
     document.getElementById("count").textContent = String(bk.length);
+    document.getElementById("countNote").textContent = "book rows";
     const tracker = bankrollSvg();
     if (!bk.length) { grid.innerHTML = tracker + '<div class="empty">Book is empty. Add a purchase to data/book.json to track In / Out / Days / ROI.</div>'; return; }
     grid.innerHTML = tracker + bk.map(b => {
@@ -428,8 +537,8 @@ function paint() {
     return;
   }
   const list = rows();
-  document.getElementById("nbcv").textContent = "(" + deals.filter(needsBcv).length + ")";
   document.getElementById("count").textContent = String(list.length);
+  document.getElementById("countNote").textContent = "rows · last 14 days";
   if (!list.length) {
     grid.innerHTML = '<div class="empty">No buy this pass. Nothing cleared cash, profit, and hold together.</div>';
     return;
