@@ -1319,5 +1319,214 @@
    "Over cap"
   ],
   "found": "2026-10-27"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Prospex SPB101 (Sumo family)",
+  "ref": "SPB101",
+  "ask": 357,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/397950625314",
+  "kind": "buy",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/JEsAAeSwqyxqBuWa/s-l500.webp",
+  "why": "BIN $350 + ~$7 ship (Best Offer on), listed New (Other), under the $400 Sumo cap.",
+  "redFlags": [
+   "Seller has only 22 feedback",
+   "Price unusually low for an SPB101: authenticate",
+   "No SPB101 sold comps yet, so needs BCV",
+   "Box/papers not confirmed"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Vintage Seamaster De Ville \"14K\" (ref not stated)",
+  "ref": "De Ville vintage",
+  "ask": 499.99,
+  "buy": 600,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/407309771223",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/nPgAAeSwxE9q2lCt/s-l500.webp",
+  "why": "BIN $499.99 free ship, seller 1,514 fb 100%. Under cap, but ref, decade and running condition unconfirmed.",
+  "redFlags": [
+   "Possibly gold-capped, not solid",
+   "Ref/movement not shown"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX007 'Timeworn' dial",
+  "ref": "SKX007",
+  "ask": 201.15,
+  "buy": 220,
+  "sell": null,
+  "source": "eBay auction",
+  "url": "https://www.ebay.com/itm/860071343977",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "https://i.ebayimg.com/images/g/YRUAAeSw5RJq2adK/s-l500.webp",
+  "why": "Auction ~$201 incl ship, 5 bids, ends ~Thu 1 AM CT. Mod-shop seller.",
+  "redFlags": [
+   "Likely aftermarket dial (mod shop)"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX009 auction",
+  "ref": "SKX009",
+  "ask": 234.23,
+  "buy": 220,
+  "sell": null,
+  "source": "eBay auction",
+  "url": "https://www.ebay.com/itm/800822106834",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "",
+  "why": "$227.50 + $6.73, 4 bids, ~5h left; already over cap.",
+  "redFlags": [
+   "Over cap"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Sumo SBDC031 auction",
+  "ref": "SBDC031",
+  "ask": 437.1,
+  "buy": 400,
+  "sell": null,
+  "source": "eBay auction",
+  "url": "https://www.ebay.com/itm/940031804679",
+  "kind": "pass",
+  "tier": "core",
+  "image_url": "",
+  "why": "$425 + $12.10, 0 bids, ~10h left; over cap.",
+  "redFlags": [
+   "Over cap"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "1960s Seamaster De Ville (ShopGoodwill)",
+  "ref": "De Ville vintage",
+  "ask": 507.84,
+  "buy": 600,
+  "sell": null,
+  "source": "ShopGoodwill auction",
+  "url": "https://shopgoodwill.com/item/281609891",
+  "kind": "auction",
+  "tier": "core",
+  "image_url": "",
+  "why": "Now $502.85 + $4.99 ship after 17 bids; listed running/tested, 33.5mm; ends today 10/28 7:54 PM CT. Flagged 10/26.",
+  "redFlags": [
+   "Thin De Ville comps (needs BCV)",
+   "Bidding may climb past cap"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay 58 M79030N-0003",
+  "ref": "79030N",
+  "ask": 2500,
+  "buy": 2650,
+  "sell": 3450,
+  "source": "Chrono24 (private seller)",
+  "url": "https://www.chrono24.com/tudor/black-bay-fifty-eight--id49515375.htm",
+  "kind": "buy",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "$2,500 + shipping (not shown), lowest US Chrono24 listing, under the $2,650 cap and below recent eBay/Grailzee sold prices (mostly $3,180-3,800).",
+  "redFlags": [
+   "Private seller: confirm box/papers and seller history",
+   "Shipping not shown",
+   "Authenticate"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay GMT Pepsi (eBay auction)",
+  "ref": "79830RB",
+  "ask": 3039,
+  "buy": 2700,
+  "sell": null,
+  "source": "eBay auction",
+  "url": "https://www.ebay.com/itm/206646834115",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "$2,999 + $40, 1 bid, ~1d10h left; over cap.",
+  "redFlags": [
+   "Over cap"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "BELL & ROSS",
+  "model": "BR 03-92 Heritage",
+  "ref": "BR03-92",
+  "ask": 1800,
+  "buy": 1750,
+  "sell": null,
+  "source": "Chrono24 (private seller)",
+  "url": "https://www.chrono24.com/bellross/br-03-92-heritage--id47997052.htm",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "$1,800, just over the 'well under ~$1,850-2,000' target.",
+  "redFlags": [
+   "Over cap",
+   "Often faked"
+  ],
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "PANERAI",
+  "model": "Luminor Marina PAM00104 (Grailzee offer listing)",
+  "ref": "PAM00104",
+  "ask": null,
+  "buy": null,
+  "sell": null,
+  "source": "Grailzee",
+  "url": "https://grailzee.com/",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "2008 PAM104 offer listing showing a $2,300 high offer, not an ask. Ref not fully confirmed. Lead only (premium).",
+  "redFlags": [
+   "Offer listing, no ask",
+   "Ref unconfirmed",
+   "Panerai often faked"
+  ],
+  "note": "premium",
+  "found": "2026-10-28"
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay Heritage 79230N",
+  "ref": "79230N",
+  "ask": 3500,
+  "buy": 2250,
+  "sell": null,
+  "source": "Facebook Marketplace",
+  "url": "https://www.facebook.com/marketplace/item/1778610766893118",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "Hermitage, $3,500; well over cap.",
+  "redFlags": [
+   "Over cap"
+  ],
+  "found": "2026-10-28"
  }
 ]
