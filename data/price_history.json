@@ -56,7 +56,7 @@
         "date": "2026-10-29",
         "low": 275.0,
         "currency": "USD",
-        "n": 1,
+        "n": 2,
         "basis": "item price only; shipping was not in the response",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/137857129632?_skw=Seiko+SBDC003&hash=item2018ecdca0:g:kIkAAeSwN89qxAiP"
@@ -182,7 +182,7 @@
     "points": [
       {
         "date": "2026-10-29",
-        "low": 284.5,
+        "low": 294.5,
         "currency": "USD",
         "n": 14,
         "basis": "price+shipping",
@@ -200,10 +200,10 @@
         "date": "2026-10-29",
         "low": 61.0,
         "currency": "USD",
-        "n": 3,
+        "n": 2,
         "basis": "price+shipping",
         "source": "eBay",
-        "url": "https://www.ebay.com/itm/128157879656?_skw=Omega+311.30.42.30.01.005&hash=item1dd6ce0d68:g:r7wAAeSwK7lqw~Ln"
+        "url": "https://www.ebay.com/itm/128161256755?_skw=Omega+311.30.42.30.01.005&hash=item1dd7019533:g:c~cAAeSwYa5qw~L2"
       }
     ]
   },
@@ -230,12 +230,12 @@
     "points": [
       {
         "date": "2026-10-29",
-        "low": 42.39,
+        "low": 41.25,
         "currency": "USD",
-        "n": 61,
+        "n": 63,
         "basis": "price+shipping",
         "source": "eBay",
-        "url": "https://www.ebay.com/itm/326920746005?_skw=Omega+Seamaster+De+Ville&hash=item4c1dfeb415:g:qp4AAeSwYvlpRnU4"
+        "url": "https://www.ebay.com/itm/237151166837?_skw=Omega+Seamaster+De+Ville&hash=item37374fa175:g:dLUAAeSw8bFq44Sw"
       }
     ]
   },
@@ -280,10 +280,10 @@
         "date": "2026-10-29",
         "low": 61.0,
         "currency": "USD",
-        "n": 2,
+        "n": 1,
         "basis": "price+shipping",
         "source": "eBay",
-        "url": "https://www.ebay.com/itm/128157879607?_skw=Tudor+79830RB&hash=item1dd6ce0d37:g:r7wAAeSwK7lqw~Ln"
+        "url": "https://www.ebay.com/itm/128161256667?_skw=Tudor+79830RB&hash=item1dd70194db:g:c~cAAeSwYa5qw~L2"
       }
     ]
   },
