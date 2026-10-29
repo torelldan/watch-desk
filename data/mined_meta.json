@@ -1,0 +1,22 @@
+{
+  "last_mined": "Oct 29, 2026 6:05 AM CT",
+  "last_mined_iso": "2026-10-29T06:05:07-05:00",
+  "counts": {
+    "models": 32,
+    "models_ok": 32,
+    "listings": 125,
+    "ebay": 125,
+    "chrono24": 0,
+    "errors": 1
+  },
+  "errors": [
+    {
+      "model_id": "skx007",
+      "ref": "SKX007",
+      "source": "Chrono24",
+      "error": "HTTP 403"
+    }
+  ],
+  "models_filter": "",
+  "max_price": null
+}

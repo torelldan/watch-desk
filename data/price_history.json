@@ -1,0 +1,322 @@
+{
+  "skx007": {
+    "brand": "SEIKO",
+    "model": "SKX007",
+    "ref": "SKX007",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 74.0,
+        "currency": "USD",
+        "n": 16,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/800845824434?_skw=Seiko+SKX007&hash=itemba762181b2:g:g9IAAeSwVxNq4Sa6"
+      }
+    ]
+  },
+  "skx009": {
+    "brand": "SEIKO",
+    "model": "SKX009",
+    "ref": "SKX009",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 81.0,
+        "currency": "USD",
+        "n": 8,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/800845607942?_skw=Seiko+SKX009&hash=itemba761e3406:g:mNsAAeSwoP9q4RH8"
+      }
+    ]
+  },
+  "sarb035": {
+    "brand": "SEIKO",
+    "model": "SARB035",
+    "ref": "SARB035",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 113.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/336862828303?_skw=Seiko+SARB035&hash=item4e6e96d70f:g:7HIAAeSwAxlquOkF"
+      }
+    ]
+  },
+  "sbdc003": {
+    "brand": "SEIKO",
+    "model": "Prospex Sumo SBDC003",
+    "ref": "SBDC003",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 275.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/137857129632?_skw=Seiko+SBDC003&hash=item2018ecdca0:g:kIkAAeSwN89qxAiP"
+      }
+    ]
+  },
+  "sbdc081": {
+    "brand": "SEIKO",
+    "model": "Prospex Sumo SBDC081",
+    "ref": "SBDC081",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 76.51,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/198635932017?_skw=Seiko+SBDC081&hash=item2e3f9fc971:g:Yj0AAeSw-hBqpQLg"
+      }
+    ]
+  },
+  "sbdc113": {
+    "brand": "SEIKO",
+    "model": "Prospex Sumo SBDC113",
+    "ref": "SBDC113",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 241.41,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/407273567346?_skw=Seiko+SBDC113&hash=item5ed3657472:g:Is4AAeSw-vZqxk41"
+      }
+    ]
+  },
+  "spb101": {
+    "brand": "SEIKO",
+    "model": "Prospex SPB101",
+    "ref": "SPB101",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 350.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/397950625314?_skw=Seiko+SPB101&hash=item5ca7b4a622:g:JEsAAeSwqyxqBuWa"
+      }
+    ]
+  },
+  "prx-40": {
+    "brand": "TISSOT",
+    "model": "PRX Powermatic 80",
+    "ref": "T137.407.11.041.00",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 199.99,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/188037271059?_skw=Tissot+T137.407.11.041.00&hash=item2bc7e50e13:g:QV4AAeSwC7lph~yi"
+      }
+    ]
+  },
+  "prx-green": {
+    "brand": "TISSOT",
+    "model": "PRX Powermatic 80 green",
+    "ref": "PRX Powermatic 80 green",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 284.98,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/226832424654?_skw=Tissot+PRX+Powermatic+80+green&hash=item34d0441ece:g:6qwAAOSwx0ZoLfk1"
+      }
+    ]
+  },
+  "fugu": {
+    "brand": "CITIZEN",
+    "model": "Fugu NY0040",
+    "ref": "NY0040",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 51.94,
+        "currency": "USD",
+        "n": 3,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/377605052940?_skw=Citizen+NY0040&hash=item57eb03da0c:g:5S0AAeSwkUhqpOeR"
+      }
+    ]
+  },
+  "omega-165008": {
+    "brand": "OMEGA",
+    "model": "Seamaster De Ville",
+    "ref": "165.008",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 499.55,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/398438457723?_skw=Omega+165.008&hash=item5cc4c8617b:g:Ls0AAeSwi5NqubEj"
+      }
+    ]
+  },
+  "omega-168004": {
+    "brand": "OMEGA",
+    "model": "Constellation",
+    "ref": "168.004",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 284.5,
+        "currency": "USD",
+        "n": 15,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128152552990?_skw=Omega+168.004&hash=item1dd67cc61e:g:F4sAAeSwnqdq2ubh"
+      }
+    ]
+  },
+  "omega-moon": {
+    "brand": "OMEGA",
+    "model": "Speedmaster Professional",
+    "ref": "311.30.42.30.01.005",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 3,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128157879656?_skw=Omega+311.30.42.30.01.005&hash=item1dd6ce0d68:g:r7wAAeSwK7lqw~Ln"
+      }
+    ]
+  },
+  "omega-mk40": {
+    "brand": "OMEGA",
+    "model": "Speedmaster Triple Date MK40",
+    "ref": "3520.53",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128161256660?_skw=Omega+3520.53&hash=item1dd70194d4:g:c~cAAeSwYa5qw~L2"
+      }
+    ]
+  },
+  "deville": {
+    "brand": "OMEGA",
+    "model": "Seamaster De Ville vintage",
+    "ref": "De Ville vintage",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 42.39,
+        "currency": "USD",
+        "n": 61,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/326920746005?_skw=Omega+Seamaster+De+Ville&hash=item4c1dfeb415:g:qp4AAeSwYvlpRnU4"
+      }
+    ]
+  },
+  "bb58": {
+    "brand": "TUDOR",
+    "model": "Black Bay 58",
+    "ref": "79030N",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 1.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/307247905369?_skw=Tudor+79030N&hash=item478966fa59:g:doYAAeSw4MJqysKt"
+      }
+    ]
+  },
+  "bb-79540": {
+    "brand": "TUDOR",
+    "model": "Black Bay 41",
+    "ref": "79540",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 288.73,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/198341415927?_skw=Tudor+79540&hash=item2e2e11d3f7:g:dosAAeSwANFp~oxA"
+      }
+    ]
+  },
+  "bb-gmt": {
+    "brand": "TUDOR",
+    "model": "Black Bay GMT",
+    "ref": "79830RB",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128157879607?_skw=Tudor+79830RB&hash=item1dd6ce0d37:g:r7wAAeSwK7lqw~Ln"
+      }
+    ]
+  },
+  "br03-92": {
+    "brand": "BELL & ROSS",
+    "model": "BR03-92",
+    "ref": "BR03-92",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 181.99,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/198751336527?_skw=Bell+%26+Ross+BR03-92&hash=item2e4680b84f:g:KAYAAeSwMm1qMO~1"
+      }
+    ]
+  },
+  "br-horograph": {
+    "brand": "BELL & ROSS",
+    "model": "BR03-92 Horograph",
+    "ref": "BR0392-HOR-BLC/SRB",
+    "points": [
+      {
+        "date": "2026-10-29",
+        "low": 1900.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/168578785276?_skw=Bell+%26+Ross+BR0392+Horograph&hash=item2740141ffc:g:uPEAAeSwrBNqbOX-"
+      }
+    ]
+  }
+}
