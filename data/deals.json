@@ -1528,5 +1528,119 @@
    "Over cap"
   ],
   "found": "2026-10-28"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster De Ville 166.020",
+  "ref": "166.020",
+  "ask": 650,
+  "buy": 600,
+  "sell": null,
+  "source": "Reddit r/watchexchange",
+  "url": "https://www.reddit.com/r/Watchexchange/comments/1xijmho/wts_omega_seamaster_de_ville_166020_cal_562/",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Cal. 562, serviced July 2026, $650 plus shipping; about 8% over the $600 cap. Worth a lowball if it lingers.",
+  "redFlags": [
+   "Over cap",
+   "Needs BCV"
+  ],
+  "found": "2026-10-29"
+ },
+ {
+  "brand": "TISSOT",
+  "model": "PRX Powermatic 80 green",
+  "ref": "T137.407.11.091.00",
+  "ask": 410,
+  "buy": 400,
+  "sell": null,
+  "source": "Chrono24",
+  "url": "https://www.chrono24.com/tissot/prx--id49451805.htm",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Private US seller, $410 plus shipping; about 2.5% over cap.",
+  "redFlags": [
+   "Over cap after shipping"
+  ],
+  "found": "2026-10-29"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster 1960s gold filled",
+  "ref": "vintage Seamaster",
+  "ask": 750,
+  "buy": 600,
+  "sell": null,
+  "source": "Facebook Marketplace",
+  "url": "https://www.facebook.com/marketplace/item/1432835145489193/",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Mt Juliet, just listed at $750; 25% over cap.",
+  "redFlags": [
+   "Over cap",
+   "Ref unconfirmed"
+  ],
+  "found": "2026-10-29"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster 600 135.011 (1966)",
+  "ref": "135.011",
+  "ask": 400,
+  "buy": 600,
+  "sell": null,
+  "source": "ShopGoodwill",
+  "url": "https://shopgoodwill.com/item/281630874",
+  "kind": "auction",
+  "image_url": "",
+  "why": "$400 with 11 bids, ends 10/30 8:11 PM CT; under the vintage Omega cap but not a 166.020/165.008, so no comps yet.",
+  "redFlags": [
+   "Needs BCV",
+   "Not a target ref",
+   "Photo/condition review needed"
+  ],
+  "found": "2026-10-29"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Constellation 168.004",
+  "ref": "168.004",
+  "ask": 1340,
+  "buy": 2995,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/206595913387",
+  "kind": "pass",
+  "image_url": "https://i.ebayimg.com/images/g/tzsAAeSwusxqvuzr/s-l200.jpg",
+  "why": "Gold capped, cal. 561, $1,300 BIN or Best Offer plus $40 shipping from Bogota; seller 100% / 1,763 but away until 11/07.",
+  "redFlags": [
+   "No box or papers",
+   "No returns",
+   "Import fee wording conflicts",
+   "Dial originality unverified",
+   "Needs BCV"
+  ],
+  "found": "2026-10-29"
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Constellation CD 168.004",
+  "ref": "168.004",
+  "ask": 284.5,
+  "buy": 2995,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/128152552990",
+  "kind": "auction",
+  "image_url": "",
+  "why": "$234.50 bid (71 bids) plus $50 shipping, ends 10/30 1:50 PM CT; will likely run well past this.",
+  "redFlags": [
+   "Seller 95.4% / 61",
+   "Money order only",
+   "No returns",
+   "Patina dial needs photo review",
+   "Needs BCV"
+  ],
+  "found": "2026-10-29"
  }
 ]
