@@ -1642,5 +1642,97 @@
    "Needs BCV"
   ],
   "found": "2026-10-29"
+ },
+ {
+  "brand": "Bell & Ross",
+  "model": "BR03-92 (ceramic, black dial)",
+  "ref": "BR03-92",
+  "ask": 1500,
+  "buy": 1750,
+  "sell": 1890,
+  "source": "Chrono24",
+  "url": "https://www.chrono24.com/bellross/br03-92--id47900125.htm",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "https://img.chrono24.com/images/uhren/47900125-659qnkdo6314i81q42t7dt0b-ExtraLarge.jpg",
+  "why": "$1,500 + shipping, private seller in New York, 2022, original box, Chrono24 escrow. Under the cap, but without papers resale vs the $1,890\u20131,999 B&P eBay comps leaves about $200 after 10% fees, under the $300 minimum.",
+  "redFlags": [
+   "No papers",
+   "Garbled reference text (mentions BR 03-95 Nightlum)",
+   "Heavily faked brand; authenticate",
+   "Needs BCV"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Prospex Sumo SBDC001",
+  "ref": "SBDC001",
+  "ask": 392,
+  "buy": 400,
+  "sell": null,
+  "source": "Chrono24",
+  "url": "https://www.chrono24.com/seiko/prospex--id48857455.htm",
+  "kind": "pass",
+  "image_url": "https://img.chrono24.com/images/uhren/9105ee6f4zhi-pplqdenlw4hu5blar166qxjv-ExtraLarge.jpg",
+  "why": "$392 + shipping, private seller in California, black Sumo on bracelet, runs, minimal wear. Under the Sumo cap but no SBDC001 sold comps yet and no room for $300 profit.",
+  "redFlags": [
+   "No box or papers",
+   "Needs BCV"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Prospex Blue Sumo SBDC003",
+  "ref": "SBDC003",
+  "ask": 353.19,
+  "buy": 400,
+  "sell": 392.5,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/900028159237",
+  "kind": "pass",
+  "image_url": "https://i.ebayimg.com/images/g/IFIAAeSwBX5qnx0E/s-l400.jpg",
+  "why": "\u00a3245 + \u00a319.05 GSP shipping (~$353) from UK seller mewatches (100%, 1,286). Plus ~\u00a333 import charges, all-in ~$398 vs eBay sold median ~$392 (Aug\u2013Oct), so no margin.",
+  "redFlags": [
+   "Condition: Pre-owned Fair",
+   "No returns",
+   "Import charges"
+  ]
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster De Ville 1964 B6308 cal. 670 (14K GF)",
+  "ref": "De Ville vintage",
+  "ask": 599.99,
+  "buy": 600,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/137515959930",
+  "kind": "pass",
+  "image_url": "https://i.ebayimg.com/images/g/w8AAAeSwNEdpxsy6/s-l400.jpg",
+  "why": "$599.99 free shipping, 37,885-feedback seller, 30-day returns, Authenticity Guarantee. At the cap but small 31mm gold-filled case limits resale.",
+  "redFlags": [
+   "31mm gold-filled",
+   "Dial originality not stated",
+   "Needs BCV"
+  ]
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Seamaster De Ville 1960s Seahorse (steel)",
+  "ref": "De Ville vintage",
+  "ask": 586.35,
+  "buy": 600,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/820087736014",
+  "kind": "pass",
+  "image_url": "https://i.ebayimg.com/images/g/vjQAAeSwTtFqmw8u/s-l400.jpg",
+  "why": "$580 + $6.35 shipping, steel case, 'original dial' per seller.",
+  "redFlags": [
+   "Listed as Seller refurbished",
+   "Seller 97.1% / 212",
+   "Reference not stated",
+   "Needs BCV"
+  ]
  }
 ]
