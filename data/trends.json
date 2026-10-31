@@ -739,6 +739,12 @@
    "price": 3200,
    "source": "Grailzee sold",
    "url": "https://grailzee.com/pages/completed-auctions"
+  },
+  {
+   "date": "2026-10-30",
+   "price": 3600,
+   "source": "Grailzee sold",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-51"
   }
  ],
  "25407N": [
@@ -1703,6 +1709,30 @@
    "price": 266.62,
    "source": "eBay sold",
    "url": "https://www.ebay.com/itm/287624552105"
+  }
+ ],
+ "212.30.41.20.01.002": [
+  {
+   "date": "2026-10-30",
+   "price": 2950,
+   "source": "Grailzee sold",
+   "url": "https://grailzee.com/products/no-reserve-2019-omega-seamaster-diver-300m-41mm-black-wave-dial-steel-bracelet-212-30-41-20-01-002"
+  }
+ ],
+ "310.30.42.50.04.001": [
+  {
+   "date": "2026-10-31",
+   "price": 7000,
+   "source": "Grailzee sold",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-310-30-42-50-04-148"
+  }
+ ],
+ "W62000V3": [
+  {
+   "date": "2026-10-31",
+   "price": 3350,
+   "source": "Grailzee sold",
+   "url": "https://grailzee.com/products/no-reserve-cartier-roadster-w62000v3-2"
   }
  ]
 }

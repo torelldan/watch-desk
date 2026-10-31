@@ -3,7 +3,7 @@
   {
    "date": "2026-07-24",
    "price": 797,
-   "currency_note": "Sold \u20ac710; Second Vintage page shows \u2248$797",
+   "currency_note": "Sold €710; Second Vintage page shows ≈$797",
    "source": "Second Vintage auction",
    "title": "Omega Seamaster De Ville 166.020, cal. 562",
    "url": "https://secondvintage.com/en/auction/OME-OAS-0032"
@@ -11,7 +11,7 @@
   {
    "date": "2026-01-11",
    "price": 786,
-   "currency_note": "Sold \u20ac700; Second Vintage page shows \u2248$786",
+   "currency_note": "Sold €700; Second Vintage page shows ≈$786",
    "source": "Second Vintage auction",
    "title": "Omega Seamaster De Ville 166.020, 1966, cal. 552",
    "url": "https://secondvintage.com/en/auction/OME7G9J7C0000"
@@ -28,7 +28,7 @@
   {
    "date": "2026-04-30",
    "price": 617,
-   "currency_note": "Sold \u20ac550; Second Vintage page shows \u2248$617",
+   "currency_note": "Sold €550; Second Vintage page shows ≈$617",
    "source": "Second Vintage auction",
    "title": "Omega Seamaster De Ville 165.008, 1966",
    "url": "https://secondvintage.com/en/auction/OME-OSD-0003"
@@ -862,6 +862,13 @@
    "source": "Grailzee sold",
    "title": "Tudor 79830RB (Grailzee sold result)",
    "url": "https://grailzee.com/search?q=79830RB&soldStatus=Sold"
+  },
+  {
+   "date": "2026-10-30",
+   "price": 3600,
+   "source": "Grailzee sold",
+   "title": "Tudor 79830RB 2024, no reserve (Grailzee sold)",
+   "url": "https://grailzee.com/products/no-reserve-tudor-black-bay-79830rb-51"
   }
  ],
  "25407N": [
@@ -1974,6 +1981,33 @@
    "source": "eBay sold (incl. ship)",
    "title": "Seiko SBDC003 Blue Sumo",
    "url": "https://www.ebay.com/itm/366579449753"
+  }
+ ],
+ "212.30.41.20.01.002": [
+  {
+   "date": "2026-10-30",
+   "price": 2950,
+   "source": "Grailzee sold",
+   "title": "Omega Seamaster 300M 41mm 2019, no reserve (Grailzee sold)",
+   "url": "https://grailzee.com/products/no-reserve-2019-omega-seamaster-diver-300m-41mm-black-wave-dial-steel-bracelet-212-30-41-20-01-002"
+  }
+ ],
+ "310.30.42.50.04.001": [
+  {
+   "date": "2026-10-31",
+   "price": 7000,
+   "source": "Grailzee sold",
+   "title": "Omega Speedmaster Moonwatch 2024 (Grailzee sold)",
+   "url": "https://grailzee.com/products/omega-speedmaster-professional-moonwatch-310-30-42-50-04-148"
+  }
+ ],
+ "W62000V3": [
+  {
+   "date": "2026-10-31",
+   "price": 3350,
+   "source": "Grailzee sold",
+   "title": "Cartier Roadster, no reserve (Grailzee sold)",
+   "url": "https://grailzee.com/products/no-reserve-cartier-roadster-w62000v3-2"
   }
  ]
 }

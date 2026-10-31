@@ -331,7 +331,7 @@
   "url": "https://www.reddit.com/r/Watchexchange/comments/1xbo6kp/",
   "found": "2026-10-21",
   "kind": "pass",
-  "why": "Borderline. $820 + insured ship. Tempus Europa median \u20ac950 (10 sales); 360d.io says prices down 27% in 12 months. Est. profit $300-400.",
+  "why": "Borderline. $820 + insured ship. Tempus Europa median €950 (10 sales); 360d.io says prices down 27% in 12 months. Est. profit $300-400.",
   "redFlags": [
    "PayPal F&F only, no buyer protection",
    "34mm is small for FB buyers",
@@ -406,8 +406,8 @@
   "url": "https://www.reddit.com/r/Watchexchange/comments/1xbq11p/wts_grand_seiko_sbgw231_full_kit/",
   "found": "2026-10-21",
   "kind": "buy",
-  "sellRange": "$2,800\u2013$3,100 (r/watchexchange sold, last ~2 months)",
-  "why": "Off-list pick, $5,000 tier. Asking $2,350 (CONUS, full kit) vs four r/watchexchange sales at $2,800\u2013$3,100 in the last ~2 months and a WatchCharts market estimate of $2,996. Selling at the low comp ($2,800) leaves about $450 before fees.",
+  "sellRange": "$2,800–$3,100 (r/watchexchange sold, last ~2 months)",
+  "why": "Off-list pick, $5,000 tier. Asking $2,350 (CONUS, full kit) vs four r/watchexchange sales at $2,800–$3,100 in the last ~2 months and a WatchCharts market estimate of $2,996. Selling at the low comp ($2,800) leaves about $450 before fees.",
   "redFlags": [
    "Reddit blocked our reads, so condition, kit details, shipping terms and the seller's trade history are unverified; check the post and ask for a timestamp photo",
    "Dress watch: local FB demand may be slower; one Japanese tracker shows a ~135-day median time to sell, though 360d.io shows 26 days"
@@ -1217,7 +1217,7 @@
   "kind": "auction",
   "tier": "core",
   "image_url": "https://i.ebayimg.com/images/g/560AAeSw9WZq3iGB/s-l400.jpg",
-  "why": "$200 + $6.43 ship, 0 bids (BIN $375), ~5 days left; good condition, seller 100%, Stuart FL. Recent SKX007 sold $186\u2013334.",
+  "why": "$200 + $6.43 ship, 0 bids (BIN $375), ~5 days left; good condition, seller 100%, Stuart FL. Recent SKX007 sold $186–334.",
   "redFlags": [
    "Auction not ending within 24h",
    "Needs BCV"
@@ -1276,7 +1276,7 @@
   "kind": "pass",
   "tier": "stretch",
   "image_url": "",
-  "why": "Private seller at $1,800, right at the ~$1,850\u20132,000 market cluster, not well under it.",
+  "why": "Private seller at $1,800, right at the ~$1,850–2,000 market cluster, not well under it.",
   "redFlags": [
    "Not well under market",
    "Authentication needed (often faked)"
@@ -1655,7 +1655,7 @@
   "kind": "pass",
   "tier": "stretch",
   "image_url": "https://img.chrono24.com/images/uhren/47900125-659qnkdo6314i81q42t7dt0b-ExtraLarge.jpg",
-  "why": "$1,500 + shipping, private seller in New York, 2022, original box, Chrono24 escrow. Under the cap, but without papers resale vs the $1,890\u20131,999 B&P eBay comps leaves about $200 after 10% fees, under the $300 minimum.",
+  "why": "$1,500 + shipping, private seller in New York, 2022, original box, Chrono24 escrow. Under the cap, but without papers resale vs the $1,890–1,999 B&P eBay comps leaves about $200 after 10% fees, under the $300 minimum.",
   "redFlags": [
    "No papers",
    "Garbled reference text (mentions BR 03-95 Nightlum)",
@@ -1691,7 +1691,7 @@
   "url": "https://www.ebay.com/itm/900028159237",
   "kind": "pass",
   "image_url": "https://i.ebayimg.com/images/g/IFIAAeSwBX5qnx0E/s-l400.jpg",
-  "why": "\u00a3245 + \u00a319.05 GSP shipping (~$353) from UK seller mewatches (100%, 1,286). Plus ~\u00a333 import charges, all-in ~$398 vs eBay sold median ~$392 (Aug\u2013Oct), so no margin.",
+  "why": "£245 + £19.05 GSP shipping (~$353) from UK seller mewatches (100%, 1,286). Plus ~£33 import charges, all-in ~$398 vs eBay sold median ~$392 (Aug–Oct), so no margin.",
   "redFlags": [
    "Condition: Pre-owned Fair",
    "No returns",
@@ -1732,6 +1732,100 @@
    "Listed as Seller refurbished",
    "Seller 97.1% / 212",
    "Reference not stated",
+   "Needs BCV"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "Prospex Turtle",
+  "ref": "SRPE93",
+  "ask": 323,
+  "buy": 270,
+  "sell": null,
+  "source": "Chrono24 (private seller)",
+  "url": "https://www.chrono24.com/seiko/prospex--id49103727.htm",
+  "found": "2026-10-31",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Cheapest US Turtle on Chrono24, $323 plus shipping.",
+  "redFlags": [
+   "About $53 over the $270 cap",
+   "Listing not opened (condition and box unchecked)",
+   "Needs BCV"
+  ]
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Black Bay GMT 79830RB, 2023 full kit",
+  "ref": "79830RB",
+  "ask": 3150,
+  "buy": 2700,
+  "sell": null,
+  "source": "r/watchexchange",
+  "url": "https://www.reddit.com/r/Watchexchange/comments/1xk7ur3/",
+  "found": "2026-10-31",
+  "kind": "pass",
+  "tier": "stretch",
+  "image_url": "",
+  "why": "Full kit, but $450 over cap; Grailzee sold a 2024 79830RB at $3,600 on 10/30.",
+  "redFlags": [
+   "Over $2,700 cap",
+   "Seller trade count not checked"
+  ]
+ },
+ {
+  "brand": "SEIKO",
+  "model": "SKX007K",
+  "ref": "SKX007",
+  "ask": 350,
+  "buy": 220,
+  "sell": null,
+  "source": "Facebook Marketplace (Hendersonville)",
+  "url": "https://www.facebook.com/marketplace/item/4649796725263797/",
+  "found": "2026-10-31",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Local pickup option, but $130 over cap.",
+  "redFlags": [
+   "Over $220 cap",
+   "Listing not opened"
+  ]
+ },
+ {
+  "brand": "OMEGA",
+  "model": "Vintage Seamaster De Ville automatic (ShopGoodwill auction)",
+  "ref": "De Ville vintage",
+  "ask": 286,
+  "buy": 600,
+  "sell": null,
+  "source": "ShopGoodwill auction",
+  "url": "https://shopgoodwill.com/item/282275153",
+  "found": "2026-10-31",
+  "kind": "auction",
+  "image_url": "",
+  "why": "$286 with 9 bids, ends in about 3.5 days (around Nov 3). Under cap so far; watch it near the end.",
+  "redFlags": [
+   "Item page unreadable: dial, running status and shipping unchecked",
+   "Reference not stated",
+   "Needs BCV"
+  ]
+ },
+ {
+  "brand": "TUDOR",
+  "model": "Prince Oysterdate 74000",
+  "ref": "74000",
+  "ask": 824.49,
+  "buy": 850,
+  "sell": null,
+  "source": "eBay",
+  "url": "https://www.ebay.com/itm/147657726251",
+  "found": "2026-10-31",
+  "kind": "pass",
+  "image_url": "",
+  "why": "Mined BIN just under the $850 cap.",
+  "redFlags": [
+   "Seller 90.8% / 53 feedback, ships from India",
+   "High fake/frankenwatch risk",
    "Needs BCV"
   ]
  }
