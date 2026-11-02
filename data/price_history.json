@@ -39,6 +39,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/960044356938?_skw=Seiko+SKX007&hash=itemdf871a554a:g:vHsAAeSw1jlqyTxi"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 74.99,
+        "currency": "USD",
+        "n": 11,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/307259594965?_skw=Seiko+SKX007&hash=item478a1958d5:g:CLsAAeSwfmdq5qXu"
       }
     ]
   },
@@ -82,6 +91,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/960044356938?_skw=Seiko+SKX009&hash=itemdf871a554a:g:vHsAAeSw1jlqyTxi"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 110.1,
+        "currency": "USD",
+        "n": 4,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/960044356938?_skw=Seiko+SKX009&hash=itemdf871a554a:g:vHsAAeSw1jlqyTxi"
       }
     ]
   },
@@ -119,6 +137,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 113.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/336862828303?_skw=Seiko+SARB035&hash=item4e6e96d70f:g:7HIAAeSwAxlquOkF"
+      },
+      {
+        "date": "2026-11-02",
         "low": 113.0,
         "currency": "USD",
         "n": 1,
@@ -168,6 +195,15 @@
         "basis": "item price only; shipping was not in the response",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/137857129632?_skw=Seiko+SBDC003&hash=item2018ecdca0:g:kIkAAeSwN89qxAiP"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 328.08,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/900028159237?_skw=Seiko+SBDC003&hash=itemd18ddbd505:g:IFIAAeSwBX5qnx0E"
       }
     ]
   },
@@ -211,6 +247,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/198635932017?_skw=Seiko+SBDC081&hash=item2e3f9fc971:g:Yj0AAeSw-hBqpQLg"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 72.86,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/198635932017?_skw=Seiko+SBDC081&hash=item2e3f9fc971:g:a0wAAeSw3dtq4ViU"
       }
     ]
   },
@@ -254,6 +299,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/407273567346?_skw=Seiko+SBDC113&hash=item5ed3657472:g:Is4AAeSw-vZqxk41"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 241.41,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/407273567346?_skw=Seiko+SBDC113&hash=item5ed3657472:g:Is4AAeSw-vZqxk41"
       }
     ]
   },
@@ -291,6 +345,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 350.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/397950625314?_skw=Seiko+SPB101&hash=item5ca7b4a622:g:JEsAAeSwqyxqBuWa"
+      },
+      {
+        "date": "2026-11-02",
         "low": 350.0,
         "currency": "USD",
         "n": 1,
@@ -340,6 +403,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/188037271059?_skw=Tissot+T137.407.11.041.00&hash=item2bc7e50e13:g:QV4AAeSwC7lph~yi"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 199.99,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/188037271059?_skw=Tissot+T137.407.11.041.00&hash=item2bc7e50e13:g:QV4AAeSwC7lph~yi"
       }
     ]
   },
@@ -377,6 +449,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 284.98,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/226832424654?_skw=Tissot+PRX+Powermatic+80+green&hash=item34d0441ece:g:6qwAAOSwx0ZoLfk1"
+      },
+      {
+        "date": "2026-11-02",
         "low": 284.98,
         "currency": "USD",
         "n": 2,
@@ -426,6 +507,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/377605052940?_skw=Citizen+NY0040&hash=item57eb03da0c:g:5S0AAeSwkUhqpOeR"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 52.33,
+        "currency": "USD",
+        "n": 3,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/377605052940?_skw=Citizen+NY0040&hash=item57eb03da0c:g:5S0AAeSwkUhqpOeR"
       }
     ]
   },
@@ -463,6 +553,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 499.55,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/398438457723?_skw=Omega+165.008&hash=item5cc4c8617b:g:Ls0AAeSwi5NqubEj"
+      },
+      {
+        "date": "2026-11-02",
         "low": 499.55,
         "currency": "USD",
         "n": 1,
@@ -512,6 +611,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/206591840300?_skw=Omega+168.004&hash=item3019d5502c:g:VHUAAeSw1MJqvKKu"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 1884.9,
+        "currency": "USD",
+        "n": 16,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/206591840300?_skw=Omega+168.004&hash=item3019d5502c:g:VHUAAeSw1MJqvKKu"
       }
     ]
   },
@@ -549,6 +657,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128164718121?_skw=Omega+311.30.42.30.01.005&hash=item1dd7366629:g:FrYAAeSwwqpqw~LJ"
+      },
+      {
+        "date": "2026-11-02",
         "low": 61.0,
         "currency": "USD",
         "n": 2,
@@ -614,6 +731,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/336869440247?_skw=Omega+Seamaster+De+Ville&hash=item4e6efbbaf7:g:228AAeSw3RFq466D"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 42.41,
+        "currency": "USD",
+        "n": 59,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/326920746005?_skw=Omega+Seamaster+De+Ville&hash=item4c1dfeb415:g:qp4AAeSwYvlpRnU4"
       }
     ]
   },
@@ -700,6 +826,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/198341415927?_skw=Tudor+79540&hash=item2e2e11d3f7:g:dosAAeSwANFp~oxA"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 288.73,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/198341415927?_skw=Tudor+79540&hash=item2e2e11d3f7:g:dosAAeSwANFp~oxA"
       }
     ]
   },
@@ -737,6 +872,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128164718085?_skw=Tudor+79830RB&hash=item1dd7366605:g:FrYAAeSwwqpqw~LJ"
+      },
+      {
+        "date": "2026-11-02",
         "low": 61.0,
         "currency": "USD",
         "n": 1,
@@ -786,6 +930,15 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/198751336527?_skw=Bell+%26+Ross+BR03-92&hash=item2e4680b84f:g:KAYAAeSwMm1qMO~1"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 181.99,
+        "currency": "USD",
+        "n": 3,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/198751336527?_skw=Bell+%26+Ross+BR03-92&hash=item2e4680b84f:g:KAYAAeSwMm1qMO~1"
       }
     ]
   },
@@ -829,6 +982,15 @@
         "basis": "item price only; shipping was not in the response",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/168578785276?_skw=Bell+%26+Ross+BR0392+Horograph&hash=item2740141ffc:g:uPEAAeSwrBNqbOX-"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 1900.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/168578785276?_skw=Bell+%26+Ross+BR0392+Horograph&hash=item2740141ffc:g:uPEAAeSwrBNqbOX-"
       }
     ]
   },
@@ -857,6 +1019,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 660.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/168825313461?_skw=Seiko+SARB017&hash=item274ec5d8b5:g:TL8AAeSwwnNq47gP"
+      },
+      {
+        "date": "2026-11-02",
         "low": 660.0,
         "currency": "USD",
         "n": 1,
@@ -913,6 +1084,15 @@
         "basis": "item price only; shipping was not in the response",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/307255913583?_skw=Omega+210.30.42.20.03.001&hash=item4789e12c6f:g:ZFsAAeSw495q46Xw"
+      },
+      {
+        "date": "2026-11-02",
+        "low": 1.0,
+        "currency": "USD",
+        "n": 1,
+        "basis": "item price only; shipping was not in the response",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/307255913583?_skw=Omega+210.30.42.20.03.001&hash=item4789e12c6f:g:fLoAAeSwYNlq597U"
       }
     ]
   },
@@ -941,6 +1121,15 @@
       },
       {
         "date": "2026-11-01",
+        "low": 824.49,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/147657726251?_skw=Tudor+74000&hash=item226116192b:g:ONEAAeSwTT1qv1jj"
+      },
+      {
+        "date": "2026-11-02",
         "low": 824.49,
         "currency": "USD",
         "n": 1,
