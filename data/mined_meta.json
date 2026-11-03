@@ -1,11 +1,11 @@
 {
-  "last_mined": "Nov 2, 2026 3:50 PM CT",
-  "last_mined_iso": "2026-11-02T15:50:58-06:00",
+  "last_mined": "Nov 3, 2026 1:40 PM CT",
+  "last_mined_iso": "2026-11-03T13:40:30-06:00",
   "counts": {
     "models": 32,
     "models_ok": 32,
-    "listings": 115,
-    "ebay": 115,
+    "listings": 125,
+    "ebay": 125,
     "chrono24": 0,
     "errors": 1
   },
