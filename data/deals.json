@@ -2009,5 +2009,50 @@
     "why": "eBay auction $135 (shipping unknown), ends Nov 6; days out.",
     "redFlags": "Will likely pass the $160 cap; needs BCV.",
     "image_url": "https://i.ebayimg.com/images/g/dpUAAeSwIJBq5Qjv/s-l225.jpg"
+  },
+  {
+    "brand": "OMEGA",
+    "model": "Seamaster De Ville KM6292",
+    "ref": "De Ville",
+    "ask": 389.99,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/186105017573",
+    "found": "2026-11-04",
+    "kind": "pass",
+    "why": "eBay BIN $389.99 shipped (LA, 99.7%), cal. 563/550 gold-fill, under $600 cap.",
+    "redFlags": "Running condition not stated in title; gold-fill wear; needs BCV, confirm runs before buying.",
+    "image_url": "https://i.ebayimg.com/images/g/NrUAAOSweR1lG1k3/s-l225.jpg"
+  },
+  {
+    "brand": "OMEGA",
+    "model": "Seamaster De Ville (1960s auto, 14K)",
+    "ref": "De Ville",
+    "ask": 557.99,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/376427142297",
+    "found": "2026-11-04",
+    "kind": "pass",
+    "why": "eBay BIN $557.99 shipped, US seller 99.3%, under $600 cap but thin margin.",
+    "redFlags": "Gold-capped/14K details unverified; running/service unknown; needs BCV.",
+    "image_url": "https://i.ebayimg.com/images/g/2csAAeSwr6FpCPg5/s-l225.jpg"
+  },
+  {
+    "brand": "OMEGA",
+    "model": "Seamaster De Ville (1960s auto, 14K solid gold)",
+    "ref": "De Ville",
+    "ask": 389.99,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/940050796934",
+    "found": "2026-11-04",
+    "kind": "pass",
+    "why": "eBay auction $389.99, ends Nov 8 10:36 PM CT; Boca Raton 99.5%.",
+    "redFlags": "Days out, will likely climb past $600 cap given solid gold; needs BCV.",
+    "image_url": "https://i.ebayimg.com/images/g/T08AAeSwtgFq49yd/s-l225.jpg"
   }
 ]
