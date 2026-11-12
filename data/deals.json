@@ -1,214 +1,5 @@
 [
   {
-    "brand": "SEIKO",
-    "model": "Prospex SPB101 (Sumo family)",
-    "ref": "SPB101",
-    "ask": 357,
-    "buy": 400,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/397950625314",
-    "kind": "buy",
-    "tier": "core",
-    "image_url": "https://i.ebayimg.com/images/g/JEsAAeSwqyxqBuWa/s-l500.webp",
-    "why": "BIN $350 + ~$7 ship (Best Offer on), listed New (Other), under the $400 Sumo cap.",
-    "redFlags": [
-      "Seller has only 22 feedback",
-      "Price unusually low for an SPB101: authenticate",
-      "No SPB101 sold comps yet, so needs BCV",
-      "Box/papers not confirmed"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "OMEGA",
-    "model": "Vintage Seamaster De Ville \"14K\" (ref not stated)",
-    "ref": "De Ville vintage",
-    "ask": 499.99,
-    "buy": 600,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/407309771223",
-    "kind": "pass",
-    "tier": "core",
-    "image_url": "https://i.ebayimg.com/images/g/nPgAAeSwxE9q2lCt/s-l500.webp",
-    "why": "BIN $499.99 free ship, seller 1,514 fb 100%. Under cap, but ref, decade and running condition unconfirmed.",
-    "redFlags": [
-      "Possibly gold-capped, not solid",
-      "Ref/movement not shown"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "SEIKO",
-    "model": "SKX007 'Timeworn' dial",
-    "ref": "SKX007",
-    "ask": 201.15,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay auction",
-    "url": "https://www.ebay.com/itm/860071343977",
-    "kind": "pass",
-    "tier": "core",
-    "image_url": "https://i.ebayimg.com/images/g/YRUAAeSw5RJq2adK/s-l500.webp",
-    "why": "Auction ~$201 incl ship, 5 bids, ends ~Thu 1 AM CT. Mod-shop seller.",
-    "redFlags": [
-      "Likely aftermarket dial (mod shop)"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "SEIKO",
-    "model": "SKX009 auction",
-    "ref": "SKX009",
-    "ask": 234.23,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay auction",
-    "url": "https://www.ebay.com/itm/800822106834",
-    "kind": "pass",
-    "tier": "core",
-    "image_url": "",
-    "why": "$227.50 + $6.73, 4 bids, ~5h left; already over cap.",
-    "redFlags": [
-      "Over cap"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "SEIKO",
-    "model": "Sumo SBDC031 auction",
-    "ref": "SBDC031",
-    "ask": 437.1,
-    "buy": 400,
-    "sell": null,
-    "source": "eBay auction",
-    "url": "https://www.ebay.com/itm/940031804679",
-    "kind": "pass",
-    "tier": "core",
-    "image_url": "",
-    "why": "$425 + $12.10, 0 bids, ~10h left; over cap.",
-    "redFlags": [
-      "Over cap"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "OMEGA",
-    "model": "1960s Seamaster De Ville (ShopGoodwill)",
-    "ref": "De Ville vintage",
-    "ask": 507.84,
-    "buy": 600,
-    "sell": null,
-    "source": "ShopGoodwill auction",
-    "url": "https://shopgoodwill.com/item/281609891",
-    "kind": "auction",
-    "tier": "core",
-    "image_url": "",
-    "why": "Now $502.85 + $4.99 ship after 17 bids; listed running/tested, 33.5mm; ends today 10/28 7:54 PM CT. Flagged 10/26.",
-    "redFlags": [
-      "Thin De Ville comps (needs BCV)",
-      "Bidding may climb past cap"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "TUDOR",
-    "model": "Black Bay 58 M79030N-0003",
-    "ref": "79030N",
-    "ask": 2500,
-    "buy": 2650,
-    "sell": 3450,
-    "source": "Chrono24 (private seller)",
-    "url": "https://www.chrono24.com/tudor/black-bay-fifty-eight--id49515375.htm",
-    "kind": "buy",
-    "tier": "stretch",
-    "image_url": "",
-    "why": "$2,500 + shipping (not shown), lowest US Chrono24 listing, under the $2,650 cap and below recent eBay/Grailzee sold prices (mostly $3,180-3,800).",
-    "redFlags": [
-      "Private seller: confirm box/papers and seller history",
-      "Shipping not shown",
-      "Authenticate"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "TUDOR",
-    "model": "Black Bay GMT Pepsi (eBay auction)",
-    "ref": "79830RB",
-    "ask": 3039,
-    "buy": 2700,
-    "sell": null,
-    "source": "eBay auction",
-    "url": "https://www.ebay.com/itm/206646834115",
-    "kind": "pass",
-    "tier": "stretch",
-    "image_url": "",
-    "why": "$2,999 + $40, 1 bid, ~1d10h left; over cap.",
-    "redFlags": [
-      "Over cap"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "BELL & ROSS",
-    "model": "BR 03-92 Heritage",
-    "ref": "BR03-92",
-    "ask": 1800,
-    "buy": 1750,
-    "sell": null,
-    "source": "Chrono24 (private seller)",
-    "url": "https://www.chrono24.com/bellross/br-03-92-heritage--id47997052.htm",
-    "kind": "pass",
-    "tier": "stretch",
-    "image_url": "",
-    "why": "$1,800, just over the 'well under ~$1,850-2,000' target.",
-    "redFlags": [
-      "Over cap",
-      "Often faked"
-    ],
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "PANERAI",
-    "model": "Luminor Marina PAM00104 (Grailzee offer listing)",
-    "ref": "PAM00104",
-    "ask": null,
-    "buy": null,
-    "sell": null,
-    "source": "Grailzee",
-    "url": "https://grailzee.com/",
-    "kind": "pass",
-    "tier": "stretch",
-    "image_url": "",
-    "why": "2008 PAM104 offer listing showing a $2,300 high offer, not an ask. Ref not fully confirmed. Lead only (premium).",
-    "redFlags": [
-      "Offer listing, no ask",
-      "Ref unconfirmed",
-      "Panerai often faked"
-    ],
-    "note": "premium",
-    "found": "2026-10-28"
-  },
-  {
-    "brand": "TUDOR",
-    "model": "Black Bay Heritage 79230N",
-    "ref": "79230N",
-    "ask": 3500,
-    "buy": 2250,
-    "sell": null,
-    "source": "Facebook Marketplace",
-    "url": "https://www.facebook.com/marketplace/item/1778610766893118",
-    "kind": "pass",
-    "tier": "stretch",
-    "image_url": "",
-    "why": "Hermitage, $3,500; well over cap.",
-    "redFlags": [
-      "Over cap"
-    ],
-    "found": "2026-10-28"
-  },
-  {
     "brand": "OMEGA",
     "model": "Seamaster De Ville 166.020",
     "ref": "166.020",
@@ -321,98 +112,6 @@
       "Needs BCV"
     ],
     "found": "2026-10-29"
-  },
-  {
-    "brand": "Bell & Ross",
-    "model": "BR03-92 (ceramic, black dial)",
-    "ref": "BR03-92",
-    "ask": 1500,
-    "buy": 1750,
-    "sell": 1890,
-    "source": "Chrono24",
-    "url": "https://www.chrono24.com/bellross/br03-92--id47900125.htm",
-    "kind": "pass",
-    "tier": "stretch",
-    "image_url": "https://img.chrono24.com/images/uhren/47900125-659qnkdo6314i81q42t7dt0b-ExtraLarge.jpg",
-    "why": "$1,500 + shipping, private seller in New York, 2022, original box, Chrono24 escrow. Under the cap, but without papers resale vs the $1,890–1,999 B&P eBay comps leaves about $200 after 10% fees, under the $300 minimum.",
-    "redFlags": [
-      "No papers",
-      "Garbled reference text (mentions BR 03-95 Nightlum)",
-      "Heavily faked brand; authenticate",
-      "Needs BCV"
-    ]
-  },
-  {
-    "brand": "SEIKO",
-    "model": "Prospex Sumo SBDC001",
-    "ref": "SBDC001",
-    "ask": 392,
-    "buy": 400,
-    "sell": null,
-    "source": "Chrono24",
-    "url": "https://www.chrono24.com/seiko/prospex--id48857455.htm",
-    "kind": "pass",
-    "image_url": "https://img.chrono24.com/images/uhren/9105ee6f4zhi-pplqdenlw4hu5blar166qxjv-ExtraLarge.jpg",
-    "why": "$392 + shipping, private seller in California, black Sumo on bracelet, runs, minimal wear. Under the Sumo cap but no SBDC001 sold comps yet and no room for $300 profit.",
-    "redFlags": [
-      "No box or papers",
-      "Needs BCV"
-    ]
-  },
-  {
-    "brand": "SEIKO",
-    "model": "Prospex Blue Sumo SBDC003",
-    "ref": "SBDC003",
-    "ask": 353.19,
-    "buy": 400,
-    "sell": 392.5,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/900028159237",
-    "kind": "pass",
-    "image_url": "https://i.ebayimg.com/images/g/IFIAAeSwBX5qnx0E/s-l400.jpg",
-    "why": "£245 + £19.05 GSP shipping (~$353) from UK seller mewatches (100%, 1,286). Plus ~£33 import charges, all-in ~$398 vs eBay sold median ~$392 (Aug–Oct), so no margin.",
-    "redFlags": [
-      "Condition: Pre-owned Fair",
-      "No returns",
-      "Import charges"
-    ]
-  },
-  {
-    "brand": "OMEGA",
-    "model": "Seamaster De Ville 1964 B6308 cal. 670 (14K GF)",
-    "ref": "De Ville vintage",
-    "ask": 599.99,
-    "buy": 600,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/137515959930",
-    "kind": "pass",
-    "image_url": "https://i.ebayimg.com/images/g/w8AAAeSwNEdpxsy6/s-l400.jpg",
-    "why": "$599.99 free shipping, 37,885-feedback seller, 30-day returns, Authenticity Guarantee. At the cap but small 31mm gold-filled case limits resale.",
-    "redFlags": [
-      "31mm gold-filled",
-      "Dial originality not stated",
-      "Needs BCV"
-    ]
-  },
-  {
-    "brand": "OMEGA",
-    "model": "Seamaster De Ville 1960s Seahorse (steel)",
-    "ref": "De Ville vintage",
-    "ask": 586.35,
-    "buy": 600,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/820087736014",
-    "kind": "pass",
-    "image_url": "https://i.ebayimg.com/images/g/vjQAAeSwTtFqmw8u/s-l400.jpg",
-    "why": "$580 + $6.35 shipping, steel case, 'original dial' per seller.",
-    "redFlags": [
-      "Listed as Seller refurbished",
-      "Seller 97.1% / 212",
-      "Reference not stated",
-      "Needs BCV"
-    ]
   },
   {
     "brand": "SEIKO",
@@ -835,7 +534,7 @@
     "url": "https://www.ebay.com/itm/940066046291",
     "found": "2026-11-07",
     "kind": "auction",
-    "why": "eBay auction at $260 (shipping unknown on mined row), ends Nov 11 ~3:50 PM CT; Clearwater FL seller 100% / 671. Under $340 priority cap; recent related Khaki Field solds ~$356–447.",
+    "why": "eBay auction at $260 (shipping unknown on mined row), ends Nov 11 ~3:50 PM CT; Clearwater FL seller 100% / 671. Under $340 priority cap; recent related Khaki Field solds ~$356\u2013447.",
     "redFlags": "Shipping unknown; mid-auction will climb; needs BCV; confirm exact ref/dial vs sold comps.",
     "image_url": "https://i.ebayimg.com/images/g/53oAAeSw82Rq66ex/s-l225.jpg"
   },
@@ -866,7 +565,7 @@
     "found": "2026-11-07",
     "kind": "pass",
     "why": "eBay BIN $375 (shipping unknown), Malden MA seller 100% / 23. Under PRX $400 ask but 35mm leather, not the usual 40mm steel PM80 flip target.",
-    "redFlags": "Wrong size vs 40mm comps (~$446–458 sold); thin seller; shipping unknown; needs 35mm-specific BCV/comps.",
+    "redFlags": "Wrong size vs 40mm comps (~$446\u2013458 sold); thin seller; shipping unknown; needs 35mm-specific BCV/comps.",
     "image_url": "https://i.ebayimg.com/images/g/luEAAeSwObBq7Qsw/s-l225.jpg"
   },
   {
@@ -1084,7 +783,7 @@
     "url": "https://www.ebay.com/itm/317850483115",
     "found": "2026-11-10",
     "kind": "pass",
-    "why": "Listed at $1,564, under the ~$1,850–2,000 eBay cluster, but it ships from Indonesia and Bell & Ross is faked often.",
+    "why": "Listed at $1,564, under the ~$1,850\u20132,000 eBay cluster, but it ships from Indonesia and Bell & Ross is faked often.",
     "redFlags": [
       "Authentication risk, overseas seller (98.8%, 319)",
       "Heritage variant, comps not verified for this exact dial",
@@ -1140,7 +839,7 @@
     "url": "https://www.ebay.com/itm/336821008277",
     "found": "2026-11-11",
     "kind": "buy",
-    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785–$1,050.",
+    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785\u2013$1,050.",
     "redFlags": [
       "Brand-new seller account (100%, 2 feedback)",
       "Title says 'new band', so the original bracelet/strap is likely missing",
@@ -1241,5 +940,133 @@
       "No 79540 sold comps"
     ],
     "image_url": ""
+  },
+  {
+    "brand": "Omega",
+    "model": "Seamaster De Ville 165.008 (1960s, cal. 610)",
+    "ref": "165.008",
+    "ask": 499.55,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/398438457723",
+    "found": "2026-11-12",
+    "kind": "pass",
+    "why": "1960s 165.008 at $499.55 BIN, under the $600 cap, but the only comp on file is $617, so the margin after ~10% fees is about $55.",
+    "redFlags": [
+      "Seller in Albania, 131 feedback",
+      "Only one sold comp on file",
+      "Dial originality not verified"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/Ls0AAeSwi5NqubEj/s-l225.jpg"
+  },
+  {
+    "brand": "Omega",
+    "model": "Seamaster De Ville 165.008 gold plated (cal. 712)",
+    "ref": "165.008",
+    "ask": 580.0,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/920131408291",
+    "found": "2026-11-12",
+    "kind": "pass",
+    "why": "Gold-plated 165.008 at $580 BIN, right at the cap with essentially no margin against the single $617 comp.",
+    "redFlags": [
+      "Gold-plated case (plating wear risk)",
+      "Seller in Colombia, 82 feedback",
+      "Thin margin"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/TxoAAeSwCJJq9KM5/s-l225.jpg"
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX009 Pepsi",
+    "ref": "SKX009",
+    "ask": 187.0,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/820329543094",
+    "found": "2026-11-12",
+    "kind": "auction",
+    "why": "Pre-owned SKX009 auction at $187 incl. shipping, ending Nov 12 10:28 PM CT; recent SKX009 sold comps run about $200-390.",
+    "redFlags": [
+      "Philippines seller (99%, 1,042); these batches are often modded, check dial/bezel are OEM",
+      "Bid will likely rise"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/X-wAAeSwD6Jq79mY/s-l225.jpg"
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX009 Pepsi",
+    "ref": "SKX009",
+    "ask": 153.5,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/168846932479",
+    "found": "2026-11-12",
+    "kind": "auction",
+    "why": "US seller SKX009 auction at $153.50 with free shipping, ends Nov 14 6:17 PM CT; under the $220 cap if it stays low.",
+    "redFlags": [
+      "Described as scratched from normal use",
+      "Auction, price will rise"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/XI8AAeSw38Nq7JBH/s-l225.jpg"
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX007",
+    "ref": "SKX007",
+    "ask": 78.5,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/206683739356",
+    "found": "2026-11-12",
+    "kind": "auction",
+    "why": "SKX007 auction at $78.50 incl. shipping, ends Nov 15 5:30 PM CT; well under the $220 cap for now.",
+    "redFlags": [
+      "Philippines seller (98.3%, 14,627); check for aftermarket parts",
+      "Early bid, will rise"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/Hj8AAeSwRcdq7~~o/s-l225.jpg"
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX007",
+    "ref": "SKX007",
+    "ask": 157.88,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/137914826612",
+    "found": "2026-11-12",
+    "kind": "auction",
+    "why": "Second SKX007 auction from the Pearland, TX seller (99.3%, 5,281) at $157.88, ends Nov 15 8:48 PM CT.",
+    "redFlags": [
+      "Auction, price will rise"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/5boAAeSw-w1q5ez1/s-l225.jpg"
+  },
+  {
+    "brand": "Bell & Ross",
+    "model": "BR03-92 Black Steel 42mm",
+    "ref": "BR03-92",
+    "ask": 1695.0,
+    "buy": 2500,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/236958724927",
+    "found": "2026-11-12",
+    "kind": "pass",
+    "why": "BR03-92 at $1,695 with free shipping and OEM box, only about 10% under the $1,850-2,000 market cluster and the $1,890 Oct 15 sold comp, so not well under.",
+    "redFlags": [
+      "Bell & Ross is faked often; authenticate",
+      "No papers mentioned",
+      "Margin under $300 after fees"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/gTUAAeSwHg9qYm8y/s-l225.jpg"
   }
 ]
