@@ -1,50 +1,5 @@
 [
   {
-    "brand": "SEIKO",
-    "model": "SKX009",
-    "ref": "SKX009",
-    "ask": 186.5,
-    "buy": null,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/820295434869",
-    "found": "2026-11-03",
-    "kind": "pass",
-    "why": "eBay auction $151.50+$35 ship, ends Nov 4 10:21 PM CT; bids will climb.",
-    "redFlags": "Philippines seller, likely aftermarket/patina; needs BCV.",
-    "image_url": "https://i.ebayimg.com/images/g/mZkAAeSwbo5q5F9D/s-l225.jpg"
-  },
-  {
-    "brand": "SEIKO",
-    "model": "SKX007",
-    "ref": "SKX007",
-    "ask": 174,
-    "buy": null,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/820295504724",
-    "found": "2026-11-03",
-    "kind": "pass",
-    "why": "eBay auction $139+$35, ends Nov 4 10:48 PM CT.",
-    "redFlags": "Philippines seller; check for mod parts; needs BCV.",
-    "image_url": "https://i.ebayimg.com/images/g/D5IAAeSwc~Vq5GPR/s-l225.jpg"
-  },
-  {
-    "brand": "CITIZEN",
-    "model": "Promaster Fugu",
-    "ref": "NY0040-09E",
-    "ask": 135,
-    "buy": null,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/880066150860",
-    "found": "2026-11-03",
-    "kind": "pass",
-    "why": "eBay auction $135 (shipping unknown), ends Nov 6; days out.",
-    "redFlags": "Will likely pass the $160 cap; needs BCV.",
-    "image_url": "https://i.ebayimg.com/images/g/dpUAAeSwIJBq5Qjv/s-l225.jpg"
-  },
-  {
     "brand": "OMEGA",
     "model": "Seamaster De Ville KM6292",
     "ref": "De Ville",
@@ -190,7 +145,7 @@
     "url": "https://www.ebay.com/itm/940066046291",
     "found": "2026-11-07",
     "kind": "auction",
-    "why": "eBay auction at $260 (shipping unknown on mined row), ends Nov 11 ~3:50 PM CT; Clearwater FL seller 100% / 671. Under $340 priority cap; recent related Khaki Field solds ~$356\u2013447.",
+    "why": "eBay auction at $260 (shipping unknown on mined row), ends Nov 11 ~3:50 PM CT; Clearwater FL seller 100% / 671. Under $340 priority cap; recent related Khaki Field solds ~$356–447.",
     "redFlags": "Shipping unknown; mid-auction will climb; needs BCV; confirm exact ref/dial vs sold comps.",
     "image_url": "https://i.ebayimg.com/images/g/53oAAeSw82Rq66ex/s-l225.jpg"
   },
@@ -221,7 +176,7 @@
     "found": "2026-11-07",
     "kind": "pass",
     "why": "eBay BIN $375 (shipping unknown), Malden MA seller 100% / 23. Under PRX $400 ask but 35mm leather, not the usual 40mm steel PM80 flip target.",
-    "redFlags": "Wrong size vs 40mm comps (~$446\u2013458 sold); thin seller; shipping unknown; needs 35mm-specific BCV/comps.",
+    "redFlags": "Wrong size vs 40mm comps (~$446–458 sold); thin seller; shipping unknown; needs 35mm-specific BCV/comps.",
     "image_url": "https://i.ebayimg.com/images/g/luEAAeSwObBq7Qsw/s-l225.jpg"
   },
   {
@@ -439,7 +394,7 @@
     "url": "https://www.ebay.com/itm/317850483115",
     "found": "2026-11-10",
     "kind": "pass",
-    "why": "Listed at $1,564, under the ~$1,850\u20132,000 eBay cluster, but it ships from Indonesia and Bell & Ross is faked often.",
+    "why": "Listed at $1,564, under the ~$1,850–2,000 eBay cluster, but it ships from Indonesia and Bell & Ross is faked often.",
     "redFlags": [
       "Authentication risk, overseas seller (98.8%, 319)",
       "Heritage variant, comps not verified for this exact dial",
@@ -495,7 +450,7 @@
     "url": "https://www.ebay.com/itm/336821008277",
     "found": "2026-11-11",
     "kind": "buy",
-    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785\u2013$1,050.",
+    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785–$1,050.",
     "redFlags": [
       "Brand-new seller account (100%, 2 feedback)",
       "Title says 'new band', so the original bracelet/strap is likely missing",
@@ -1318,7 +1273,7 @@
     "kind": "auction",
     "tier": "stretch",
     "image_url": "https://i.ebayimg.com/images/g/kjAAAeSwDDxq6ob6/s-l225.jpg",
-    "why": "Auction, current price $2,662 incl. shipping vs $4,100 cap; ends Nov 22 ~6:35 PM CT. Listed with box. Grailzee comps on file at $4,250\u2013$5,000, so only worth watching if it closes under the cap.",
+    "why": "Auction, current price $2,662 incl. shipping vs $4,100 cap; ends Nov 22 ~6:35 PM CT. Listed with box. Grailzee comps on file at $4,250–$5,000, so only worth watching if it closes under the cap.",
     "redFlags": [
       "Seller has only 69 feedback",
       "Auction will climb; not a buy at current bid",
@@ -1396,7 +1351,7 @@
     "kind": "auction",
     "tier": "core",
     "image_url": "https://i.ebayimg.com/images/g/doAAAeSwilBq-m~z/s-l225.jpg",
-    "why": "Auction from the Philippines (seller 99%, 1k) at $184 incl. shipping vs $220 cap; ends Nov 20 ~10:44 PM CT. SKX009 eBay sold comps on file $340\u2013$380.",
+    "why": "Auction from the Philippines (seller 99%, 1k) at $184 incl. shipping vs $220 cap; ends Nov 20 ~10:44 PM CT. SKX009 eBay sold comps on file $340–$380.",
     "redFlags": [
       "Ships from Philippines",
       "Same seller lists many modded SKXs; confirm original dial/bezel",
@@ -1421,6 +1376,204 @@
       "No sold comps / no BCV",
       "Gold-capped vs solid gold unconfirmed",
       "UK import duty/shipping"
+    ]
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay GMT Pepsi",
+    "ref": "79830RB",
+    "ask": 2405.0,
+    "buy": 2700,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/920150091071",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "stretch",
+    "image_url": "https://i.ebayimg.com/images/g/WykAAeSwvnRq93ob/s-l225.jpg",
+    "why": "Auction at $2,405 incl. free shipping (La Mesa, CA; seller 100%, 58 feedback) vs $2,700 stretch cap; ends Nov 21 ~3:11 PM CT. Recent 79830RB sold comps on file $3,000–$3,995 (Grailzee sold $3,200–$3,600).",
+    "redFlags": [
+      "Title doesn't mention box & papers",
+      "Low seller feedback count (58)",
+      "Auction will climb; days out"
+    ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX009 Pepsi/Patina",
+    "ref": "SKX009",
+    "ask": 174.0,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/227618605594",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/TjAAAeSw8NNq~FbB/s-l225.jpg",
+    "why": "PH auction $139 + $35 ship = $174 vs $220 cap; ends Nov 22 ~12:45 PM CT. SKX009 eBay sold comps on file ~$200–$390.",
+    "redFlags": [
+      "Ships from Philippines",
+      "'Patina' insert; seller lists many modded SKXs, confirm original parts",
+      "Auction will climb"
+    ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX009 Pepsi",
+    "ref": "SKX009",
+    "ask": 174.0,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/800928417943",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/o8AAAeSwOg5q-~uA/s-l225.jpg",
+    "why": "PH auction $139 + $35 ship = $174 vs $220 cap; ends Nov 22 ~12:30 PM CT.",
+    "redFlags": [
+      "Ships from Philippines",
+      "Same mod-heavy seller; confirm original dial/bezel",
+      "Auction will climb"
+    ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX009",
+    "ref": "SKX009",
+    "ask": 175.0,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/227606830219",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/xFIAAeSwVBRq34LN/s-l225.jpg",
+    "why": "Las Vegas auction at $175 (shipping unknown) vs $220 cap; ends Nov 22 ~7:30 PM CT.",
+    "redFlags": [
+      "Shipping not stated",
+      "On rubber strap, no bracelet",
+      "Auction will climb"
+    ]
+  },
+  {
+    "brand": "Citizen",
+    "model": "Promaster Fugu",
+    "ref": "NY0040-09E",
+    "ask": 135.82,
+    "buy": 160,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/137928185186",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/L1cAAeSwvElqIWUo/s-l225.jpg",
+    "why": "UK auction at $135.82 incl. shipping vs $160 cap; seller 100% (2,459); 'VGC BOX'; ends Nov 25 ~1:30 PM CT.",
+    "redFlags": [
+      "Ships from UK (import duty possible)",
+      "Auction will climb; days out",
+      "No BCV on file"
+    ]
+  },
+  {
+    "brand": "Citizen",
+    "model": "Promaster NY0040 Lefty",
+    "ref": "NY0040",
+    "ask": 74.99,
+    "buy": 160,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/206702554731",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/OM8AAeSwIEhq-Wk0/s-l225.jpg",
+    "why": "PH auction $9.99 + $65 ship = $74.99; ends Nov 22 ~5:30 PM CT.",
+    "redFlags": [
+      "Ships from Philippines; high shipping",
+      "Exact variant unconfirmed",
+      "No BCV on file"
+    ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "Prospex Sumo SBDC081 green",
+    "ref": "SBDC081",
+    "ask": 381.0,
+    "buy": 400,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/840137869208",
+    "found": "2026-11-18",
+    "kind": "auction",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/NpcAAeSwT1Rq~D2x/s-l225.jpg",
+    "why": "JP auction $381 incl. free shipping vs $400 Sumo cap; ends Nov 24 ~5:42 AM CT.",
+    "redFlags": [
+      "Ships from Japan",
+      "Seller only 56 feedback",
+      "Little headroom under cap; no SBDC081 sold comps on file (needs BCV)"
+    ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "Prospex Sumo SBDC113",
+    "ref": "SBDC113",
+    "ask": 241.41,
+    "buy": 400,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/407342225179",
+    "found": "2026-11-18",
+    "kind": "pass",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/~EsAAeSwo6lq7ITr/s-l225.jpg",
+    "why": "BIN $166.41 + $75 ship = $241.41; price far below a full SBDC113, title reads 'Belt' — likely strap/bracelet only or unclear listing.",
+    "redFlags": [
+      "Possibly strap only",
+      "Listing page couldn't be verified (eBay blocked fetch)",
+      "No SBDC113 comps on file"
+    ]
+  },
+  {
+    "brand": "Omega",
+    "model": "Seamaster De Ville (vintage)",
+    "ref": "De Ville vintage",
+    "ask": 494.21,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/840129571744",
+    "found": "2026-11-18",
+    "kind": "pass",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/MJoAAeSwNjdq-HqT/s-l225.jpg",
+    "why": "BIN $494.21 (shipping unknown) from Nottingham, UK; men's 35mm automatic.",
+    "redFlags": [
+      "No ref/caliber in title",
+      "Shipping unknown + import from UK",
+      "Seller only 84 feedback; running status not stated"
+    ]
+  },
+  {
+    "brand": "Omega",
+    "model": "Seamaster De Ville (vintage)",
+    "ref": "De Ville vintage",
+    "ask": 167.5,
+    "buy": 600,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/880106640425",
+    "found": "2026-11-18",
+    "kind": "pass",
+    "tier": "core",
+    "image_url": "https://i.ebayimg.com/images/g/1CoAAeSwm0FqzTet/s-l225.jpg",
+    "why": "Auction $167.50 ending today ~2:57 PM CT (Toledo).",
+    "redFlags": [
+      "Sold for parts — not running"
     ]
   }
 ]
