@@ -38,13 +38,43 @@ CATEGORY_WRISTWATCH = "31387"
 MAX_ITEMS_PER_QUERY = 100
 PAGE_LIMIT = 50
 
-PARTS_RE = re.compile(
-    r"\b(bezel insert|insert only|hands only|dial only|movement only|box only|"
-    r"empty box|papers only|strap only|bracelet only|clasp only|spring bars?|"
-    r"link only|band only|buckle only)\b",
-    re.I,
+# A listing is a part when the title is selling the part, not when a complete
+# watch mentions a dial color, a strap, a box, or extra links.
+NOT_WORKING_RE = re.compile(
+    r"\b(for parts|for repair|not working|not running|as is|spares|repair)\b"
+)
+PART_ONLY_RE = re.compile(
+    r"\b(bezel insert|insert only|hands only|dial only|movement only|box only|empty box|"
+    r"papers only|straps? only|bracelets? only|clasp only|spring bars?|links? only|"
+    r"bands? only|buckles? only|cases? only|empty cases?|crystals? only|crowns? only)\b"
+)
+PART_FOR_RE = re.compile(
+    r"\b(?:bracelets?|straps?|bands?|clasps?|buckles?|links?|dials?|crowns?|bezels?|"
+    r"inserts?|movements?|crystals?|hands|case ?backs?)\b(?:\s+\w+){0,8}\s+for\b"
+)
+GENUINE_PART_RE = re.compile(
+    r"\bgenuine\b(?:\s+\w+){0,6}\s+"
+    r"(dial|dials|bracelet|bracelets|strap|straps|band|bands|link|links|clasp|clasps|"
+    r"crown|bezel|insert)s?\b"
+)
+COLOR_WORD = (
+    r"black|blue|white|green|silver|gold|grey|gray|champagne|ivory|roman|sunburst|"
+    r"gilt|brown|orange|navy|red|cream|salmon|panda|tropical|matte|dark|light|hulk|pepsi|lume"
+)
+WATCH_WORD_RE = re.compile(
+    r"\b(watch|wristwatch|watches|timepiece|automatic|quartz|manual|self winding|"
+    r"hand winding|winding|chronometer|diver|divers|mens|ladies|womens|womans)\b"
+)
+CASE_MM_RE = re.compile(r"\b\d{2}\s*mm\b")
+# Used only by the price backstop. A cheap title that says these is a watch on
+# sale, not a part the wording missed.
+COMPLETE_WATCH_RE = re.compile(
+    r"\b(watch|wristwatch|watches|automatic|self winding|chronometer|diver|divers)\b"
 )
 EXCLUDE_RE = re.compile(r"\b(homage|replica|aftermarket|modded|fake|franken)\b", re.I)
+PRICE_FLOOR_RATIO = 0.33
+MIN_LISTINGS_FOR_PRICE_FLOOR = 3
+FILTER_REASONS = ("part", "not_working", "excluded", "below_median")
 CHRONO_BLOCK_RE = re.compile(
     r"cf-browser-verification|cf-challenge|just a moment|captcha|access denied",
     re.I,
@@ -108,8 +138,173 @@ def title_matches(title, groups):
     return False
 
 
+def normalize_title(title):
+    text = (title or "").casefold()
+    text = text.replace("&", " and ")
+    for ch in ("'", "’", "‘", "`"):
+        text = text.replace(ch, "")
+    text = re.sub(r"[^a-z0-9+]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def empty_filter_counts():
+    return {key: 0 for key in FILTER_REASONS}
+
+
+def note_reject(bucket, reason):
+    if bucket is not None and reason:
+        bucket[reason] = bucket.get(reason, 0) + 1
+
+
+def _dial_is_the_item(text):
+    if not re.search(r"\bdials?\b", text):
+        return False
+    if re.search(r"\bdial only\b", text):
+        return True
+    # "BLACK DIAL ... series" is a dial for sale. A watch that merely says
+    # "black dial" does not.
+    if re.search(r"\bseries\b", text) and not WATCH_WORD_RE.search(text):
+        return True
+    ends = re.search(r"\bdials?(?:\s+\d+){0,4}$", text)
+    color_end = re.search(rf"\b(?:{COLOR_WORD})\s+dials?(?:\s+\d+){{0,4}}$", text)
+    if ends and not color_end:
+        return True
+    if re.search(r"\boriginal dials?\b", text) and not re.search(
+        r"\b(watch|wristwatch|watches|automatic|mens|ladies)\b", text
+    ):
+        return True
+    context = WATCH_WORD_RE.search(text) or CASE_MM_RE.search(text)
+    if not context and not re.search(rf"\b(?:{COLOR_WORD})\s+dials?\b", text):
+        return True
+    return False
+
+
+def _box_is_the_item(text):
+    if re.search(r"\bpresentation box\b", text):
+        return True
+    if not re.search(r"\bbox\b", text):
+        return False
+    if re.search(r"\b(no box|with box|w box|box and papers|box or papers)\b", text):
+        return False
+    if WATCH_WORD_RE.search(text) or CASE_MM_RE.search(text):
+        return False
+    return True
+
+
+def _strap_is_the_item(text):
+    if re.search(r"\bbracelet links?\b", text):
+        return True
+    if not re.search(r"\b(bracelets?|straps?|bands?|clasps?|buckles?)\b", text):
+        return False
+    # "3 bracelets" and "on rubber strap" describe the watch. "custom band" does too.
+    if re.search(r"\b\d+\s+bracelets\b", text):
+        return False
+    if re.search(r"\bcustom band\b", text):
+        return False
+    if re.search(r"\bon\b(?:\s+\w+){0,3}\s+(?:strap|band|bracelet)\b", text):
+        return False
+    if WATCH_WORD_RE.search(text):
+        return False
+    return bool(re.search(r"\b(bracelet|strap|band|clasp|buckle)\b", text))
+
+
+def _is_part_title(text):
+    if PART_ONLY_RE.search(text) or PART_FOR_RE.search(text) or GENUINE_PART_RE.search(text):
+        return True
+    if re.search(r"\bspare\b", text) or re.search(r"\blot of\b", text):
+        return True
+    if re.search(r"\b(female|male) stem\b", text):
+        return True
+    if re.search(r"\bcrown\b", text) and re.search(r"\bstem\b", text):
+        return True
+    if re.search(r"\bmovements?\b", text):
+        return True
+    if re.search(r"\bcase ?backs?\b", text) or re.search(r"\bwatch cases?\b", text):
+        return True
+    if re.search(r"\bfor cal(?:iber)?\b", text):
+        return True
+    if re.search(r"\b(protection film|protective film|chapter ring)\b", text):
+        return True
+    if re.search(r"\bplexi\b", text) and not re.search(r"\b(watch|wristwatch|automatic|quartz)\b", text):
+        return True
+    if _dial_is_the_item(text) or _box_is_the_item(text) or _strap_is_the_item(text):
+        return True
+    return False
+
+
+def title_reject_reason(title):
+    """Why this title is not a complete working watch, or None to keep it.
+
+    `part` is a dial, bracelet, box, or other piece sold alone.
+    `not_working` is for parts, for repair, not working, or as-is.
+    `excluded` is a replica, homage, or similar, which was already skipped.
+    """
+    raw = title or ""
+    if EXCLUDE_RE.search(raw):
+        return "excluded"
+    text = normalize_title(raw)
+    if not text:
+        return None
+    if NOT_WORKING_RE.search(text):
+        return "not_working"
+    if _is_part_title(text):
+        return "part"
+    return None
+
+
 def looks_like_parts(title):
-    return bool(PARTS_RE.search(title or "") or EXCLUDE_RE.search(title or ""))
+    return title_reject_reason(title) is not None
+
+
+def is_auction(row):
+    if str(row.get("format") or "").casefold() == "auction":
+        return True
+    # A $1 eLive auction is a real watch even if the format field is missing.
+    if row.get("end_time") and "elive" in normalize_title(row.get("title")):
+        return True
+    return False
+
+
+def reads_as_complete_watch(title):
+    return bool(COMPLETE_WATCH_RE.search(normalize_title(title)))
+
+
+def median(values):
+    vals = sorted(values)
+    mid = len(vals) // 2
+    if len(vals) % 2:
+        return vals[mid]
+    return (vals[mid - 1] + vals[mid]) / 2
+
+
+def drop_price_outliers(rows, ratio=PRICE_FLOOR_RATIO):
+    """Drop fixed-price listings priced like a part next to the model's other listings.
+
+    Auctions stay, including a $1 eLive bid. A buy-it-now title that reads as a
+    whole watch stays too: that is a cheap watch, not a missed dial or bracelet.
+    The floor is one third of the model's median, and only when the model has
+    at least three listings left to compare.
+    """
+    grouped = {}
+    for index, row in enumerate(rows):
+        grouped.setdefault(row.get("model_id"), []).append(index)
+    drop = set()
+    for indexes in grouped.values():
+        priced = [i for i in indexes if isinstance(rows[i].get("total"), (int, float))]
+        if len(priced) < MIN_LISTINGS_FOR_PRICE_FLOOR:
+            continue
+        med = median(rows[i]["total"] for i in priced)
+        if med <= 0:
+            continue
+        floor = med * ratio
+        for i in priced:
+            row = rows[i]
+            if is_auction(row) or reads_as_complete_watch(row.get("title")):
+                continue
+            if row["total"] < floor:
+                drop.add(i)
+    kept = [row for i, row in enumerate(rows) if i not in drop]
+    return kept, len(drop)
 
 
 def effective_cap(model, max_price):
@@ -207,12 +402,12 @@ def image_of(item):
     return ""
 
 
-def listing_from_ebay(model, item, cap):
+def listing_from_ebay(model, item, cap, rejected=None):
     """Build one listing dict, or None when the item is not a real under-cap watch."""
     if not isinstance(item, dict):
         return None
     title = item.get("title") or ""
-    if not title or looks_like_parts(title):
+    if not title:
         return None
     groups = model.get("title_any") or [[model.get("ref") or ""]]
     if not title_matches(title, groups):
@@ -226,6 +421,10 @@ def listing_from_ebay(model, item, cap):
     ship, known = shipping_of(item)
     total = round(price + ship, 2) if known else price
     if total > cap:
+        return None
+    reason = title_reject_reason(title)
+    if reason:
+        note_reject(rejected, reason)
         return None
     end = item.get("itemEndDate")
     if end is not None and not isinstance(end, str):
@@ -291,7 +490,7 @@ def walk_jsonld(node, out):
         })
 
 
-def listing_from_chrono(model, raw, cap):
+def listing_from_chrono(model, raw, cap, rejected=None):
     if not isinstance(raw, dict):
         return None
     title = str(raw.get("title") or "")
@@ -300,7 +499,7 @@ def listing_from_chrono(model, raw, cap):
         url = "https://www.chrono24.com" + url
     if "chrono24.com" not in url or not url.startswith("http"):
         return None
-    if not title or looks_like_parts(title):
+    if not title:
         return None
     groups = model.get("title_any") or [[model.get("ref") or ""]]
     if not title_matches(title, groups):
@@ -313,6 +512,10 @@ def listing_from_chrono(model, raw, cap):
     except (TypeError, ValueError):
         return None
     if price > cap:
+        return None
+    reason = title_reject_reason(title)
+    if reason:
+        note_reject(rejected, reason)
         return None
     image = raw.get("image") or ""
     if not isinstance(image, str) or not image.startswith("http"):
@@ -340,7 +543,7 @@ def listing_from_chrono(model, raw, cap):
     }
 
 
-def parse_chrono24(html, model, cap):
+def parse_chrono24(html, model, cap, rejected=None):
     """Parse a Chrono24 search page. Returns (listings, error).
 
     A page that contains JSON-LD but no under-cap USD matches is a real empty
@@ -366,7 +569,7 @@ def parse_chrono24(html, model, cap):
         raws = []
         walk_jsonld(payload, raws)
         for raw in raws:
-            row = listing_from_chrono(model, raw, cap)
+            row = listing_from_chrono(model, raw, cap, rejected)
             if row:
                 found.append(row)
     if found:
@@ -508,7 +711,7 @@ def fetch_token(client_id, client_secret):
     return token
 
 
-def search_ebay(token, model, cap):
+def search_ebay(token, model, cap, rejected=None):
     """Return (rows, error). rows is None only when the call failed."""
     queries = [
         ("BIN", "buyingOptions:{FIXED_PRICE|BEST_OFFER}"),
@@ -534,7 +737,7 @@ def search_ebay(token, model, cap):
             errors.append(str(getattr(exc, "reason", exc)))
             continue
         for item in items:
-            row = listing_from_ebay(model, item, cap)
+            row = listing_from_ebay(model, item, cap, rejected)
             if row:
                 rows.append(row)
     if errors and not rows:
@@ -613,7 +816,7 @@ def fetch_chrono_html(query):
     return resp.text, None
 
 
-def chrono_for_model(model, cap, state):
+def chrono_for_model(model, cap, state, rejected=None):
     """Return (rows, error). state['blocked'] stops later calls after one block."""
     if state.get("blocked"):
         return [], state.get("reason") or "blocked"
@@ -625,7 +828,7 @@ def chrono_for_model(model, cap, state):
             state["blocked"] = True
             state["reason"] = err
         return [], err
-    rows, parse_err = parse_chrono24(html, model, cap)
+    rows, parse_err = parse_chrono24(html, model, cap, rejected)
     if parse_err == "blocked":
         state["blocked"] = True
         state["reason"] = "blocked"
@@ -644,6 +847,20 @@ def merge_listings(previous, selected_ids, failed_ids, fresh_rows):
 
 def sort_listings(rows):
     return sorted(rows, key=lambda r: (str(r.get("model_id")), float(r.get("total") or 0), str(r.get("url"))))
+
+
+def without_rejected(rows, rejected):
+    """Drop parts, non-working watches, and fixed-price outliers. Counts each drop."""
+    kept = []
+    for row in rows:
+        reason = title_reject_reason(row.get("title"))
+        if reason:
+            note_reject(rejected, reason)
+            continue
+        kept.append(row)
+    kept, n_low = drop_price_outliers(kept)
+    rejected["below_median"] = rejected.get("below_median", 0) + n_low
+    return kept
 
 
 def missing_secrets():
@@ -694,6 +911,8 @@ def run_mine(models_filter, max_price):
     failed = set()
     chrono_state = {}
     chrono_noted = False
+    chrono_failed = set()
+    rejected = empty_filter_counts()
     ok = 0
     for index, model in enumerate(selected):
         cap = effective_cap(model, max_price)
@@ -701,7 +920,7 @@ def run_mine(models_filter, max_price):
             errors.append({"model_id": model["id"], "ref": model.get("ref"), "source": "eBay", "error": "no buy cap"})
             failed.add(model["id"])
             continue
-        ebay_rows, err = search_ebay(token, model, cap)
+        ebay_rows, err = search_ebay(token, model, cap, rejected)
         if ebay_rows is None:
             errors.append({"model_id": model["id"], "ref": model.get("ref"), "source": "eBay", "error": err or "search failed"})
             failed.add(model["id"])
@@ -709,9 +928,8 @@ def run_mine(models_filter, max_price):
             continue
         if err:
             errors.append({"model_id": model["id"], "ref": model.get("ref"), "source": "eBay", "error": err})
-        chrono_rows, chrono_err = chrono_for_model(model, cap, chrono_state)
+        chrono_rows, chrono_err = chrono_for_model(model, cap, chrono_state, rejected)
         published = list(ebay_rows)
-        priced = list(ebay_rows)
         if chrono_err:
             if not (chrono_state.get("blocked") and chrono_noted):
                 errors.append({"model_id": model["id"], "ref": model.get("ref"), "source": "Chrono24", "error": chrono_err})
@@ -723,10 +941,10 @@ def run_mine(models_filter, max_price):
             )
         else:
             published.extend(chrono_rows)
-            priced.extend(chrono_rows)
         published = dedupe_rows(published)
         fresh.extend(published)
-        append_history(history, model, history_point(dedupe_rows(priced)), day)
+        if chrono_err:
+            chrono_failed.add(model["id"])
         ok += 1
         print(
             f"{model['ref']}: {sum(1 for r in published if r.get('source') == 'eBay')} eBay, "
@@ -741,7 +959,17 @@ def run_mine(models_filter, max_price):
             print(f"  {err.get('source')} {err.get('ref')}: {err.get('error')}", flush=True)
         return 1
     selected_ids = {m["id"] for m in selected}
-    merged = sort_listings(merge_listings(previous, selected_ids, failed, fresh))
+    merged = without_rejected(merge_listings(previous, selected_ids, failed, fresh), rejected)
+    merged = sort_listings(merged)
+    for model in selected:
+        if model["id"] in failed:
+            continue
+        history_rows = [row for row in merged if row.get("model_id") == model["id"]]
+        # A Chrono24 block keeps yesterday's rows on the page, but they are not
+        # today's prices, so they do not set the daily low.
+        if model["id"] in chrono_failed:
+            history_rows = [row for row in history_rows if row.get("source") != "Chrono24"]
+        append_history(history, model, history_point(history_rows), day)
     label, iso = stamp()
     meta = {
         "last_mined": label,
@@ -754,6 +982,7 @@ def run_mine(models_filter, max_price):
             "chrono24": sum(1 for r in merged if r.get("source") == "Chrono24"),
             "errors": len(errors),
         },
+        "filtered": rejected,
         "errors": errors,
         "models_filter": models_filter or "",
         "max_price": max_price,
@@ -762,7 +991,9 @@ def run_mine(models_filter, max_price):
     save_json(META_PATH, meta)
     save_json(HISTORY_PATH, history)
     print(
-        f"Wrote {len(merged)} listings. Last mined {label}. {len(errors)} error(s).",
+        f"Wrote {len(merged)} listings. Last mined {label}. {len(errors)} error(s). "
+        f"Filtered part {rejected['part']}, not working {rejected['not_working']}, "
+        f"below median {rejected['below_median']}, excluded {rejected['excluded']}.",
         flush=True,
     )
     return 0
@@ -806,7 +1037,11 @@ def self_test():
     item_eur["price"] = {"value": "180", "currency": "EUR"}
     assert listing_from_ebay(model, item_eur, 220) is None
     item_parts = dict(item, title="Seiko SKX007 bezel insert only")
-    assert listing_from_ebay(model, item_parts, 220) is None
+    rejected = empty_filter_counts()
+    assert listing_from_ebay(model, item_parts, 220, rejected) is None
+    assert rejected["part"] == 1
+    assert title_reject_reason("Excellent Tudor 79540 men's watch with 2 original links") is None
+    assert title_reject_reason("Omega Seamaster NOT WORKING") == "not_working"
     item_other = dict(item, title="Seiko SKX009 pepsi")
     assert listing_from_ebay(model, item_other, 220) is None
     auction = {

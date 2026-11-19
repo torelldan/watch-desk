@@ -4,8 +4,8 @@
   "counts": {
     "models": 32,
     "models_ok": 32,
-    "listings": 147,
-    "ebay": 147,
+    "listings": 108,
+    "ebay": 108,
     "chrono24": 0,
     "errors": 1
   },
@@ -18,5 +18,11 @@
     }
   ],
   "models_filter": "",
-  "max_price": null
+  "max_price": null,
+  "filtered": {
+    "part": 32,
+    "not_working": 7,
+    "excluded": 0,
+    "below_median": 0
+  }
 }
