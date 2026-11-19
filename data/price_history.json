@@ -2040,7 +2040,7 @@
       },
       {
         "date": "2026-11-19",
-        "low": 51.49,
+        "low": 51.41,
         "currency": "USD",
         "n": 6,
         "basis": "price+shipping",
@@ -2849,7 +2849,7 @@
       },
       {
         "date": "2026-11-19",
-        "low": 24.5,
+        "low": 31.0,
         "currency": "USD",
         "n": 61,
         "basis": "price+shipping",
