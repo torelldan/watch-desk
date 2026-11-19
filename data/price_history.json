@@ -2603,7 +2603,7 @@
         "date": "2026-11-19",
         "low": 61.0,
         "currency": "USD",
-        "n": 2,
+        "n": 3,
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/128191072551?_skw=Omega+311.30.42.30.01.005&hash=item1dd8c88927:g:f34AAeSwq0Jq9fa9"
@@ -3421,7 +3421,7 @@
         "date": "2026-11-19",
         "low": 61.0,
         "currency": "USD",
-        "n": 4,
+        "n": 5,
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/128190914131?_skw=Tudor+79830RB&hash=item1dd8c61e53:g:I3wAAeSwLrpq9djP"

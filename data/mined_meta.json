@@ -1,13 +1,19 @@
 {
-  "last_mined": "Nov 19, 2026 2:51 PM CT",
-  "last_mined_iso": "2026-11-19T14:51:18-06:00",
+  "last_mined": "Nov 19, 2026 4:52 PM CT",
+  "last_mined_iso": "2026-11-19T16:52:08-06:00",
   "counts": {
     "models": 32,
     "models_ok": 32,
-    "listings": 108,
-    "ebay": 108,
+    "listings": 110,
+    "ebay": 110,
     "chrono24": 0,
     "errors": 1
+  },
+  "filtered": {
+    "part": 34,
+    "not_working": 7,
+    "excluded": 0,
+    "below_median": 0
   },
   "errors": [
     {
@@ -18,11 +24,5 @@
     }
   ],
   "models_filter": "",
-  "max_price": null,
-  "filtered": {
-    "part": 32,
-    "not_working": 7,
-    "excluded": 0,
-    "below_median": 0
-  }
+  "max_price": null
 }
