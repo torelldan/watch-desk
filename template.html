@@ -438,18 +438,40 @@ function dialColor(brand) {
   if (brand === "OMEGA") return "#123";
   return "#2a241c";
 }
+const MAX_FRESH_PER_MODEL = 8;
+function capPerModel(rows) {
+  const by = new Map();
+  rows.forEach(l => {
+    const key = l.model_id || l.ref || "";
+    if (!by.has(key)) by.set(key, []);
+    by.get(key).push(l);
+  });
+  const out = [];
+  by.forEach(list => {
+    list.sort((a, b) => Number(a.total != null ? a.total : a.price) - Number(b.total != null ? b.total : b.price));
+    out.push(...list.slice(0, MAX_FRESH_PER_MODEL));
+  });
+  return out;
+}
 function freshRows(live) {
   const q = document.getElementById("q").value.toLowerCase().trim();
-  return live.filter(l => {
+  const matched = live.filter(l => {
     const total = Number(l.total != null ? l.total : l.price);
     if (sourceFilter !== "all" && sourceKey(l.source) !== sourceFilter) return false;
     if (budget !== "all" && total > budget) return false;
     if (!q) return true;
     return (l.brand + " " + l.model + " " + l.ref + " " + (l.title || "")).toLowerCase().includes(q);
   }).sort((a, b) => Number(a.total) - Number(b.total) || String(a.ref).localeCompare(String(b.ref)));
+  return matched;
 }
 function paintFresh(grid, live) {
-  const list = freshRows(live);
+  const matched = freshRows(live);
+  const fullCount = new Map();
+  matched.forEach(l => {
+    const key = l.model_id || l.ref || "";
+    fullCount.set(key, (fullCount.get(key) || 0) + 1);
+  });
+  const list = capPerModel(matched);
   document.getElementById("count").textContent = String(list.length);
   document.getElementById("countNote").textContent = "live listings";
   if (!list.length) {
@@ -471,7 +493,7 @@ function paintFresh(grid, live) {
     g.rows.push(l);
   });
   grid.innerHTML = groups.map(g =>
-    '<div class="fresh-head">' + esc(g.label) + " · " + esc(g.ref) + " · cap " + (g.cap != null ? money(g.cap) : "—") + " · " + g.rows.length + "</div>" +
+    '<div class="fresh-head">' + esc(g.label) + " · " + esc(g.ref) + " · cap " + (g.cap != null ? money(g.cap) : "—") + " · " + ((fullCount.get(g.key) || g.rows.length) > g.rows.length ? g.rows.length + " cheapest of " + fullCount.get(g.key) : g.rows.length) + "</div>" +
     g.rows.map(l => `
     <article class="card">
       <div class="shot">
@@ -500,7 +522,7 @@ function paint() {
   document.getElementById("nbcv").textContent = "(" + deals.filter(needsBcv).length + ")";
   const live = minedListings.filter(listingLive);
   const nfresh = document.getElementById("nfresh");
-  if (nfresh) nfresh.textContent = "(" + live.length + ")";
+  if (nfresh) nfresh.textContent = "(" + capPerModel(live).length + ")";
   if (view === "fresh") {
     paintFresh(grid, live);
     return;

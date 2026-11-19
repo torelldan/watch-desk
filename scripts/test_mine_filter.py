@@ -122,6 +122,74 @@ class PriceFloorTest(unittest.TestCase):
         self.assertEqual(n_low, 0)
         self.assertEqual(len(kept), 2)
 
+    def test_daniel_examples(self):
+        belt = "Excellent condition Belt Seiko Prospex SBDC113 Navy 20mm Men's Wristwatch"
+        self.assertEqual(mine.title_reject_reason(belt), "part")
+        self.assertEqual(
+            mine.title_reject_reason("Excellent condition Belt Seiko Prospex SBDC113 Navy 20mm"),
+            "part",
+        )
+        links = "Excellent condition Tudor I914902 79540 men's watch with 2 original links"
+        self.assertIsNone(mine.title_reject_reason(links))
+        read = "Omega Seamaster De Ville 10k Gold Filled Wrist Watch (READ)"
+        self.assertEqual(mine.title_reject_reason(read), "not_working")
+        self.assertEqual(mine.title_reject_reason("Omega Seamaster read description"), "not_working")
+        bracelet = "Tudor Black Bay 41 Self-Winding Stainless Silver Dial Bracelet #79540"
+        auction = {
+            "format": "auction",
+            "title": bracelet,
+            "total": 30.99,
+            "end_time": "2026-11-22T00:00:00Z",
+            "buy_cap": 2250,
+            "model_id": "bb-79540",
+        }
+        self.assertEqual(mine.row_reject_reason(auction), "part")
+        kept = mine.without_rejected(
+            [
+                {
+                    "model_id": "bb-79540",
+                    "format": "BIN",
+                    "title": links,
+                    "total": 288.73,
+                    "buy_cap": 2250,
+                },
+                {
+                    "model_id": "deville",
+                    "format": "auction",
+                    "title": read,
+                    "total": 31,
+                    "end_time": "2026-11-22T00:00:00Z",
+                    "buy_cap": 600,
+                },
+                auction,
+                {
+                    "model_id": "bb-79540",
+                    "format": "BIN",
+                    "title": "Tudor Black Bay Heritage 41 Blue Dial 79540 Automatic No Box Or Papers",
+                    "total": 1950,
+                    "buy_cap": 2250,
+                },
+                {
+                    "model_id": "bb-gmt",
+                    "format": "auction",
+                    "title": "eLive- Tudor Black Bay GMT 41mm Pepsi Black Dial 79830RB w/Card 2024",
+                    "total": 61,
+                    "end_time": "2026-11-22T00:00:00Z",
+                    "buy_cap": 2700,
+                },
+            ],
+            counts := mine.empty_filter_counts(),
+        )
+        titles = [row["title"] for row in kept]
+        self.assertNotIn(links, titles)
+        self.assertNotIn(read, titles)
+        self.assertNotIn(bracelet, titles)
+        self.assertIn("eLive- Tudor Black Bay GMT 41mm Pepsi Black Dial 79830RB w/Card 2024", titles)
+        self.assertIn("Tudor Black Bay Heritage 41 Blue Dial 79540 Automatic No Box Or Papers", titles)
+        self.assertGreaterEqual(counts["below_cap"], 1)
+        self.assertGreaterEqual(counts["part"], 1)
+        self.assertGreaterEqual(counts["not_working"], 1)
+
     def test_without_rejected_counts_each_reason(self):
         rows = [
             row("m", "BIN", "seiko skx007 dial", 40),

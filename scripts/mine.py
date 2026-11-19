@@ -73,8 +73,14 @@ COMPLETE_WATCH_RE = re.compile(
 )
 EXCLUDE_RE = re.compile(r"\b(homage|replica|aftermarket|modded|fake|franken)\b", re.I)
 PRICE_FLOOR_RATIO = 0.33
+BUY_CAP_FLOOR_RATIO = 0.35
 MIN_LISTINGS_FOR_PRICE_FLOOR = 3
-FILTER_REASONS = ("part", "not_working", "excluded", "below_median")
+FILTER_REASONS = ("part", "not_working", "excluded", "below_cap", "below_median")
+# An auction that merely ends on a part word, with none of these, is the part.
+AUCTION_KEEP_CONTEXT_RE = re.compile(r"\b(watch|wristwatch|watches|automatic)\b|\d+\s*mm\b")
+AUCTION_END_PART_RE = re.compile(
+    r"\b(bracelets?|straps?|belts?|bands?|links?|clasps?)\b(?:\s+#?\s*\d+[a-z0-9]*)*$"
+)
 CHRONO_BLOCK_RE = re.compile(
     r"cf-browser-verification|cf-challenge|just a moment|captcha|access denied",
     re.I,
@@ -211,6 +217,10 @@ def _strap_is_the_item(text):
 def _is_part_title(text):
     if PART_ONLY_RE.search(text) or PART_FOR_RE.search(text) or GENUINE_PART_RE.search(text):
         return True
+    # Japanese sellers use "belt" for a strap sold on its own, often with the
+    # watch name after it. "with belt" or "on belt" is still the watch.
+    if re.search(r"\bbelts?\b", text) and not re.search(r"\b(with|on)\s+belts?\b", text):
+        return True
     if re.search(r"\bspare\b", text) or re.search(r"\blot of\b", text):
         return True
     if re.search(r"\b(female|male) stem\b", text):
@@ -245,6 +255,10 @@ def title_reject_reason(title):
     text = normalize_title(raw)
     if not text:
         return None
+    # "(READ)" and "read description" are the seller's warning that it is not
+    # a working watch. A bare "read" inside another word is left alone.
+    if re.search(r"\(\s*read\s*\)", raw, re.I) or re.search(r"\bread description\b", text):
+        return "not_working"
     if NOT_WORKING_RE.search(text):
         return "not_working"
     if _is_part_title(text):
@@ -269,12 +283,54 @@ def reads_as_complete_watch(title):
     return bool(COMPLETE_WATCH_RE.search(normalize_title(title)))
 
 
+def auction_ends_as_part(title):
+    """True when an auction title ends on bracelet, strap, links, or belt.
+
+    A low bid stays when the title says watch, automatic, or a case size in mm.
+    "Self-winding" and a bare "41" do not count: those still show up on straps.
+    """
+    text = normalize_title(title)
+    if not text or AUCTION_KEEP_CONTEXT_RE.search(text):
+        return False
+    return bool(AUCTION_END_PART_RE.search(text))
+
+
+def row_reject_reason(row):
+    reason = title_reject_reason(row.get("title") if isinstance(row, dict) else row)
+    if reason:
+        return reason
+    if isinstance(row, dict) and is_auction(row) and auction_ends_as_part(row.get("title")):
+        return "part"
+    return None
+
+
 def median(values):
     vals = sorted(values)
     mid = len(vals) // 2
     if len(vals) % 2:
         return vals[mid]
     return (vals[mid - 1] + vals[mid]) / 2
+
+
+def drop_below_buy_cap(rows, ratio=BUY_CAP_FLOOR_RATIO):
+    """Drop fixed-price listings under about 35% of that model's buy cap.
+
+    This catches a $288 bracelet on a $2,250 watch even when the model has
+    too few listings for a median. Auctions are left to the title rules,
+    because a $1 bid on a real watch is still a real watch.
+    """
+    drop = set()
+    for index, row in enumerate(rows):
+        if is_auction(row):
+            continue
+        cap = row.get("buy_cap")
+        total = row.get("total")
+        if not isinstance(cap, (int, float)) or not isinstance(total, (int, float)) or cap <= 0:
+            continue
+        if total < cap * ratio:
+            drop.add(index)
+    kept = [row for index, row in enumerate(rows) if index not in drop]
+    return kept, len(drop)
 
 
 def drop_price_outliers(rows, ratio=PRICE_FLOOR_RATIO):
@@ -836,10 +892,12 @@ def chrono_for_model(model, cap, state, rejected=None):
     return rows, parse_err
 
 
-def merge_listings(previous, selected_ids, failed_ids, fresh_rows):
+def merge_listings(previous, selected_ids, failed_ids, fresh_rows, known_ids=None):
     kept = []
     for row in previous:
         mid = row.get("model_id")
+        if known_ids is not None and mid not in known_ids:
+            continue
         if mid not in selected_ids or mid in failed_ids:
             kept.append(row)
     return dedupe_rows(kept + fresh_rows)
@@ -853,11 +911,13 @@ def without_rejected(rows, rejected):
     """Drop parts, non-working watches, and fixed-price outliers. Counts each drop."""
     kept = []
     for row in rows:
-        reason = title_reject_reason(row.get("title"))
+        reason = row_reject_reason(row)
         if reason:
             note_reject(rejected, reason)
             continue
         kept.append(row)
+    kept, n_cap = drop_below_buy_cap(kept)
+    rejected["below_cap"] = rejected.get("below_cap", 0) + n_cap
     kept, n_low = drop_price_outliers(kept)
     rejected["below_median"] = rejected.get("below_median", 0) + n_low
     return kept
@@ -959,7 +1019,11 @@ def run_mine(models_filter, max_price):
             print(f"  {err.get('source')} {err.get('ref')}: {err.get('error')}", flush=True)
         return 1
     selected_ids = {m["id"] for m in selected}
-    merged = without_rejected(merge_listings(previous, selected_ids, failed, fresh), rejected)
+    known_ids = {m["id"] for m in models}
+    merged = without_rejected(
+        merge_listings(previous, selected_ids, failed, fresh, known_ids),
+        rejected,
+    )
     merged = sort_listings(merged)
     for model in selected:
         if model["id"] in failed:
@@ -993,7 +1057,8 @@ def run_mine(models_filter, max_price):
     print(
         f"Wrote {len(merged)} listings. Last mined {label}. {len(errors)} error(s). "
         f"Filtered part {rejected['part']}, not working {rejected['not_working']}, "
-        f"below median {rejected['below_median']}, excluded {rejected['excluded']}.",
+        f"below cap {rejected['below_cap']}, below median {rejected['below_median']}, "
+        f"excluded {rejected['excluded']}.",
         flush=True,
     )
     return 0

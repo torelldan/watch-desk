@@ -1,5 +1,5 @@
 {
-  "note": "Mining config derived from data/deals.json buy caps (and the refs those deals share with data/comps.json). buy_cap is a number that appears on a deals.json row for that ref. The script searches eBay for active BIN and auction listings at or under buy_cap. It does not bid, buy, or message. Edit buy_cap here when a cap changes; the daily job reads this file, not deals.json directly.",
+  "note": "buy_cap is the most the miner will search up to. It does not bid, buy, or message. Older caps came from deals.json. Caps added on 2026-11-19 are about 25% under a sourced used-market price; cap_note names the source and the market figure.",
   "models": [
     {
       "id": "skx007",
@@ -10,18 +10,11 @@
       "buy_cap": 220,
       "cap_as_of": "2026-10-28",
       "cap_note": "Newest deals.json buy is 220 (2026-10-23 through 2026-10-28). The 2026-10-21 row used 300.",
-      "title_any": [["SKX007"]]
-    },
-    {
-      "id": "skx009",
-      "brand": "SEIKO",
-      "model": "SKX009",
-      "ref": "SKX009",
-      "query": "Seiko SKX009",
-      "buy_cap": 220,
-      "cap_as_of": "2026-10-28",
-      "cap_note": "Newest deals.json buy is 220 (2026-10-22 through 2026-10-28). The 2026-10-21 row used 330.",
-      "title_any": [["SKX009"]]
+      "title_any": [
+        [
+          "SKX007"
+        ]
+      ]
     },
     {
       "id": "sarb017",
@@ -31,17 +24,11 @@
       "query": "Seiko SARB017",
       "buy_cap": 680,
       "cap_as_of": "2026-10-22",
-      "title_any": [["SARB017"]]
-    },
-    {
-      "id": "sarb035",
-      "brand": "SEIKO",
-      "model": "SARB035",
-      "ref": "SARB035",
-      "query": "Seiko SARB035",
-      "buy_cap": 400,
-      "cap_as_of": "2026-10-21",
-      "title_any": [["SARB035"]]
+      "title_any": [
+        [
+          "SARB017"
+        ]
+      ]
     },
     {
       "id": "sbdc003",
@@ -51,17 +38,11 @@
       "query": "Seiko SBDC003",
       "buy_cap": 400,
       "cap_as_of": "2026-10-23",
-      "title_any": [["SBDC003"]]
-    },
-    {
-      "id": "sbdc033",
-      "brand": "SEIKO",
-      "model": "Prospex Sumo SBDC033",
-      "ref": "SBDC033",
-      "query": "Seiko SBDC033",
-      "buy_cap": 400,
-      "cap_as_of": "2026-10-26",
-      "title_any": [["SBDC033"]]
+      "title_any": [
+        [
+          "SBDC003"
+        ]
+      ]
     },
     {
       "id": "sbdc081",
@@ -71,37 +52,11 @@
       "query": "Seiko SBDC081",
       "buy_cap": 400,
       "cap_as_of": "2026-10-27",
-      "title_any": [["SBDC081"]]
-    },
-    {
-      "id": "sbdc113",
-      "brand": "SEIKO",
-      "model": "Prospex Sumo SBDC113",
-      "ref": "SBDC113",
-      "query": "Seiko SBDC113",
-      "buy_cap": 400,
-      "cap_as_of": "2026-10-23",
-      "title_any": [["SBDC113"]]
-    },
-    {
-      "id": "sbdc031",
-      "brand": "SEIKO",
-      "model": "Prospex Sumo SBDC031",
-      "ref": "SBDC031",
-      "query": "Seiko SBDC031",
-      "buy_cap": 400,
-      "cap_as_of": "2026-10-28",
-      "title_any": [["SBDC031"]]
-    },
-    {
-      "id": "spb101",
-      "brand": "SEIKO",
-      "model": "Prospex SPB101",
-      "ref": "SPB101",
-      "query": "Seiko SPB101",
-      "buy_cap": 400,
-      "cap_as_of": "2026-10-28",
-      "title_any": [["SPB101"]]
+      "title_any": [
+        [
+          "SBDC081"
+        ]
+      ]
     },
     {
       "id": "prx-40",
@@ -111,7 +66,14 @@
       "query": "Tissot T137.407.11.041.00",
       "buy_cap": 400,
       "cap_as_of": "2026-10-27",
-      "title_any": [["T137.407.11.041.00"], ["T1374071104100"]]
+      "title_any": [
+        [
+          "T137.407.11.041.00"
+        ],
+        [
+          "T1374071104100"
+        ]
+      ]
     },
     {
       "id": "prx-35",
@@ -121,7 +83,11 @@
       "query": "Tissot T137.207",
       "buy_cap": 400,
       "cap_as_of": "2026-10-23",
-      "title_any": [["T137.207"]]
+      "title_any": [
+        [
+          "T137.207"
+        ]
+      ]
     },
     {
       "id": "prx-green",
@@ -131,7 +97,12 @@
       "query": "Tissot PRX Powermatic 80 green",
       "buy_cap": 400,
       "cap_as_of": "2026-10-24",
-      "title_any": [["PRX", "green"]]
+      "title_any": [
+        [
+          "PRX",
+          "green"
+        ]
+      ]
     },
     {
       "id": "khaki-h69439363",
@@ -141,7 +112,11 @@
       "query": "Hamilton H69439363",
       "buy_cap": 340,
       "cap_as_of": "2026-10-23",
-      "title_any": [["H69439363"]]
+      "title_any": [
+        [
+          "H69439363"
+        ]
+      ]
     },
     {
       "id": "khaki-38",
@@ -152,7 +127,12 @@
       "buy_cap": 340,
       "cap_as_of": "2026-10-22",
       "cap_note": "Same $340 buy as the deals.json rows whose ref is \"38mm (ref not recorded)\". H69439363 is mined on its own row.",
-      "title_any": [["Khaki", "38"]]
+      "title_any": [
+        [
+          "Khaki",
+          "38"
+        ]
+      ]
     },
     {
       "id": "fugu",
@@ -162,7 +142,11 @@
       "query": "Citizen NY0040",
       "buy_cap": 160,
       "cap_as_of": "2026-10-21",
-      "title_any": [["NY0040"]]
+      "title_any": [
+        [
+          "NY0040"
+        ]
+      ]
     },
     {
       "id": "omega-165008",
@@ -172,7 +156,14 @@
       "query": "Omega 165.008",
       "buy_cap": 600,
       "cap_as_of": "2026-10-26",
-      "title_any": [["165.008"], ["165008"]]
+      "title_any": [
+        [
+          "165.008"
+        ],
+        [
+          "165008"
+        ]
+      ]
     },
     {
       "id": "omega-168004",
@@ -182,7 +173,14 @@
       "query": "Omega 168.004",
       "buy_cap": 2995,
       "cap_as_of": "2026-10-21",
-      "title_any": [["168.004"], ["168004"]]
+      "title_any": [
+        [
+          "168.004"
+        ],
+        [
+          "168004"
+        ]
+      ]
     },
     {
       "id": "omega-smp-blue",
@@ -192,7 +190,14 @@
       "query": "Omega 210.30.42.20.03.001",
       "buy_cap": 3300,
       "cap_as_of": "2026-10-21",
-      "title_any": [["210.30.42.20.03.001"], ["21030422003001"]]
+      "title_any": [
+        [
+          "210.30.42.20.03.001"
+        ],
+        [
+          "21030422003001"
+        ]
+      ]
     },
     {
       "id": "omega-225450",
@@ -202,7 +207,14 @@
       "query": "Omega 2254.50",
       "buy_cap": 2700,
       "cap_as_of": "2026-10-22",
-      "title_any": [["2254.50"], ["2254.50.00"]]
+      "title_any": [
+        [
+          "2254.50"
+        ],
+        [
+          "2254.50.00"
+        ]
+      ]
     },
     {
       "id": "omega-moon",
@@ -212,7 +224,14 @@
       "query": "Omega 311.30.42.30.01.005",
       "buy_cap": 4100,
       "cap_as_of": "2026-10-23",
-      "title_any": [["311.30.42.30.01.005"], ["31130423001005"]]
+      "title_any": [
+        [
+          "311.30.42.30.01.005"
+        ],
+        [
+          "31130423001005"
+        ]
+      ]
     },
     {
       "id": "omega-mk40",
@@ -222,7 +241,11 @@
       "query": "Omega 3520.53",
       "buy_cap": 2300,
       "cap_as_of": "2026-10-21",
-      "title_any": [["3520.53"]]
+      "title_any": [
+        [
+          "3520.53"
+        ]
+      ]
     },
     {
       "id": "deville",
@@ -233,7 +256,11 @@
       "buy_cap": 600,
       "cap_as_of": "2026-10-27",
       "cap_note": "Cap from the deals.json rows ref \"De Ville vintage\" and \"De Ville\". 165.008 is mined on its own row.",
-      "title_any": [["De Ville"]]
+      "title_any": [
+        [
+          "De Ville"
+        ]
+      ]
     },
     {
       "id": "tudor-74000",
@@ -243,7 +270,11 @@
       "query": "Tudor 74000",
       "buy_cap": 850,
       "cap_as_of": "2026-10-21",
-      "title_any": [["74000"]]
+      "title_any": [
+        [
+          "74000"
+        ]
+      ]
     },
     {
       "id": "bb58",
@@ -254,7 +285,14 @@
       "buy_cap": 2650,
       "cap_as_of": "2026-10-28",
       "cap_note": "Newest deals.json buy is 2650 (2026-10-28). The 2026-10-21 row used 3499.",
-      "title_any": [["79030N"], ["M79030N"]]
+      "title_any": [
+        [
+          "79030N"
+        ],
+        [
+          "M79030N"
+        ]
+      ]
     },
     {
       "id": "bb-79230b",
@@ -264,7 +302,14 @@
       "query": "Tudor 79230B",
       "buy_cap": 2250,
       "cap_as_of": "2026-10-23",
-      "title_any": [["79230B"], ["M79230B"]]
+      "title_any": [
+        [
+          "79230B"
+        ],
+        [
+          "M79230B"
+        ]
+      ]
     },
     {
       "id": "bb-79230n",
@@ -274,7 +319,14 @@
       "query": "Tudor 79230N",
       "buy_cap": 2250,
       "cap_as_of": "2026-10-27",
-      "title_any": [["79230N"], ["M79230N"]]
+      "title_any": [
+        [
+          "79230N"
+        ],
+        [
+          "M79230N"
+        ]
+      ]
     },
     {
       "id": "bb-79540",
@@ -284,7 +336,11 @@
       "query": "Tudor 79540",
       "buy_cap": 2250,
       "cap_as_of": "2026-10-22",
-      "title_any": [["79540"]]
+      "title_any": [
+        [
+          "79540"
+        ]
+      ]
     },
     {
       "id": "bb-gmt",
@@ -294,7 +350,14 @@
       "query": "Tudor 79830RB",
       "buy_cap": 2700,
       "cap_as_of": "2026-10-27",
-      "title_any": [["79830RB"], ["M79830RB"]]
+      "title_any": [
+        [
+          "79830RB"
+        ],
+        [
+          "M79830RB"
+        ]
+      ]
     },
     {
       "id": "sbgw231",
@@ -304,7 +367,11 @@
       "query": "Grand Seiko SBGW231",
       "buy_cap": 2350,
       "cap_as_of": "2026-10-21",
-      "title_any": [["SBGW231"]]
+      "title_any": [
+        [
+          "SBGW231"
+        ]
+      ]
     },
     {
       "id": "br03-92",
@@ -315,7 +382,17 @@
       "buy_cap": 1750,
       "cap_as_of": "2026-10-28",
       "cap_note": "deals.json buys for BR03-92 include 2500 (2026-10-21, 2026-10-22, and the 2026-10-27 Chrono24 row), 1600 (2026-10-24 Heritage), 1700 (2026-10-25 and 2026-10-26), and 1750 (2026-10-28). buy_cap is 1750, the newest row.",
-      "title_any": [["BR03-92"], ["BR 03-92"], ["BR0392"]]
+      "title_any": [
+        [
+          "BR03-92"
+        ],
+        [
+          "BR 03-92"
+        ],
+        [
+          "BR0392"
+        ]
+      ]
     },
     {
       "id": "br-horograph",
@@ -325,15 +402,385 @@
       "query": "Bell & Ross BR0392 Horograph",
       "buy_cap": 2500,
       "cap_as_of": "2026-10-21",
-      "title_any": [["BR0392-HOR-BLC/SRB"], ["Horograph"], ["HOR-BLC"]]
+      "title_any": [
+        [
+          "BR0392-HOR-BLC/SRB"
+        ],
+        [
+          "Horograph"
+        ],
+        [
+          "HOR-BLC"
+        ]
+      ]
+    },
+    {
+      "id": "pam00104",
+      "brand": "PANERAI",
+      "model": "Luminor Marina",
+      "ref": "PAM00104",
+      "query": "Panerai PAM00104",
+      "buy_cap": 3250,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "Loupe market value $4,315 for PAM104 (93 listings). Cap is about 25% under that ($3,236, rounded to $3,250). Chrono24's model overview puts the same ref near $4,131.",
+      "title_any": [
+        [
+          "PAM00104"
+        ],
+        [
+          "PAM 00104"
+        ]
+      ]
+    },
+    {
+      "id": "pam01312",
+      "brand": "PANERAI",
+      "model": "Luminor Marina 1950",
+      "ref": "PAM01312",
+      "query": "Panerai PAM01312",
+      "buy_cap": 3500,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $4,695 as of Nov 13, 2026. Cap is about 25% under that ($3,521, rounded to $3,500).",
+      "title_any": [
+        [
+          "PAM01312"
+        ],
+        [
+          "PAM 01312"
+        ]
+      ]
+    },
+    {
+      "id": "iw327001",
+      "brand": "IWC",
+      "model": "Mark XVIII",
+      "ref": "IW327001",
+      "query": "IWC IW327001",
+      "buy_cap": 2450,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "Loupe market value $3,299 for IW327001 (27 listings). Cap is about 25% under that ($2,474, rounded to $2,450). Other Mark XVIII variants were not given their own market figure, so they are not searched.",
+      "title_any": [
+        [
+          "IW327001"
+        ]
+      ]
+    },
+    {
+      "id": "iw371605",
+      "brand": "IWC",
+      "model": "Portugieser Chronograph",
+      "ref": "IW371605",
+      "query": "IWC IW371605",
+      "buy_cap": 3750,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "Soda, early November 2026: private-sale estimate about $5,000, against an IWC US list price of $9,200. Cap is 25% under $5,000.",
+      "title_any": [
+        [
+          "IW371605"
+        ]
+      ]
+    },
+    {
+      "id": "caw211p",
+      "brand": "TAG HEUER",
+      "model": "Monaco Calibre 11",
+      "ref": "CAW211P",
+      "query": "TAG Heuer CAW211P",
+      "buy_cap": 3800,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "CAW211P is the Monaco Calibre 11 (CAW211P.FC6356), not an Aquaracer. Loupe market value $5,038. Cap is about 25% under that ($3,778, rounded to $3,800).",
+      "title_any": [
+        [
+          "CAW211P"
+        ]
+      ]
+    },
+    {
+      "id": "sub-124060",
+      "brand": "ROLEX",
+      "model": "Submariner",
+      "ref": "124060",
+      "query": "Rolex 124060",
+      "buy_cap": 9600,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WristPrices: worth about $12,800 pre-owned with box and papers, from 661 sold prices, newest sale Oct 18, 2026. Cap is 25% under $12,800.",
+      "title_any": [
+        [
+          "124060"
+        ]
+      ]
+    },
+    {
+      "id": "sub-114060",
+      "brand": "ROLEX",
+      "model": "Submariner",
+      "ref": "114060",
+      "query": "Rolex 114060",
+      "buy_cap": 7950,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WristPrices: worth about $10,600 pre-owned with box and papers, from 330 sold prices, newest sale Oct 19, 2026. Cap is 25% under $10,600.",
+      "title_any": [
+        [
+          "114060"
+        ]
+      ]
+    },
+    {
+      "id": "dj-126300",
+      "brand": "ROLEX",
+      "model": "Datejust 41",
+      "ref": "126300",
+      "query": "Rolex 126300",
+      "buy_cap": 6950,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "Ermitage Jewelers 2026 pre-owned guide: Datejust 41 steel Oyster 126300 with papers $8,000–$10,500. Midpoint $9,250. Cap is about 25% under that ($6,938, rounded to $6,950).",
+      "title_any": [
+        [
+          "126300"
+        ]
+      ]
+    },
+    {
+      "id": "dj-126200",
+      "brand": "ROLEX",
+      "model": "Datejust 36",
+      "ref": "126200",
+      "query": "Rolex 126200",
+      "buy_cap": 6550,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WristPrices: worth about $8,750 pre-owned with box and papers, 453 sold results, prices updated Oct 26, 2026. Cap is about 25% under that ($6,562, rounded to $6,550).",
+      "title_any": [
+        [
+          "126200"
+        ]
+      ]
+    },
+    {
+      "id": "exp-124270",
+      "brand": "ROLEX",
+      "model": "Explorer",
+      "ref": "124270",
+      "query": "Rolex 124270",
+      "buy_cap": 5950,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WristPrices: worth about $7,900 pre-owned with box and papers, 345 sold results. Cap is about 25% under that ($5,925, rounded to $5,950).",
+      "title_any": [
+        [
+          "124270"
+        ]
+      ]
+    },
+    {
+      "id": "santos-wssa0018",
+      "brand": "CARTIER",
+      "model": "Santos Large",
+      "ref": "WSSA0018",
+      "query": "Cartier WSSA0018",
+      "buy_cap": 5300,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts market price $7,088 for Santos Large WSSA0018. Cap is about 25% under that ($5,316, rounded to $5,300).",
+      "title_any": [
+        [
+          "WSSA0018"
+        ]
+      ]
+    },
+    {
+      "id": "santos-wssa0029",
+      "brand": "CARTIER",
+      "model": "Santos Medium",
+      "ref": "WSSA0029",
+      "query": "Cartier WSSA0029",
+      "buy_cap": 5150,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $6,859 as of Nov 17, 2026 (retail $8,400 as of Sep 2026). Cap is about 25% under $6,859 ($5,144, rounded to $5,150).",
+      "title_any": [
+        [
+          "WSSA0029"
+        ]
+      ]
+    },
+    {
+      "id": "tank-wsta0041",
+      "brand": "CARTIER",
+      "model": "Tank Must Large",
+      "ref": "WSTA0041",
+      "query": "Cartier WSTA0041",
+      "buy_cap": 2350,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "Watch Price Tracker: median of 13 sales in the 90 days through Nov 6, 2026 was $3,165. Cap is about 25% under that ($2,374, rounded to $2,350). Chrono24's average asking price is about $3,200.",
+      "title_any": [
+        [
+          "WSTA0041"
+        ]
+      ]
+    },
+    {
+      "id": "reverso-q3858520",
+      "brand": "JAEGER-LECOULTRE",
+      "model": "Reverso Classic",
+      "ref": "Q3858520",
+      "query": "Jaeger-LeCoultre Q3858520",
+      "buy_cap": 5250,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $6,981 for ref 3858520 as of Nov 18, 2026. Cap is about 25% under that ($5,236, rounded to $5,250).",
+      "title_any": [
+        [
+          "Q3858520"
+        ],
+        [
+          "3858520"
+        ]
+      ]
+    },
+    {
+      "id": "ro-15500st",
+      "brand": "AUDEMARS PIGUET",
+      "model": "Royal Oak 15500ST",
+      "ref": "15500ST",
+      "query": "Audemars Piguet 15500ST",
+      "buy_cap": 30400,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $40,534 as of Nov 17, 2026 (dial variants differ; this is the base ref). Cap is about 25% under that ($30,400).",
+      "title_any": [
+        [
+          "15500ST"
+        ]
+      ]
+    },
+    {
+      "id": "ro-15202st",
+      "brand": "AUDEMARS PIGUET",
+      "model": "Royal Oak Jumbo 15202ST",
+      "ref": "15202ST",
+      "query": "Audemars Piguet 15202ST",
+      "buy_cap": 50400,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WATCH.MARKETS, November 2026: Royal Oak Jumbo 15202ST market value $67,197. Cap is about 25% under that ($50,398, rounded to $50,400).",
+      "title_any": [
+        [
+          "15202ST"
+        ]
+      ]
+    },
+    {
+      "id": "sbga211",
+      "brand": "GRAND SEIKO",
+      "model": "Snowflake SBGA211",
+      "ref": "SBGA211",
+      "query": "Grand Seiko SBGA211",
+      "buy_cap": 3450,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $4,597 as of Nov 18, 2026 (retail $6,900 as of Sep 2026). Cap is about 25% under $4,597 ($3,448, rounded to $3,450).",
+      "title_any": [
+        [
+          "SBGA211"
+        ]
+      ]
+    },
+    {
+      "id": "br03-diver",
+      "brand": "BELL & ROSS",
+      "model": "BR 03-92 Diver",
+      "ref": "BR0392-D-BL-ST/SRB",
+      "query": "Bell & Ross BR0392-D-BL-ST",
+      "buy_cap": 1600,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $2,157 as of Nov 12, 2026. Cap is about 25% under that ($1,618, rounded to $1,600).",
+      "title_any": [
+        [
+          "BR0392-D-BL-ST/SRB"
+        ],
+        [
+          "BR0392-D-BL-ST"
+        ]
+      ]
+    },
+    {
+      "id": "br05-black",
+      "brand": "BELL & ROSS",
+      "model": "BR 05",
+      "ref": "BR05A-BL-ST/SST",
+      "query": "Bell & Ross BR05A-BL-ST",
+      "buy_cap": 2150,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts private-sale market price $2,881 as of Nov 13, 2026. Cap is about 25% under that ($2,161, rounded to $2,150).",
+      "title_any": [
+        [
+          "BR05A-BL-ST/SST"
+        ],
+        [
+          "BR05A-BL-ST"
+        ]
+      ]
+    },
+    {
+      "id": "brv292",
+      "brand": "BELL & ROSS",
+      "model": "BR V2-92",
+      "ref": "BRV292-BL-ST/SST",
+      "query": "Bell & Ross BRV292-BL-ST",
+      "buy_cap": 1200,
+      "cap_as_of": "2026-11-19",
+      "cap_note": "WatchCharts pre-owned estimate $1,599 as of Sep 30, 2026. Cap is about 25% under that ($1,199, rounded to $1,200).",
+      "title_any": [
+        [
+          "BRV292-BL-ST/SST"
+        ],
+        [
+          "BRV292-BL-ST"
+        ]
+      ]
     }
   ],
   "skipped": [
-    {"ref": "PAM00104", "reason": "No numeric buy cap in deals.json."},
-    {"ref": "CAW211P", "reason": "No numeric buy cap in deals.json."},
-    {"ref": "Mark XVIII", "reason": "No numeric buy cap in deals.json."},
-    {"ref": "ref unconfirmed", "reason": "Not a searchable reference. Sumo refs SBDC003, SBDC033, SBDC081, and SBDC113 are listed."},
-    {"ref": "SKX007 (unconfirmed)", "reason": "Unconfirmed. SKX007 is listed."},
-    {"ref": "vintage (no ref)", "reason": "No reference. 165.008 and De Ville vintage are listed."}
+    {
+      "ref": "ref unconfirmed",
+      "reason": "Not a searchable reference. Sumo refs SBDC003 and SBDC081 are listed."
+    },
+    {
+      "ref": "SKX007 (unconfirmed)",
+      "reason": "Unconfirmed. SKX007 is listed."
+    },
+    {
+      "ref": "vintage (no ref)",
+      "reason": "No reference. 165.008 and De Ville vintage are listed."
+    },
+    {
+      "ref": "SKX009",
+      "reason": "trimmed to rebalance toward top-tier brands"
+    },
+    {
+      "ref": "SARB035",
+      "reason": "trimmed to rebalance toward top-tier brands"
+    },
+    {
+      "ref": "SBDC033",
+      "reason": "trimmed to rebalance toward top-tier brands"
+    },
+    {
+      "ref": "SBDC113",
+      "reason": "trimmed to rebalance toward top-tier brands"
+    },
+    {
+      "ref": "SBDC031",
+      "reason": "trimmed to rebalance toward top-tier brands"
+    },
+    {
+      "ref": "SPB101",
+      "reason": "trimmed to rebalance toward top-tier brands"
+    },
+    {
+      "ref": "Tank Louis",
+      "reason": "No single USD used-market price. Causli, October 2026, puts private sales of gold Tank Louis (example ref WGTA0011) at €7,150–€12,700, which is too wide to turn into one buy cap."
+    },
+    {
+      "ref": "PAM00312",
+      "reason": "Only a euro asking median was found (Horoview, €3,740 across 75 listings). No USD sold or market-price figure, so it was not given a cap."
+    },
+    {
+      "ref": "Aquaracer",
+      "reason": "No Aquaracer reference was named. CAW211P is the Monaco Calibre 11, and that ref is listed under its real model name."
+    }
   ]
 }

@@ -397,15 +397,6 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/800929372471?_skw=Seiko+SKX009&hash=itemba7b1c5937:g:fA4AAeSwEvlq~DuT"
-      },
-      {
-        "date": "2026-11-19",
-        "low": 68.0,
-        "currency": "USD",
-        "n": 5,
-        "basis": "price+shipping",
-        "source": "eBay",
-        "url": "https://www.ebay.com/itm/800929372471?_skw=Seiko+SKX009&hash=itemba7b1c5937:g:fA4AAeSwEvlq~DuT"
       }
     ]
   },
@@ -1199,15 +1190,6 @@
         "basis": "price+shipping",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/407342225179?_skw=Seiko+SBDC113&hash=item5ed77d171b:g:~EsAAeSwo6lq7ITr"
-      },
-      {
-        "date": "2026-11-19",
-        "low": 241.41,
-        "currency": "USD",
-        "n": 1,
-        "basis": "price+shipping",
-        "source": "eBay",
-        "url": "https://www.ebay.com/itm/407342225179?_skw=Seiko+SBDC113&hash=item5ed77d171b:g:~EsAAeSwo6lq7ITr"
       }
     ]
   },
@@ -1404,15 +1386,6 @@
         "basis": "item price only; shipping was not in the response",
         "source": "eBay",
         "url": "https://www.ebay.com/itm/327437608583?_skw=Seiko+SPB101&hash=item4c3ccd6687:g:Ck8AAeSw0z9q6gnY"
-      },
-      {
-        "date": "2026-11-19",
-        "low": 350.0,
-        "currency": "USD",
-        "n": 1,
-        "basis": "item price only; shipping was not in the response",
-        "source": "eBay",
-        "url": "https://www.ebay.com/itm/397950625314?_skw=Seiko+SPB101&hash=item5ca7b4a622:g:JEsAAeSwqyxqBuWa"
       }
     ]
   },
@@ -2822,12 +2795,12 @@
       },
       {
         "date": "2026-11-19",
-        "low": 31.0,
+        "low": 251.45,
         "currency": "USD",
-        "n": 41,
+        "n": 40,
         "basis": "price+shipping",
         "source": "eBay",
-        "url": "https://www.ebay.com/itm/940100484503?_skw=Omega+Seamaster+De+Ville&hash=itemdae25afd97:g:0jsAAeSwWeVq~Lna"
+        "url": "https://www.ebay.com/itm/366810608902?_skw=Omega+Seamaster+De+Ville&hash=item55679db506:g:bOsAAeSwilBq-OVy"
       }
     ]
   },
@@ -3214,12 +3187,12 @@
       },
       {
         "date": "2026-11-19",
-        "low": 30.99,
+        "low": 1950.0,
         "currency": "USD",
-        "n": 4,
+        "n": 2,
         "basis": "price+shipping",
         "source": "eBay",
-        "url": "https://www.ebay.com/itm/920151116969?_skw=Tudor+79540&hash=itemd63d47cca9:g:Bs0AAeSwpyFqmO~n"
+        "url": "https://www.ebay.com/itm/237177977856?_skw=Tudor+79540&hash=item3738e8bc00:g:aqAAAeSwZsdq9PtG"
       }
     ]
   },
