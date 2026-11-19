@@ -42,7 +42,7 @@ The desk only reads public listings. The job does not bid, buy, or message selle
    - `EBAY_CLIENT_SECRET`
 3. Run it from **Actions > Mine listings > Run workflow**. Optional inputs: a models filter (comma-separated refs, ids, or brands such as `SKX007, SBGW231`) and a max price in USD, which tightens each buy cap. Leave both blank to mine the full watch list.
 4. The same job also runs every day at **12:30 UTC** (7:30 AM CT while daylight time is in effect, before the 8 AM review). After the fall time change, 12:30 UTC is 6:30 AM CT. Move the cron in `.github/workflows/mine.yml` to `30 13 * * *` if you want 7:30 AM CT in winter.
-5. When the mined JSON changes, the job commits to `main`. That push runs the Pages workflow and republishes the site. If nothing changed, it does not commit. If the two secrets are missing, the script logs a notice and exits without writing listings.
+5. When the mined JSON changes, the job commits to `main`. GitHub does not start the Pages workflow from that push, so a successful Mine listings run starts the Pages workflow itself and republishes the site from the latest `main`. The daily run and a manual Run workflow both do this. If nothing changed, it does not commit, but the site is still republished. If the two secrets are missing, the script logs a notice and exits without writing listings.
 
 On the desk, **Refresh data** opens the Mine listings workflow. You still tap **Run workflow** there. **Fresh listings** shows BIN and auction rows from `data/mined_listings.json` that are still live and at or under the cap. Ended auctions are hidden. **Last mined** is the America/Chicago time of the last successful run.
 

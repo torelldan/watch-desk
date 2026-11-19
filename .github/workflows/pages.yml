@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Mine listings commits with the workflow token. GitHub does not start
+  # this workflow from that push, so a successful mine starts it here.
+  workflow_run:
+    workflows: ["Mine listings"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -16,13 +21,25 @@ concurrency:
 
 jobs:
   deploy:
+    # Ordinary pushes and a manual run still deploy. A mine deploys only
+    # when that run succeeded.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        if: github.event_name != 'workflow_run'
         uses: actions/checkout@v4
+      # workflow_run otherwise checks out the commit the mine started from,
+      # which does not include the listings just pushed. The branch name
+      # checks out the latest default branch, so those listings are published.
+      - name: Checkout default branch
+        if: github.event_name == 'workflow_run'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
