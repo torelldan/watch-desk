@@ -4579,5 +4579,117 @@
         "url": "https://www.ebay.com/itm/128191072547?_skw=Tudor+79230B&hash=item1dd8c88923:g:k2sAAeSwSD9q9fa9"
       }
     ]
+  },
+  "pam00104": {
+    "brand": "PANERAI",
+    "model": "Luminor Marina",
+    "ref": "PAM00104",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 2983.5,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/287453393854?_skw=Panerai+PAM00104&hash=item42ed8eb3be:g:AAkAAeSwvM9qXvZ2"
+      }
+    ]
+  },
+  "pam01312": {
+    "brand": "PANERAI",
+    "model": "Luminor Marina 1950",
+    "ref": "PAM01312",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 3302.25,
+        "currency": "USD",
+        "n": 1,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/257544330312?_skw=Panerai+PAM01312&hash=item3bf6d69c48:g:D0YAAeSwBD9qj6Ln"
+      }
+    ]
+  },
+  "sub-124060": {
+    "brand": "ROLEX",
+    "model": "Submariner",
+    "ref": "124060",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 51.0,
+        "currency": "USD",
+        "n": 20,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/800927920006?_skw=Rolex+124060&hash=itemba7b062f86:g:jo8AAeSw7t5q-9MS"
+      }
+    ]
+  },
+  "sub-114060": {
+    "brand": "ROLEX",
+    "model": "Submariner",
+    "ref": "114060",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 9,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128199119249?_skw=Rolex+114060&hash=item1dd9435191:g:7UMAAeSweA9q-3la"
+      }
+    ]
+  },
+  "dj-126300": {
+    "brand": "ROLEX",
+    "model": "Datejust 41",
+    "ref": "126300",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 20,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128201367020?_skw=Rolex+126300&hash=item1dd9659dec:g:4KsAAeSwDtRq~MyL"
+      }
+    ]
+  },
+  "exp-124270": {
+    "brand": "ROLEX",
+    "model": "Explorer",
+    "ref": "124270",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 61.0,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/128205557465?_skw=Rolex+124270&hash=item1dd9a58ed9:g:8D0AAeSwAQ5q~3CA"
+      }
+    ]
+  },
+  "santos-wssa0018": {
+    "brand": "CARTIER",
+    "model": "Santos Large",
+    "ref": "WSSA0018",
+    "points": [
+      {
+        "date": "2026-11-19",
+        "low": 5264.99,
+        "currency": "USD",
+        "n": 2,
+        "basis": "price+shipping",
+        "source": "eBay",
+        "url": "https://www.ebay.com/itm/920052468181?_skw=Cartier+WSSA0018&hash=itemd6376689d5:g:9ogAAeSwKsRq1Wf6"
+      }
+    ]
   }
 }

@@ -1,19 +1,19 @@
 {
-  "last_mined": "Nov 19, 2026 4:52 PM CT",
-  "last_mined_iso": "2026-11-19T16:52:08-06:00",
+  "last_mined": "Nov 19, 2026 5:34 PM CT",
+  "last_mined_iso": "2026-11-19T17:34:07-06:00",
   "counts": {
     "models": 46,
-    "models_ok": 32,
-    "listings": 100,
-    "ebay": 100,
+    "models_ok": 46,
+    "listings": 155,
+    "ebay": 155,
     "chrono24": 0,
     "errors": 1
   },
   "filtered": {
-    "part": 1,
-    "not_working": 1,
+    "part": 79,
+    "not_working": 8,
     "excluded": 0,
-    "below_cap": 1,
+    "below_cap": 17,
     "below_median": 0
   },
   "errors": [
