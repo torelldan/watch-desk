@@ -1,6 +1,6 @@
 {
-  "last_mined": "Nov 20, 2026 2:04 PM CT",
-  "last_mined_iso": "2026-11-20T14:04:11-06:00",
+  "last_mined": "Nov 20, 2026 2:36 PM CT",
+  "last_mined_iso": "2026-11-20T14:36:40-06:00",
   "counts": {
     "models": 46,
     "models_ok": 46,
@@ -10,10 +10,10 @@
     "errors": 1
   },
   "filtered": {
-    "part": 77,
+    "part": 71,
     "not_working": 8,
     "excluded": 0,
-    "below_cap": 18,
+    "below_cap": 15,
     "below_median": 0
   },
   "errors": [
