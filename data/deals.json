@@ -1,95 +1,137 @@
 [
   {
     "brand": "Seiko",
-    "model": "SKX009",
-    "ref": "SKX009",
-    "ask": 102.5,
+    "model": "SKX007 'Black Scuba' (PH seller)",
+    "ref": "SKX007",
+    "ask": 134.0,
     "buy": 220,
     "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/287711106358",
-    "found": "2026-11-10",
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/820386408832",
+    "found": "2026-11-25",
     "kind": "auction",
-    "why": "Auction at $102.50 with shipping, well under the $220 cap, but it ends Nov 14 so the bid will likely rise. Seller is US with 100% on 79 ratings.",
+    "image_url": "https://i.ebayimg.com/images/g/XB8AAeSwwidq-m3m/s-l225.jpg",
+    "why": "Auction at $99 + $35 shipping ($134), ends Nov 27 10:04 PM CT. Seller 99% / 1,048, Philippines. SKX007 comps median ~$255, so profit after fees stays far under $300 even at today's bid. Watch only.",
     "redFlags": [
-      "Auction, current bid only",
-      "Ends Nov 14, not within 24h"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/FL4AAeSwuQtq7sM5/s-l225.jpg"
+      "Auction, bid will rise",
+      "Same PH seller lists many color-named SKX007s: mod/aftermarket-part risk",
+      "Not within 24h"
+    ]
   },
   {
     "brand": "Seiko",
-    "model": "SKX007",
+    "model": "SKX007 patina (PH seller)",
     "ref": "SKX007",
-    "ask": 209.5,
+    "ask": 174.0,
     "buy": 220,
     "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/377624873258",
-    "found": "2026-11-10",
-    "kind": "auction",
-    "why": "Auction at $209.50 with shipping on a jubilee bracelet, just under the $220 cap; ends Nov 12 5:06 PM CT. Little room left before the cap.",
-    "redFlags": [
-      "Near cap already",
-      "Small seller history (100%, 34)"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/m5AAAeSw9aVq7QrY/s-l225.jpg"
-  },
-  {
-    "brand": "Bell & Ross",
-    "model": "BR 03-92 Heritage",
-    "ref": "BR03-92",
-    "ask": 1564.0,
-    "buy": 1750,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/317850483115",
-    "found": "2026-11-10",
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/820386416805",
+    "found": "2026-11-25",
     "kind": "pass",
-    "why": "Listed at $1,564, under the ~$1,850–2,000 eBay cluster, but it ships from Indonesia and Bell & Ross is faked often.",
+    "image_url": "https://i.ebayimg.com/images/g/K3sAAeSwxzNrA7X-/s-l225.jpg",
+    "why": "Auction at $139 + $35 shipping ($174), ends Nov 27 10:12 PM CT. Under cap but ~$55 margin vs the ~$255 comp median, and 'patina' suggests a worn dial. Pass.",
     "redFlags": [
-      "Authentication risk, overseas seller (98.8%, 319)",
-      "Heritage variant, comps not verified for this exact dial",
-      "No box/papers mentioned"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/SN8AAeSwBWJphr53/s-l225.jpg"
+      "Thin margin",
+      "Patina/worn dial",
+      "PH seller, mod risk"
+    ]
   },
   {
     "brand": "Omega",
-    "model": "Constellation 168.004",
-    "ref": "168.004",
-    "ask": 1500.0,
-    "buy": 2995,
+    "model": "Vintage Seamaster De Ville automatic, gold-filled (men's)",
+    "ref": "De Ville vintage",
+    "ask": 364.0,
+    "buy": 600,
     "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/167327194256",
-    "found": "2026-11-10",
-    "kind": "pass",
-    "why": "1966 steel Constellation at $1,500 from a Texas seller (100%, 224), far under other 168.004 asks, but there are no sold comps for 168.004 on file so it can't be screened for BCV or profit.",
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/287744199303",
+    "found": "2026-11-25",
+    "kind": "auction",
+    "image_url": "https://i.ebayimg.com/images/g/FWsAAeSwvjpq4jyH/s-l225.jpg",
+    "why": "Auction at $364 (free shipping), ends Nov 30 10:49 AM CT. Seller 100% / 3,169, Montoursville PA. Men's automatic under the $600 cap; reference and running condition not stated in the title, needs BCV and a photo check.",
     "redFlags": [
-      "No sold comps or BCV",
-      "Above $1,000 cash budget",
-      "Dial/originality not verified"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/nckAAeSwCRRnthuZ/s-l225.jpg"
+      "Ref not stated",
+      "Gold-filled case wear",
+      "Auction, not within 24h"
+    ]
+  },
+  {
+    "brand": "Rolex",
+    "model": "Submariner 124060 (2022 card, $1 NR)",
+    "ref": "124060",
+    "ask": 51.0,
+    "buy": 9600,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/800959813484",
+    "found": "2026-11-25",
+    "kind": "auction",
+    "tier": "stretch",
+    "image_url": "https://i.ebayimg.com/images/g/iqkAAeSwLjJrBVDP/s-l225.jpg",
+    "why": "$1 no-reserve auction + $50 shipping, 2022 card, seller 100% / 6,684 (Chino Hills). Ends Dec 1 3:20 AM CT. Watch only.",
+    "redFlags": [
+      "Price will rise",
+      "Possible buyer premium",
+      "Over current bankroll"
+    ]
+  },
+  {
+    "brand": "Rolex",
+    "model": "Datejust 36 126200 black jubilee (2024 card, $1 NR)",
+    "ref": "126200",
+    "ask": 51.0,
+    "buy": 6550,
+    "sell": null,
+    "source": "eBay (mined)",
+    "url": "https://www.ebay.com/itm/840161318176",
+    "found": "2026-11-25",
+    "kind": "auction",
+    "tier": "stretch",
+    "image_url": "https://i.ebayimg.com/images/g/uTkAAeSwBaJrBVDS/s-l225.jpg",
+    "why": "$1 no-reserve auction + $50 shipping, 2024 card, seller 100% / 6,684 (Chino Hills). Ends Dec 1 3:20 AM CT. Watch only.",
+    "redFlags": [
+      "Price will rise",
+      "Possible buyer premium",
+      "Over current bankroll"
+    ]
   },
   {
     "brand": "Tudor",
-    "model": "Prince Oysterdate 74000",
-    "ref": "74000",
-    "ask": 824.49,
-    "buy": 850,
+    "model": "Black Bay 41 black (FB Marketplace, Murfreesboro)",
+    "ref": "79230N",
+    "ask": 2600.0,
+    "buy": 2250,
     "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/147673042969",
-    "found": "2026-11-10",
+    "source": "Facebook Marketplace",
+    "url": "https://www.facebook.com/marketplace/item/1820064979230752/",
+    "found": "2026-11-25",
     "kind": "pass",
-    "why": "Same India seller as yesterday's 74000 pass, listed again at $824.49 just under the $850 cap.",
+    "tier": "stretch",
+    "image_url": "",
+    "why": "$2,600 local in Murfreesboro; reference not named in the title (could be 79230N or a 79540). Over the $2,250 79230N cap. Pass unless the seller would come down a lot.",
     "redFlags": [
-      "Weak seller history (91%, 55)",
-      "Overseas, authenticity and parts risk"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/bq0AAeSwGTZqs68w/s-l225.jpg"
+      "Over cap",
+      "Ref not stated",
+      "No box/papers info seen"
+    ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "Prospex Turtle SRPE93K1",
+    "ref": "SRPE93",
+    "ask": 419.0,
+    "buy": 270,
+    "sell": null,
+    "source": "Chrono24",
+    "url": "https://www.chrono24.com/seiko/seiko-prospex--id50041350.htm",
+    "found": "2026-11-25",
+    "kind": "pass",
+    "image_url": "",
+    "why": "New US Chrono24 listing at $390 + $29 shipping, well over the $270 cap.",
+    "redFlags": [
+      "Over cap"
+    ]
   },
   {
     "brand": "Seiko",
@@ -102,7 +144,7 @@
     "url": "https://www.ebay.com/itm/336821008277",
     "found": "2026-11-11",
     "kind": "buy",
-    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785–$1,050.",
+    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785\u2013$1,050.",
     "redFlags": [
       "Brand-new seller account (100%, 2 feedback)",
       "Title says 'new band', so the original bracelet/strap is likely missing",
@@ -140,7 +182,7 @@
     "url": "https://www.ebay.com/itm/860129739994",
     "found": "2026-11-11",
     "kind": "auction",
-    "why": "US auction at $208.27 shipped, ends Nov 19 10:41 PM CT; worth watching if it stays well under the $400 cap. Nov 19 update: now $361.87 shipped, ends tonight 10:41 PM CT. Only blue-dial PRX comps on file (~$446–458), so ROI is ~12% and the green ref needs its own BCV.",
+    "why": "US auction at $208.27 shipped, ends Nov 19 10:41 PM CT; worth watching if it stays well under the $400 cap. Nov 19 update: now $361.87 shipped, ends tonight 10:41 PM CT. Only blue-dial PRX comps on file (~$446\u2013458), so ROI is ~12% and the green ref needs its own BCV.",
     "redFlags": [
       "Seller has 41 feedback",
       "Auction has 8 days left, price will move",
@@ -927,7 +969,7 @@
     "kind": "auction",
     "tier": "stretch",
     "image_url": "https://i.ebayimg.com/images/g/kjAAAeSwDDxq6ob6/s-l225.jpg",
-    "why": "Auction, current price $2,662 incl. shipping vs $4,100 cap; ends Nov 22 ~6:35 PM CT. Listed with box. Grailzee comps on file at $4,250–$5,000, so only worth watching if it closes under the cap.",
+    "why": "Auction, current price $2,662 incl. shipping vs $4,100 cap; ends Nov 22 ~6:35 PM CT. Listed with box. Grailzee comps on file at $4,250\u2013$5,000, so only worth watching if it closes under the cap.",
     "redFlags": [
       "Seller has only 69 feedback",
       "Auction will climb; not a buy at current bid",
@@ -1005,7 +1047,7 @@
     "kind": "auction",
     "tier": "core",
     "image_url": "https://i.ebayimg.com/images/g/doAAAeSwilBq-m~z/s-l225.jpg",
-    "why": "Auction from the Philippines (seller 99%, 1k) at $184 incl. shipping vs $220 cap; ends Nov 20 ~10:44 PM CT. SKX009 eBay sold comps on file $340–$380.",
+    "why": "Auction from the Philippines (seller 99%, 1k) at $184 incl. shipping vs $220 cap; ends Nov 20 ~10:44 PM CT. SKX009 eBay sold comps on file $340\u2013$380.",
     "redFlags": [
       "Ships from Philippines",
       "Same seller lists many modded SKXs; confirm original dial/bezel",
@@ -1045,7 +1087,7 @@
     "kind": "pass",
     "tier": "stretch",
     "image_url": "https://i.ebayimg.com/images/g/WykAAeSwvnRq93ob/s-l225.jpg",
-    "why": "Auction at $2,405 incl. free shipping (La Mesa, CA; seller 100%, 58 feedback) vs $2,700 stretch cap; ends Nov 21 ~3:11 PM CT. Recent 79830RB sold comps on file $3,000–$3,995 (Grailzee sold $3,200–$3,600). Nov 19 update: now $2,464.98 with free shipping, still under the $2,700 cap; ends Nov 21 ~3:11 PM CT. Nov 20 update: now $2,565 with free shipping (cap $2,700); ends Nov 21 ~3:11 PM CT. ROI ~15.6% / ~$400 at current bid but ~9.8% at cap; max for 15% ≈ $2,579. Stretch-tier pass: 58-feedback seller and no box & papers stated.",
+    "why": "Auction at $2,405 incl. free shipping (La Mesa, CA; seller 100%, 58 feedback) vs $2,700 stretch cap; ends Nov 21 ~3:11 PM CT. Recent 79830RB sold comps on file $3,000\u2013$3,995 (Grailzee sold $3,200\u2013$3,600). Nov 19 update: now $2,464.98 with free shipping, still under the $2,700 cap; ends Nov 21 ~3:11 PM CT. Nov 20 update: now $2,565 with free shipping (cap $2,700); ends Nov 21 ~3:11 PM CT. ROI ~15.6% / ~$400 at current bid but ~9.8% at cap; max for 15% \u2248 $2,579. Stretch-tier pass: 58-feedback seller and no box & papers stated.",
     "redFlags": [
       "Title doesn't mention box & papers",
       "Low seller feedback count (58)",
@@ -1065,7 +1107,7 @@
     "kind": "auction",
     "tier": "core",
     "image_url": "https://i.ebayimg.com/images/g/TjAAAeSw8NNq~FbB/s-l225.jpg",
-    "why": "PH auction $139 + $35 ship = $174 vs $220 cap; ends Nov 22 ~12:45 PM CT. SKX009 eBay sold comps on file ~$200–$390.",
+    "why": "PH auction $139 + $35 ship = $174 vs $220 cap; ends Nov 22 ~12:45 PM CT. SKX009 eBay sold comps on file ~$200\u2013$390.",
     "redFlags": [
       "Ships from Philippines",
       "'Patina' insert; seller lists many modded SKXs, confirm original parts",
@@ -1185,7 +1227,7 @@
     "kind": "pass",
     "tier": "core",
     "image_url": "https://i.ebayimg.com/images/g/~EsAAeSwo6lq7ITr/s-l225.jpg",
-    "why": "BIN $166.41 + $75 ship = $241.41; price far below a full SBDC113, title reads 'Belt' — likely strap/bracelet only or unclear listing.",
+    "why": "BIN $166.41 + $75 ship = $241.41; price far below a full SBDC113, title reads 'Belt' \u2014 likely strap/bracelet only or unclear listing.",
     "redFlags": [
       "Possibly strap only",
       "Listing page couldn't be verified (eBay blocked fetch)",
@@ -1227,7 +1269,7 @@
     "image_url": "https://i.ebayimg.com/images/g/1CoAAeSwm0FqzTet/s-l225.jpg",
     "why": "Auction $167.50 ending today ~2:57 PM CT (Toledo).",
     "redFlags": [
-      "Sold for parts — not running"
+      "Sold for parts \u2014 not running"
     ]
   },
   {
@@ -1390,7 +1432,7 @@
     "url": "https://www.ebay.com/itm/820344912025",
     "found": "2026-11-19",
     "kind": "pass",
-    "why": "PH auction at $36 + $65 shipping, ends Nov 22 ~5:30 PM CT. A twin listing, 307283345777, is at $116 shipped. A run of named PH 'mods' (Red Godzilla, Shark Limited, Batman etc.) at $109–139 + $35 also gets passed.",
+    "why": "PH auction at $36 + $65 shipping, ends Nov 22 ~5:30 PM CT. A twin listing, 307283345777, is at $116 shipped. A run of named PH 'mods' (Red Godzilla, Shark Limited, Batman etc.) at $109\u2013139 + $35 also gets passed.",
     "redFlags": [
       "Philippines builds: mod/franken risk",
       "Generic photos"
@@ -1426,7 +1468,7 @@
     "url": "https://www.ebay.com/itm/800928341609",
     "found": "2026-11-20",
     "kind": "auction",
-    "why": "PH auction at $174 incl. $35 shipping, ends Nov 22 ~12:00–12:51 PM CT; seller 99.4% / 3,176 (same seller as the logged SKX009s). ~32% ROI / ~$56 profit vs BCV $186.49 — under the $300 minimum profit. Title says \"PATINA\".",
+    "why": "PH auction at $174 incl. $35 shipping, ends Nov 22 ~12:00\u201312:51 PM CT; seller 99.4% / 3,176 (same seller as the logged SKX009s). ~32% ROI / ~$56 profit vs BCV $186.49 \u2014 under the $300 minimum profit. Title says \"PATINA\".",
     "redFlags": [
       "Philippines builds: mod/franken risk",
       "Profit under $300 minimum"
@@ -1444,7 +1486,7 @@
     "url": "https://www.ebay.com/itm/800929780765",
     "found": "2026-11-20",
     "kind": "auction",
-    "why": "PH auction at $174 incl. $35 shipping, ends Nov 22 ~12:00–12:51 PM CT; seller 99.4% / 3,176 (same seller as the logged SKX009s). ~32% ROI / ~$56 profit vs BCV $186.49 — under the $300 minimum profit.",
+    "why": "PH auction at $174 incl. $35 shipping, ends Nov 22 ~12:00\u201312:51 PM CT; seller 99.4% / 3,176 (same seller as the logged SKX009s). ~32% ROI / ~$56 profit vs BCV $186.49 \u2014 under the $300 minimum profit.",
     "redFlags": [
       "Philippines builds: mod/franken risk",
       "Profit under $300 minimum"
@@ -1462,7 +1504,7 @@
     "url": "https://www.ebay.com/itm/800929821010",
     "found": "2026-11-20",
     "kind": "auction",
-    "why": "PH auction at $174 incl. $35 shipping, ends Nov 22 ~12:00–12:51 PM CT; seller 99.4% / 3,176 (same seller as the logged SKX009s). ~32% ROI / ~$56 profit vs BCV $186.49 — under the $300 minimum profit.",
+    "why": "PH auction at $174 incl. $35 shipping, ends Nov 22 ~12:00\u201312:51 PM CT; seller 99.4% / 3,176 (same seller as the logged SKX009s). ~32% ROI / ~$56 profit vs BCV $186.49 \u2014 under the $300 minimum profit.",
     "redFlags": [
       "Philippines builds: mod/franken risk",
       "Profit under $300 minimum"
@@ -1884,7 +1926,7 @@
     "redFlags": [
       "Bid not visible",
       "5% buyer premium",
-      "Listing title says Rolex — check"
+      "Listing title says Rolex \u2014 check"
     ]
   },
   {
@@ -1895,7 +1937,7 @@
     "buy": 600,
     "sell": null,
     "source": "Reddit r/watchexchange",
-    "url": "https://www.reddit.com/r/Watchexchange/comments/1y40xg9/wts_omega_de_ville_tank_automatic_1610034_ω/",
+    "url": "https://www.reddit.com/r/Watchexchange/comments/1y40xg9/wts_omega_de_ville_tank_automatic_1610034_\u03c9/",
     "found": "2026-11-24",
     "kind": "pass",
     "image_url": "",
