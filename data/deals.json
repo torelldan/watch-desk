@@ -134,120 +134,6 @@
     ]
   },
   {
-    "brand": "Seiko",
-    "model": "Alpinist SARB017",
-    "ref": "SARB017",
-    "ask": 580.78,
-    "buy": 680,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/336821008277",
-    "found": "2026-11-11",
-    "kind": "buy",
-    "why": "BIN at $580.78 shipped, $99 under the $680 cap and below the lowest recent sold comp ($638.85, Oct 14), so it's at or under BCV. October eBay sold comps for SARB017 mostly ran $785\u2013$1,050.",
-    "redFlags": [
-      "Brand-new seller account (100%, 2 feedback)",
-      "Title says 'new band', so the original bracelet/strap is likely missing",
-      "Photos, box and papers not verified (eBay blocked the page fetch); check the dial, caseback and movement photos before buying"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/RmIAAeSwjjZqvTla/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
-    "model": "Prospex Sumo SBDC081",
-    "ref": "SBDC081",
-    "ask": 384.0,
-    "buy": 400,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/840112844070",
-    "found": "2026-11-11",
-    "kind": "auction",
-    "why": "Japan seller auction at $384 with free shipping, ends Nov 16 9:59 PM CT; already near the $400 cap with days to go.",
-    "redFlags": [
-      "Likely to finish over cap",
-      "Overseas seller, 55 feedback",
-      "No SBDC081 sold comps on file yet, so no BCV"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/liQAAeSw5qRq8pas/s-l225.jpg"
-  },
-  {
-    "brand": "Tissot",
-    "model": "PRX Powermatic 80 green 40mm",
-    "ref": "PRX Powermatic 80 green",
-    "ask": 361.87,
-    "buy": 400,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/860129739994",
-    "found": "2026-11-11",
-    "kind": "auction",
-    "why": "US auction at $208.27 shipped, ends Nov 19 10:41 PM CT; worth watching if it stays well under the $400 cap. Nov 19 update: now $361.87 shipped, ends tonight 10:41 PM CT. Only blue-dial PRX comps on file (~$446\u2013458), so ROI is ~12% and the green ref needs its own BCV.",
-    "redFlags": [
-      "Seller has 41 feedback",
-      "Auction has 8 days left, price will move",
-      "No BCV on file",
-      "Nov 19: ~12% ROI vs blue PRX comps; needs BCV"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/w8sAAeSwFMJq8qB2/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
-    "model": "SKX007",
-    "ref": "SKX007",
-    "ask": 153.76,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/137914770676",
-    "found": "2026-11-11",
-    "kind": "auction",
-    "why": "Pearland, TX seller (99.3%, 5,280) auction at $153.76 shipped, ends Nov 15 8:19 PM CT; a sister listing 137914826612 sits at $157.88.",
-    "redFlags": [
-      "Auction will rise",
-      "No BCV on file"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/QE4AAeSwLHlq5fZo/s-l225.jpg"
-  },
-  {
-    "brand": "Omega",
-    "model": "Constellation 168.004 gold-capped",
-    "ref": "168.004",
-    "ask": 1340.0,
-    "buy": 2995,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/206688274712",
-    "found": "2026-11-11",
-    "kind": "pass",
-    "why": "Gold-capped 168.004 at $1,340 shipped from Colombia; far under the steel-case cap but it's a cheaper variant and above the $1,000 bankroll.",
-    "redFlags": [
-      "Gold-capped, not steel; the cap is set from steel pricing",
-      "Overseas, dial/movement originality unverified",
-      "No 168.004 sold comps on file"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/Ha8AAeSwSI1qvtNS/s-l225.jpg"
-  },
-  {
-    "brand": "Tudor",
-    "model": "Black Bay 41 79540",
-    "ref": "79540",
-    "ask": 1950.0,
-    "buy": 2250,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/287718589455",
-    "found": "2026-11-11",
-    "kind": "pass",
-    "why": "Blue-dial 79540 at $1,950, no box or papers; under the 79230 cap, but it's a different reference with no comps on file.",
-    "redFlags": [
-      "No box or papers",
-      "Seller 96.9% (1,196), not strong enough to stand in for papers",
-      "No 79540 sold comps"
-    ],
-    "image_url": ""
-  },
-  {
     "brand": "Omega",
     "model": "Seamaster De Ville 165.008 (1960s, cal. 610)",
     "ref": "165.008",
@@ -1999,5 +1885,213 @@
     "redFlags": [
       "Wrong movement (quartz)"
     ]
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX007 all original (BIN)",
+    "ref": "SKX007",
+    "ask": 189.99,
+    "buy": 220,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/920183249538",
+    "kind": "pass",
+    "why": "$189.99 BIN, listed all original, 127-feedback seller. Under the $220 cap but just above the BCV (lowest comp $186.49); against the ~$255 comp median that is only about $40 profit after fees. Pass.",
+    "redFlags": [
+      "Above BCV",
+      "Thin dollar margin"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/4uEAAeSwtLBrBs5l/s-l225.jpg",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Bell & Ross",
+    "model": "BR03-92 Heritage (BIN)",
+    "ref": "BR03-92",
+    "ask": 1564,
+    "buy": 1750,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/317850483115",
+    "kind": "pass",
+    "tier": "stretch",
+    "why": "$1,564 delivered BIN (98.8%/324 seller). About 12% ROI and ~$186 profit against the two BR03-92 comps (median $1,944.50) after 10% fees; under 15% target and $300 minimum.",
+    "redFlags": [
+      "ROI under 15%",
+      "Heavily faked model - authenticate",
+      "Only 2 comps"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/SN8AAeSwBWJphr53/s-l225.jpg",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Bell & Ross",
+    "model": "BR03 Ceramic green dial, box & papers (auction)",
+    "ref": "BR03-92",
+    "ask": 1.31,
+    "buy": 1750,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/307301123830",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "Auction from a 1,737-feedback seller with box and papers, ends Dec 5 (11:00 AM CT). Opening bid only; watch the final price against the $1,750 cap.",
+    "redFlags": [
+      "Auction - price will rise",
+      "Heavily faked model - authenticate"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/tq0AAeSw2dRq81wE/s-l225.jpg",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Omega",
+    "model": "Speedmaster Moonwatch Professional 2016 (auction)",
+    "ref": "311.30.42.30.01.005",
+    "ask": 1.31,
+    "buy": 4100,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/307301140219",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "Auction from the same 1,737-feedback seller, ends Dec 5 (10:00 AM CT). Opening bid only; watch against the $4,100 cap.",
+    "redFlags": [
+      "Auction - price will rise",
+      "Confirm box/papers"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/VlEAAeSwn2NquoiH/s-l225.jpg",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Grand Seiko",
+    "model": "Elegance SBGW231 (auction)",
+    "ref": "SBGW231",
+    "ask": 2035.84,
+    "buy": 2350,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/227630893325",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "Auction at $2,035.84 from a 24,917-feedback seller, ends Dec 1 (6:42 PM CT). Comps median $3,100 (5 rows), lowest $2,800; worth watching if it stays under the $2,350 cap.",
+    "redFlags": [
+      "Auction - price will rise",
+      "Confirm box/papers"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/-PsAAeSwe4RqXCP9/s-l225.jpg",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Tissot",
+    "model": "PRX Powermatic 80 green (BIN)",
+    "ref": "PRX Powermatic 80 green",
+    "ask": 400,
+    "buy": 400,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/137960108678",
+    "kind": "pass",
+    "why": "$400 BIN, exactly at cap from an 8-feedback seller; no margin left after fees.",
+    "redFlags": [
+      "At cap",
+      "Low-feedback seller"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/ASUAAeSw2DhrBhzu/s-l225.jpg",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay 58 79030N (r/watchexchange)",
+    "ref": "79030N",
+    "ask": 2799,
+    "buy": 2650,
+    "sell": null,
+    "source": "Reddit r/watchexchange",
+    "url": "https://www.reddit.com/r/Watchexchange/comments/1y5rfjf/wts_tudor_black_bay_58_79030n_2799/",
+    "kind": "pass",
+    "tier": "stretch",
+    "why": "$2,799, about 5.6% over the $2,650 cap.",
+    "redFlags": [
+      "Over cap"
+    ],
+    "image_url": "",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay GMT 79830RB 2021 (FB Marketplace)",
+    "ref": "79830RB",
+    "ask": 3200,
+    "buy": 2700,
+    "sell": null,
+    "source": "Facebook Marketplace",
+    "url": "https://www.facebook.com/marketplace/item/2314347492740246/",
+    "kind": "pass",
+    "tier": "stretch",
+    "why": "$3,200 (cut from $3,650) in Hendersonville TN, local pickup. 18% over the $2,700 cap.",
+    "redFlags": [
+      "Over cap",
+      "Leather strap - confirm bracelet"
+    ],
+    "image_url": "",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay GMT 79830RB 2021 B&P (Grailzee auction)",
+    "ref": "79830RB",
+    "ask": null,
+    "buy": 2700,
+    "sell": null,
+    "source": "Grailzee",
+    "url": "https://grailzee.com/products/tudor-black-bay-79830rb-380",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "Box and papers, about 3 days left as of Nov 26. Current bid hidden without a Grailzee login.",
+    "redFlags": [
+      "Bid not visible",
+      "5% buyer premium"
+    ],
+    "image_url": "",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Panerai",
+    "model": "Luminor Marina PAM00111 2006 (Grailzee auction)",
+    "ref": "PAM111",
+    "ask": null,
+    "buy": 3300,
+    "sell": null,
+    "source": "Grailzee",
+    "url": "https://grailzee.com/products/panerai-luminor-op6567-3",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "2006, box but no papers, about 3 days left as of Nov 26. Current bid hidden without login.",
+    "redFlags": [
+      "No papers",
+      "Bid not visible",
+      "Heavily faked model - authenticate"
+    ],
+    "image_url": "",
+    "found": "2026-11-26"
+  },
+  {
+    "brand": "Bell & Ross",
+    "model": "BR 03-92 2010 B&P (Grailzee auction)",
+    "ref": "BR03-92",
+    "ask": null,
+    "buy": 1750,
+    "sell": null,
+    "source": "Grailzee",
+    "url": "https://grailzee.com/products/bell-ross-br-03-br0392-15",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "2010, box and papers, about 3 days left as of Nov 26. Current bid hidden without login.",
+    "redFlags": [
+      "Bid not visible",
+      "Heavily faked model - authenticate"
+    ],
+    "image_url": "",
+    "found": "2026-11-26"
   }
 ]
