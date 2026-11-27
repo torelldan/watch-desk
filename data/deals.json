@@ -118,151 +118,6 @@
   },
   {
     "brand": "Seiko",
-    "model": "Prospex Turtle SRPE93K1",
-    "ref": "SRPE93",
-    "ask": 419.0,
-    "buy": 270,
-    "sell": null,
-    "source": "Chrono24",
-    "url": "https://www.chrono24.com/seiko/seiko-prospex--id50041350.htm",
-    "found": "2026-11-25",
-    "kind": "pass",
-    "image_url": "",
-    "why": "New US Chrono24 listing at $390 + $29 shipping, well over the $270 cap.",
-    "redFlags": [
-      "Over cap"
-    ]
-  },
-  {
-    "brand": "Omega",
-    "model": "Seamaster De Ville 165.008 (1960s, cal. 610)",
-    "ref": "165.008",
-    "ask": 499.55,
-    "buy": 600,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/398438457723",
-    "found": "2026-11-12",
-    "kind": "pass",
-    "why": "1960s 165.008 at $499.55 BIN, under the $600 cap, but the only comp on file is $617, so the margin after ~10% fees is about $55.",
-    "redFlags": [
-      "Seller in Albania, 131 feedback",
-      "Only one sold comp on file",
-      "Dial originality not verified"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/Ls0AAeSwi5NqubEj/s-l225.jpg"
-  },
-  {
-    "brand": "Omega",
-    "model": "Seamaster De Ville 165.008 gold plated (cal. 712)",
-    "ref": "165.008",
-    "ask": 580.0,
-    "buy": 600,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/920131408291",
-    "found": "2026-11-12",
-    "kind": "pass",
-    "why": "Gold-plated 165.008 at $580 BIN, right at the cap with essentially no margin against the single $617 comp.",
-    "redFlags": [
-      "Gold-plated case (plating wear risk)",
-      "Seller in Colombia, 82 feedback",
-      "Thin margin"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/TxoAAeSwCJJq9KM5/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
-    "model": "SKX009 Pepsi",
-    "ref": "SKX009",
-    "ask": 187.0,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/820329543094",
-    "found": "2026-11-12",
-    "kind": "auction",
-    "why": "Pre-owned SKX009 auction at $187 incl. shipping, ending Nov 12 10:28 PM CT; recent SKX009 sold comps run about $200-390.",
-    "redFlags": [
-      "Philippines seller (99%, 1,042); these batches are often modded, check dial/bezel are OEM",
-      "Bid will likely rise"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/X-wAAeSwD6Jq79mY/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
-    "model": "SKX009 Pepsi",
-    "ref": "SKX009",
-    "ask": 153.5,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/168846932479",
-    "found": "2026-11-12",
-    "kind": "auction",
-    "why": "US seller SKX009 auction at $153.50 with free shipping, ends Nov 14 6:17 PM CT; under the $220 cap if it stays low.",
-    "redFlags": [
-      "Described as scratched from normal use",
-      "Auction, price will rise"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/XI8AAeSw38Nq7JBH/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
-    "model": "SKX007",
-    "ref": "SKX007",
-    "ask": 78.5,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/206683739356",
-    "found": "2026-11-12",
-    "kind": "auction",
-    "why": "SKX007 auction at $78.50 incl. shipping, ends Nov 15 5:30 PM CT; well under the $220 cap for now.",
-    "redFlags": [
-      "Philippines seller (98.3%, 14,627); check for aftermarket parts",
-      "Early bid, will rise"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/Hj8AAeSwRcdq7~~o/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
-    "model": "SKX007",
-    "ref": "SKX007",
-    "ask": 157.88,
-    "buy": 220,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/137914826612",
-    "found": "2026-11-12",
-    "kind": "auction",
-    "why": "Second SKX007 auction from the Pearland, TX seller (99.3%, 5,281) at $157.88, ends Nov 15 8:48 PM CT.",
-    "redFlags": [
-      "Auction, price will rise"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/5boAAeSw-w1q5ez1/s-l225.jpg"
-  },
-  {
-    "brand": "Bell & Ross",
-    "model": "BR03-92 Black Steel 42mm",
-    "ref": "BR03-92",
-    "ask": 1695.0,
-    "buy": 2500,
-    "sell": null,
-    "source": "eBay",
-    "url": "https://www.ebay.com/itm/236958724927",
-    "found": "2026-11-12",
-    "kind": "pass",
-    "why": "BR03-92 at $1,695 with free shipping and OEM box, only about 10% under the $1,850-2,000 market cluster and the $1,890 Oct 15 sold comp, so not well under.",
-    "redFlags": [
-      "Bell & Ross is faked often; authenticate",
-      "No papers mentioned",
-      "Margin under $300 after fees"
-    ],
-    "image_url": "https://i.ebayimg.com/images/g/gTUAAeSwHg9qYm8y/s-l225.jpg"
-  },
-  {
-    "brand": "Seiko",
     "model": "SKX009 Pepsi",
     "ref": "SKX009",
     "ask": 87.0,
@@ -2093,5 +1948,139 @@
     ],
     "image_url": "",
     "found": "2026-11-26"
+  },
+  {
+    "brand": "Seiko",
+    "model": "Alpinist SARB017 (eBay BIN)",
+    "ref": "SARB017",
+    "ask": 580.78,
+    "buy": 680,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/336821008277",
+    "kind": "pass",
+    "tier": "core",
+    "why": "$575 + $5.78 ship, under the $680 cap, but the caseback photo reads 6R35A (current SPB Alpinist movement), while SARB017 uses a 6R15 with solid caseback; specifics contradict photos.",
+    "redFlags": [
+      "Caseback/movement mismatch - likely mislabeled or mixed parts",
+      "Seller 3 feedback (joined Sep 2026)",
+      "No returns, no box/papers",
+      "Worn bezel/lugs despite 'Excellent'"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/RmIAAeSwjjZqvTla/s-l1600.webp",
+    "found": "2026-11-27"
+  },
+  {
+    "brand": "Tissot",
+    "model": "PRX Powermatic 80 green 40mm (eBay BIN)",
+    "ref": "T137.407.11.091.00",
+    "compRef": "T137.407.11.041.00",
+    "ask": 369.03,
+    "buy": 400,
+    "sell": null,
+    "source": "eBay",
+    "url": "https://www.ebay.com/itm/227632292274",
+    "kind": "pass",
+    "tier": "core",
+    "why": "$359 + $10.03 ship, new with box/papers per listing. Recent PRX P80 sold comps ~$446-458, so ROI after 10% fees is ~10%, under the 15% target.",
+    "redFlags": [
+      "ROI under 15%",
+      "Powermatic 80 ref not confirmed in listing",
+      "Seller ~24 feedback, joined Apr 2026, no returns"
+    ],
+    "image_url": "https://i.ebayimg.com/images/g/s94AAeSwRNtrB1GG/s-l1600.webp",
+    "found": "2026-11-27"
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay GMT 79830RB 2023 full set (r/watchexchange)",
+    "ref": "79830RB",
+    "ask": 2999,
+    "buy": 2700,
+    "sell": null,
+    "source": "Reddit r/watchexchange",
+    "url": "https://www.reddit.com/r/Watchexchange/comments/1y6erxq/",
+    "kind": "pass",
+    "tier": "stretch",
+    "why": "$2,999 shipped from Denver, full set with May 2023 warranty card, timegrapher photo. 11% over the $2,700 cap.",
+    "redFlags": [
+      "Over cap",
+      "Ding in bezel insert at 6",
+      "Seller trade history not visible"
+    ],
+    "image_url": "https://i.redd.it/qtc9446jl14i1.jpeg",
+    "found": "2026-11-27"
+  },
+  {
+    "brand": "Tudor",
+    "model": "Black Bay 58 79030N 2019 (r/watchexchange)",
+    "ref": "79030N",
+    "ask": 2950,
+    "buy": 2650,
+    "sell": null,
+    "source": "Reddit r/watchexchange",
+    "url": "https://www.reddit.com/r/Watchexchange/comments/1y6d4bl/",
+    "kind": "pass",
+    "tier": "stretch",
+    "why": "$2,950 asking, 11% over the $2,650 cap.",
+    "redFlags": [
+      "Over cap"
+    ],
+    "image_url": "",
+    "found": "2026-11-27"
+  },
+  {
+    "brand": "Seiko",
+    "model": "SKX007 black (r/watchexchange)",
+    "ref": "SKX007",
+    "ask": 299,
+    "buy": 220,
+    "sell": null,
+    "source": "Reddit r/watchexchange",
+    "url": "https://www.reddit.com/r/Watchexchange/comments/1y6hooz/",
+    "kind": "pass",
+    "tier": "core",
+    "why": "$299 shipped, good condition per title; well over the $220 cap.",
+    "redFlags": [
+      "Over cap"
+    ],
+    "image_url": "",
+    "found": "2026-11-27"
+  },
+  {
+    "brand": "Omega",
+    "model": "Speedmaster Professional 311.30.42.30.01.005 2018 B&P (Grailzee auction)",
+    "ref": "311.30.42.30.01.005",
+    "ask": 4000,
+    "buy": 4100,
+    "sell": null,
+    "source": "Grailzee",
+    "url": "https://grailzee.com/products/omega-speedmaster-311-30-42-30-01-31",
+    "kind": "auction",
+    "tier": "stretch",
+    "why": "Current bid $4,000 with ~8h left as of Nov 27 morning, box and papers. With the 5% buyer premium ($250 min) all-in is already ~$4,250, over the $4,100 cap.",
+    "redFlags": [
+      "All-in over cap with buyer premium",
+      "Bid will likely rise"
+    ],
+    "image_url": "",
+    "found": "2026-11-27"
+  },
+  {
+    "brand": "Seiko",
+    "model": "Prospex Turtle SRPE93K1",
+    "ref": "SRPE93",
+    "ask": 419.0,
+    "buy": 270,
+    "sell": null,
+    "source": "Chrono24",
+    "url": "https://www.chrono24.com/seiko/seiko-prospex--id50041350.htm",
+    "found": "2026-11-25",
+    "kind": "pass",
+    "image_url": "",
+    "why": "New US Chrono24 listing at $390 + $29 shipping, well over the $270 cap.",
+    "redFlags": [
+      "Over cap"
+    ]
   }
 ]
